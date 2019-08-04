@@ -1,0 +1,826 @@
+:root {
+    --nav: #162227;
+    --nav2: #1D2D34;
+    --bg: #111A1D;
+    --bord: #27343A;
+    --bord2: #2F718E;
+    --b-text: #7AD7FF;
+    --b-back: #00626B;
+    --g: #3BC486;
+    --g-back: #2A7453;
+    --g-back2: #24523D;
+    --link: #B7B7B7;
+    --light: #B7B7B7;
+    --gray: #9D9D9D;
+}
+
+#mentor-solution-page .new-editable-text .button,
+.widget-code-snippet button {
+    background-color: var(--g-back);
+    border-color: var(--g-back);
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+}
+
+body:not(.prism-dark) > header.logged-in {
+    height: 85px;
+}
+body:not(.prism-dark) > header.logged-in::before {
+    content: "Please go to SETTINGS ➔ PREFERENCES and enable »Dark Code Theme«";
+    display: block;
+    font-size: 16px;
+    padding: 10px 10px 3px;
+    text-align: center;
+}
+
+footer {
+    background: var(--nav);
+    border-color: var(--nav);
+    color: white;
+}
+footer h4 {
+    color: var(--gray);
+}
+footer a {
+    color: var(--link);
+}
+footer .legal {
+    border-color: var(--bord);
+}
+
+#nav.lo-nav-bar {
+    background-color: var(--nav);
+    color: white;
+}
+
+#notifications-page .header {
+    background-color: var(--b-back);
+}
+
+#mentor-dashboard-page .header .header-tabs .header-tab.selected,
+#mentor-next-solutions-page .header .header-tabs .header-tab.selected {
+    background-color: var(--bg);
+    color: var(--b-text);
+}
+
+#mentor-dashboard-page .rating-section,
+#mentor-next-solutions-page .rating-section {
+    border-color: var(--bord);
+    background-color: var(--bg);
+}
+
+#mentor-dashboard-page .rating-section h2,
+#mentor-next-solutions-page .rating-section h2 {
+    background-color: var(--nav);
+    border-color: var(--bord);
+    color: var(--b-text);
+}
+#mentor-dashboard-page .help-section .box, #mentor-dashboard-page .rating-section .box,
+#mentor-dashboard-page .weekly-section .box, #mentor-dashboard-page .contributions-section .box,
+#mentor-dashboard-page .celebration-section .box, #mentor-next-solutions-page .help-section .box,
+#mentor-next-solutions-page .rating-section .box, #mentor-next-solutions-page .weekly-section .box,
+#mentor-next-solutions-page .contributions-section .box, #mentor-next-solutions-page .celebration-section .box {
+    background-color: var(--bg);
+}
+
+#mentor-dashboard-page .rating-section .rating,
+#mentor-next-solutions-page .rating-section .rating {
+    color: var(--b-text);
+    border-bottom-color: var(--bord2);
+}
+
+#mentor-dashboard-page .help-section,
+#mentor-dashboard-page .rating-section,
+#mentor-dashboard-page .weekly-section,
+#mentor-dashboard-page .contributions-section,
+#mentor-dashboard-page .celebration-section,
+#mentor-next-solutions-page .help-section,
+#mentor-next-solutions-page .rating-section,
+#mentor-next-solutions-page .weekly-section,
+#mentor-next-solutions-page .contributions-section,
+#mentor-next-solutions-page .celebration-section {
+    background-color: var(--nav);
+}
+
+#mentor-dashboard-page .help-section h2, #mentor-dashboard-page .rating-section h2,
+#mentor-dashboard-page .weekly-section h2, #mentor-dashboard-page .contributions-section h2,
+#mentor-dashboard-page .celebration-section h2, #mentor-next-solutions-page .help-section h2,
+#mentor-next-solutions-page .rating-section h2, #mentor-next-solutions-page .weekly-section h2,
+#mentor-next-solutions-page .contributions-section h2, #mentor-next-solutions-page .celebration-section h2 {
+    color: var(--b-text);
+}
+
+#mentor-dashboard-page .weekly-section .bar-widget .count,
+#mentor-next-solutions-page .weekly-section .bar-widget .count {
+    background-color: var(--nav);
+}
+
+#mentor-dashboard-page .help-section .box strong,
+#mentor-dashboard-page .rating-section .box strong,
+#mentor-dashboard-page .weekly-section .box strong,
+#mentor-dashboard-page .contributions-section .box strong,
+#mentor-dashboard-page .celebration-section .box strong,
+#mentor-next-solutions-page .help-section .box strong,
+#mentor-next-solutions-page .rating-section .box strong,
+#mentor-next-solutions-page .weekly-section .box strong,
+#mentor-next-solutions-page .contributions-section .box strong,
+#mentor-next-solutions-page .celebration-section .box strong {
+    color: var(--b-text);
+}
+
+#mentor-dashboard-page .weekly-section .hr,
+#mentor-next-solutions-page .weekly-section .hr {
+    border-color: var(--bord);
+}
+
+#mentor-dashboard-page .help-section .box a,
+#mentor-dashboard-page .rating-section .box a,
+#mentor-dashboard-page .weekly-section .box a,
+#mentor-dashboard-page .contributions-section .box a,
+#mentor-dashboard-page .celebration-section .box a,
+#mentor-next-solutions-page .help-section .box a,
+#mentor-next-solutions-page .rating-section .box a,
+#mentor-next-solutions-page .weekly-section .box a,
+#mentor-next-solutions-page .contributions-section .box a,
+#mentor-next-solutions-page .celebration-section .box a {
+    color: var(--link);
+}
+
+#mentor-dashboard-page .solution .details .title .handle,
+#mentor-next-solutions-page .solution .details .title .handle {
+    color: var(--link);
+}
+#mentor-dashboard-page .solution .details .title,
+#mentor-next-solutions-page .solution .details .title {
+    color: white;
+}
+
+#mentor-dashboard-page .solution .icons .exercise,
+#mentor-next-solutions-page .solution .icons .exercise {
+    background-color: var(--bg);
+    filter: brightness(1.5);
+}
+
+#mentor-dashboard-page .solution.core, #mentor-next-solutions-page .solution.core {
+    border-color: var(--bord2);
+}
+#mentor-dashboard-page .solution, #mentor-next-solutions-page .solution {
+    border-color: var(--bord);
+}
+#mentor-dashboard-page .no-your-solutions,
+#mentor-dashboard-page .no-next-solutions,
+#mentor-next-solutions-page .no-your-solutions,
+#mentor-next-solutions-page .no-next-solutions {
+    color: white;
+}
+
+.widget-filter .title {
+    color: var(--gray);
+    background-color: var(--nav);
+    border-color: var(--bord);
+}
+.widget-filter .selectize-control .selectize-input {
+    color: white;
+    background-color: var(--bg);
+    border-color: var(--bord);
+}
+.widget-filter .selectize-control .selectize-input::after {
+    border-top-color: var(--gray);
+}
+
+.selectize-input, .selectize-control.single .selectize-input.input-active {
+    background-color: var(--nav);
+}
+.selectize-dropdown {
+    background-color: var(--nav);
+    border-color: var(--bord);
+    color: var(--link);
+}
+.widget-filter .selectize-control .selectize-dropdown .option.active {
+    background-color: var(--nav2);
+    color: white;
+}
+.selectize-input.dropdown-active::before {
+    background: var(--nav);
+}
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    color: white;
+}
+
+.pagination {
+    background-color: transparent;
+}
+
+.pagination .page.current, .pagination .next.current,
+.pagination .last.current, .pagination .prev.current,
+.pagination .first.current {
+    background-color: var(--b-back);
+    border-color: var(--b-back);
+}
+
+.pagination .page, .pagination .next, .pagination .last,
+.pagination .prev, .pagination .first {
+    border-color: var(--bord);
+}
+
+.pagination .page a, .pagination .next a,
+.pagination .last a, .pagination .prev a,
+.pagination .first a {
+    color: var(--link);
+}
+
+
+#mentor-next-solutions-page .next-exercises-navigation .exercises {
+    border-color: var(--bord);
+}
+
+#mentor-next-solutions-page .next-exercises-navigation .label.zero-count {
+    color: var(--gray);
+}
+
+#mentor-next-solutions-page .next-exercises-navigation .label {
+    color: white;
+}
+
+
+#notifications-page .notification .info {
+    color: var(--link);
+}
+#notifications-page .notification .image,
+#notifications-page .notification {
+    border-color: var(--bord);
+}
+#notifications-page .notification .mark-as-read-button,
+#notifications-page .pure-button {
+    background-color: var(--b-back);
+    border-color: var(--b-back);
+}
+#notifications-page .header-bar .mark-all-button {
+    color: var(--b-text);
+    border-color: var(--b-text);
+    background-color: var(--bg);
+}
+
+
+
+#nav.lo-nav-bar a {
+    color: var(--link);
+}
+#nav.lo-nav-bar a::before {
+    background: var(--link);
+}
+#nav.lo-nav-bar a:nth-child(n+1)::after {
+    filter: brightness(0.35);
+}
+
+.tabs-and-panes > .tabs {
+    border-color: var(--bord);
+}
+.tabs-and-panes > .tabs .tab {
+    color: var(--gray);
+    border-color: var(--bg);
+    border-bottom-color: var(--bord);
+}
+.tabs-and-panes.selected-1 > .tabs > .tab-1,
+.tabs-and-panes.selected-2 > .tabs > .tab-2,
+.tabs-and-panes.selected-3 > .tabs > .tab-3,
+.tabs-and-panes.selected-4 > .tabs > .tab-4,
+.tabs-and-panes.selected-5 > .tabs > .tab-5,
+.tabs-and-panes.selected-6 > .tabs > .tab-6 {
+    color: white;
+    border-color: var(--bord);
+    border-top-color: var(--bord2);
+    border-bottom-color: var(--bg);
+}
+
+#mentor-solution-page .discussion h3, #mentor-solution-page .new-editable-text h3 {
+    border-color: var(--bord);
+    color: white;
+}
+
+
+.editable-text .editable-text-html p code,
+.editable-text .editable-text-html li code,
+.new-editable-text .preview-area p code,
+.new-editable-text .preview-area li code {
+    background-color: var(--nav2);
+    border-color: var(--nav2);
+}
+
+.widget-discussion-post .post-header .user-handle,
+#mentor-solution-page .download-section h3,
+#mentor-solution-page .claim-section h3 {
+    color: white;
+    border-color: var(--bord);
+}
+.widget-discussion-post .post-header .user-role {
+    background-color: var(--nav2);
+    color: var(--light);
+}
+.widget-discussion-post + .widget-discussion-post {
+    border-color: var(--bord);
+}
+.editable-text .editable-text-html a, .new-editable-text .preview-area a {
+    color: var(--link);
+}
+
+.new-editable-text form textarea, .new-editable-text form .preview-area {
+    border-color: var(--bord);
+}
+
+
+.widget-code-snippet {
+    background-color: var(--bg);
+    border-color: var(--bord);
+}
+.widget-code-snippet input {
+    color: var(--light);
+}
+
+#mentor-solution-page .new-editable-text .button.leave-button,
+#mentor-solution-page .new-editable-text .button.pass-button {
+    background-color: var(--bg);
+    border-color: var(--bord);
+    color: var(--light);
+}
+#mentor-solution-page .new-editable-text .button.leave-button:hover,
+#mentor-solution-page .new-editable-text .button.pass-button:hover {
+    background-color: var(--g-back);
+    border-color: var(--g-back);
+}
+#mentor-solution-page .new-editable-text .button.approve-button,
+#mentor-solution-page .new-editable-text .button.approve-and-comment-button {
+    background-color: var(--bg);
+    border-color: var(--g-back);
+    color: var(--g);
+}
+
+
+
+#mentor-solution-page .track-header {
+    background: var(--g-back);
+}
+#mentor-solution-page .tools-bar {
+    background: var(--g-back2);
+    border-color: var(--g-back2);
+}
+
+
+/**************************************** EDITOR ****************************************/
+
+.new-editable-text form .md-editor,
+.new-editable-text form .preview-area {
+    border-color: var(--bord);
+}
+.md-editor > textarea:focus {
+    background: var(--bg);
+}
+.md-editor.active {
+    box-shadow: none;
+    border-color: var(--bord2) !important;
+}
+.md-editor .saved {
+    color: var(--gray);
+}
+
+body .md-editor .btn-toolbar {
+    background-color: var(--bg);
+}
+
+body .md-editor .btn-group button {
+    background-color: transparent;
+    color: white;
+}
+
+body .md-editor textarea {
+    color: white;
+    background-color: var(--bg);
+    border-color: var(--bord) !important;
+}
+
+
+/**************************************** MENTORING NOTES ****************************************/
+
+#modal-wrapper #modal.mentor-exercise-notes h1,
+#modal-wrapper #modal.mentor-exercise-notes #modal-close-button {
+    background-color: var(--g-back);
+}
+
+#modal-wrapper #modal {
+    background-color: var(--bg);
+}
+
+#mentor-exercise-notes p a, #mentor-exercise-notes ul a, #mentor-exercise-notes ol a {
+    color: var(--link);
+    border-color: var(--gray);
+}
+
+#mentor-exercise-notes pre {
+    border-color: var(--bord);
+}
+
+#mentor-exercise-notes .changes {
+    border-color: var(--bord);
+}
+
+/**************************************** CODE ****************************************/
+
+body.prism-dark :not(pre) > code[class*="language-"], body.prism-dark pre[class*="language-"] {
+    background-color: var(--bg);
+    border-color: var(--bord);
+}
+
+#solution-page .test-suite h3, #solution-page .solution.multi-file h3, #mentor-solution-page .test-suite h3, #mentor-solution-page .solution.multi-file h3, #my-solution-page .test-suite h3, #my-solution-page .solution.multi-file h3, #teams-solution-page .test-suite h3, #teams-solution-page .solution.multi-file h3, #teams-my-solution-page .test-suite h3, #teams-my-solution-page .solution.multi-file h3 {
+    background: var(--nav);
+    border-width: 0;
+    margin: 0;
+    color: var(--light);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body.prism-dark #solution-page .test-suite, body.prism-dark #solution-page .solution.multi-file, body.prism-dark #mentor-solution-page .test-suite, body.prism-dark #mentor-solution-page .solution.multi-file, body.prism-dark #my-solution-page .test-suite, body.prism-dark #my-solution-page .solution.multi-file, body.prism-dark #teams-solution-page .test-suite, body.prism-dark #teams-solution-page .solution.multi-file, body.prism-dark #teams-my-solution-page .test-suite, body.prism-dark #teams-my-solution-page .solution.multi-file {
+    background: transparent;
+}
+
+body.prism-dark #solution-page .solution pre, body.prism-dark #mentor-solution-page .solution pre, body.prism-dark #my-solution-page .solution pre, body.prism-dark #teams-solution-page .solution pre, body.prism-dark #teams-my-solution-page .solution pre {
+    background: var(--bg);
+}
+
+
+/**************************************** TRACKS ****************************************/
+
+#my-tracks-page .header {
+    background-image: none;
+    background-color: var(--b-back);
+}
+
+#my-tracks-page form input {
+    border-color: var(--bord);
+    background-color: var(--bg);
+    color: white;
+}
+
+#my-tracks-page form input:focus {
+    border-color: var(--bord2);
+    outline: none;
+}
+
+#my-tracks-page form button {
+    border-color: var(--bord2);
+    background-color: var(--nav);
+    color: white;
+}
+
+#my-tracks-page .track {
+    background: var(--bg);
+    border-color: var(--bord);
+    color: white;
+}
+
+#my-tracks-page .track:hover {
+    border-color: var(--bord2);
+}
+
+#my-tracks-page .num-tracks {
+    color: var(--gray);
+}
+
+#my-tracks-page .track .progress {
+    background: var(--nav2);
+    border-color: var(--nav2);
+    
+}
+
+#my-tracks-page .track .progress .filled {
+    background-color: var(--b-back);
+}
+
+#my-tracks-page .track .num-exercises, #my-tracks-page .track .progress {
+    color: white;
+}
+
+#my-tracks-page .track .num-exercises, #my-tracks-page .track .progress {
+    background-color: var(--nav2);
+}
+
+#my-tracks-page .track img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+
+/**************************************** PROFILE ****************************************/
+
+#profile-page .header {
+    background-image: none;
+    background-color: var(--g-back);
+}
+
+#profile-page .header .btns .edit-button {
+    background-color: var(--g-back);
+}
+
+#profile-page .rhs .solutions .solution {
+    border-color: var(--bord);
+}
+
+#profile-page .rhs .solutions .solution .title-bar .title,
+#profile-page .rhs .solutions .solution .details .published-at, #profile-page .rhs .solutions .solution .details .detail {
+    color: var(--light);
+}
+
+#profile-page .lhs .sidebar {
+    background-color: var(--nav);
+}
+
+#profile-page .lhs .sidebar .bio,
+#profile-page .lhs .sidebar .member-since, #profile-page .lhs .sidebar .helped-count, #profile-page .lhs .sidebar .external-link {
+    color: var(--light);
+}
+
+#profile-page .lhs .sidebar .hr {
+    border-color: var(--bord);
+}
+
+#profile-page .lhs .sidebar h3 {
+    color: white;
+}
+
+#profile-page .lhs .sidebar .external-link span {
+    color: var(--link);
+    border-color: var(--link);
+}
+
+#profile-page .lhs .sidebar .helped-count .count {
+    color: var(--g);
+}
+
+#profile-page .lhs .sidebar .badges .badge {
+    color: white;
+    border-color: var(--g);
+    background-color: transparent;
+}
+
+.file-selector {
+    color: var(--g);
+    border-color: var(--g);
+}
+.file-selector:hover {
+    color: white;
+    background-color: var(--g);
+}
+
+#modal.edit-profile .name-section h3, #modal.edit-profile .bio-section h3,
+#modal.edit-profile .avatar-section h3, #modal.edit-profile .rhs h3 {
+    color: var(--light);
+}
+
+#modal.edit-profile .name-section input, #modal.edit-profile .name-section textarea, #modal.edit-profile .bio-section input, #modal.edit-profile .bio-section textarea {
+    background-color: var(--bg);
+    border-color: var(--bord);
+    color: white;
+}
+
+#modal.edit-profile .field input {
+    background-color: var(--bg);
+    border-color: var(--bord);
+    color: white;
+}
+
+#modal.edit-profile .field > i {
+    border-color: var(--bord);
+}
+
+#modal.edit-profile .pure-button {
+    background: var(--g);
+}
+#modal.edit-profile .pure-button.cancel-button {
+    color: var(--g);
+    background-color: var(--bg);
+    border-color: var(--g);
+}
+
+
+/**************************************** SOLUTIONS ****************************************/
+
+#my-solutions .header {
+    background-image: none;
+    background-color: var(--g-back);
+}
+
+#my-solutions .solutions .solution {
+    border-color: var(--bord);
+}
+
+#my-solutions .solutions .solution .title-bar .title {
+    color: white;
+    border-color: transparent;
+}
+#my-solutions .solutions .solution .title-bar .title:hover {
+    border-color: var(--bord2);
+}
+
+#my-solutions .solutions .solution .options .option {
+    color: var(--light);
+}
+
+
+#solutions-page .user-solution, #solutions-page .solution, #my-starred-solutions-page .user-solution, #my-starred-solutions-page .solution, #exercise-page .user-solution, #exercise-page .solution {
+    border-color: var(--bord);
+}
+
+#solutions-page .user-solution .exercise, #solutions-page .solution .exercise, #my-starred-solutions-page .user-solution .exercise, #my-starred-solutions-page .solution .exercise, #exercise-page .user-solution .exercise, #exercise-page .solution .exercise {
+    color: white;
+}
+
+#solutions-page .user-solution:hover, #solutions-page .solution:hover, #my-starred-solutions-page .user-solution:hover, #my-starred-solutions-page .solution:hover, #exercise-page .user-solution:hover, #exercise-page .solution:hover {
+    border-color: var(--bord2);
+}
+
+
+/**************************************** SELECTED TRACK ****************************************/
+
+#my-track-page .header, #track-page .header, #track-maintainers-page .header, #track-mentors-page .header, #exercises-page .header, #my-track-not-joined-page .header {
+    background-image: none;
+    background-color: var(--g-back);
+}
+
+#my-track-page .header .status {
+    border: none;
+}
+
+#my-track-page .core-exercises .exercise-wrapper .exercise,
+#my-track-page .core-exercises .exercise-wrapper.in-progress .exercise {
+    background-color: var(--bg);
+}
+
+#my-track-page .core-exercises .exercise-wrapper .exercise {
+    border-color: var(--bord);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.in-progress .exercise {
+    border-color: var(--g);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.in-progress .exercise .title, #my-track-page .core-exercises .exercise-wrapper.completed .exercise .title {
+    color: white;
+}
+
+#my-track-page .core-exercises .exercise-wrapper .exercise .topics .topic {
+    color: var(--light);
+    background-color: var(--nav2);
+}
+
+#my-track-page .core-exercises .unlocked-exercises-section h3 {
+    color: var(--b-text);
+}
+
+#my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise {
+    background-color: var(--bg);
+}
+
+#my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise:not(:hover) {
+    filter: brightness(1.5);
+}
+
+
+#my-track-page .core-exercises .exercise-wrapper .circle {
+    background-color: var(--nav2);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.completed .circle {
+    border-color: var(--g);
+    background-color: var(--nav);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.in-progress .circle {
+    background: var(--g);
+    border-color: var(--g);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.in-progress .circle::before {
+    border-color: var(--nav);
+}
+
+#my-track-page .core-exercises .exercise-wrapper.in-progress::before, #my-track-page .core-exercises .exercise-wrapper.completed::before {
+    background: var(--g);
+}
+
+#my-track-page .core-exercises .exercise-wrapper::after {
+    background-color: var(--bord);
+}
+
+#my-track-page .core-exercises::before {
+    background-color: var(--bord);
+}
+
+#my-track-page .core-exercises .exercise-wrapper:last-child::before {
+    background-color: var(--bg);
+}
+
+
+
+#my-track-page .top-section {
+    border-bottom-color: var(--bg);
+}
+
+
+#my-track-page .deprecated-exercises, #my-track-page .side-exercises {
+    background: var(--bg);
+}
+
+
+
+/**************************************** SETTINGS ****************************************/
+
+#settings-bar.lo-settings-bar,
+body.namespace-my.controller-tracks.action-show footer {
+    background-color: var(--nav);
+}
+
+#settings-bar.lo-settings-bar a {
+    color: white;
+}
+
+#settings-bar.lo-settings-bar a.selected {
+    border-color: var(--b-text);
+    color: var(--b-text);
+}
+
+.lo-general-header {
+    background-image: none;
+    background-color: var(--b-back);
+}
+
+#notice {
+    background-color: var(--nav);
+    color: var(--g);
+}
+
+#my-preferences-page .settings-section,
+#my-settings-page .settings-section,
+#my-track-settings-page .settings-section,
+#my-settings-delete-account-page .settings-section {
+    border-color: var(--bord);
+}
+
+#my-settings-page h2, #my-track-settings-page h2, #my-settings-delete-account-page h2 {
+    color: white;
+}
+
+#my-preferences-page h3 {
+    color: var(--light);
+}
+
+#my-preferences-page label,
+#my-settings-page .settings-section.toggle label,
+#my-preferences-page .settings-section.toggle label,
+#my-track-settings-page .settings-section.toggle label,
+#my-settings-page .field label,
+#my-track-settings-page .field label,
+#my-settings-delete-account-page .field label {
+    color: white;
+}
+
+#my-preferences-page p,
+#my-settings-page p,
+#my-settings-page ul,
+#my-settings-page .token-explanation,
+#my-track-settings-page p,
+#my-track-settings-page ul,
+#my-track-settings-page .token-explanation,
+#my-settings-delete-account-page p,
+#my-settings-delete-account-page ul,
+#my-settings-delete-account-page .token-explanation {
+    color: var(--light);
+}
+
+#my-preferences-page .pure-button,
+#my-settings-page .pure-button, #my-track-settings-page .pure-button, #my-settings-delete-account-page .pure-button {
+    background-color: var(--b-back);
+    border-color: var(--b-back);
+}
+
+#my-settings-page .field input,
+#my-track-settings-page .field input,
+#my-settings-delete-account-page .field input {
+    border-color: var(--bord);
+    background-color: var(--bg);
+    color: white;
+}
+
+#my-settings-page .field input:focus,
+#my-track-settings-page .field input:focus,
+#my-settings-delete-account-page .field input:focus {
+    border-color: var(--bord2);
+    outline: none;
+}
+
+#my-settings-page .tracks th, #my-track-settings-page .tracks th, #my-settings-delete-account-page .tracks th {
+    border-color: var(--bord);
+}
+
+
