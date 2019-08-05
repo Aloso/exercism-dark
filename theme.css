@@ -9,6 +9,9 @@
     --g: #3BC486;
     --g-back: #2A7453;
     --g-back2: #24523D;
+    --p: #963bc4;
+    --p-back: #610f8a;
+    --p-back2: #470b65;
     --link: #B7B7B7;
     --light: #B7B7B7;
     --gray: #9D9D9D;
@@ -20,7 +23,7 @@
     border-color: var(--g);
 }
 
-body {
+body, body.devise {
     background-color: var(--bg);
     color: white;
 }
@@ -56,6 +59,92 @@ footer .legal {
     color: white;
     border-bottom-color: var(--nav);
 }
+
+/**************************************** HOME ****************************************/
+
+#landing-page .welcome-section .rhs h1 img {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+#landing-page .welcome-section .rhs p {
+    color: var(--light);
+}
+
+#landing-page .welcome-section .rhs .pure-button.sign-up-button {
+    background-color: var(--p-back);
+}
+#landing-page .welcome-section .rhs .pure-button.languages-button {
+    color: var(--p);
+    background-color: var(--bg);
+    border-color: var(--p);
+}
+
+#widget-code-person {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+#widget-code-person img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+#landing-page .pr-section h2 {
+    color: #222;
+}
+
+#landing-page .tracks-section {
+    background-color: var(--bg);
+}
+
+#landing-page .tracks-section .title-block p {
+    color: var(--light);
+}
+
+#landing-page .tracks-section .title-block p a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+#landing-page .tracks-section {
+    border-color: var(--bord);
+}
+
+#landing-page .tracks-section .tracks .row .track {
+    filter: invert(1) hue-rotate(180deg) brightness(1.5);
+}
+
+
+/**************************************** LOGIN ****************************************/
+
+.lo-devise-page .frame {
+    background-color: var(--nav);
+}
+
+.lo-devise-page .or::before, .lo-devise-page .or::after {
+    border-color: var(--bord2);
+}
+
+.lo-devise-page input {
+    background-color: var(--bg);
+    border-color: var(--bord);
+    color: white;
+    border-radius: 3px !important;
+}
+.lo-devise-page input:hover {
+    border-color: var(--b-back);
+    outline: none;
+}
+.lo-devise-page input:focus {
+    border-color: var(--b-back);
+    outline: none;
+}
+
+.lo-devise-page .sign-up a,
+.lo-devise-page .log-in a,
+.lo-devise-page .reset-password a,
+.lo-devise-page .confirmation-instructions a {
+    color: var(--link);
+}
+
+/**************************************** NOTIFICATIONS ****************************************/
 
 #notifications-page .header {
     background-color: var(--b-back);
