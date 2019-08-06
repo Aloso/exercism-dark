@@ -1,0 +1,28 @@
+@import '../variables';
+@import '../mixins';
+
+.widget-discussion-post {
+    &.delete {
+        .avatar, .post-body {
+            opacity:0.3;
+        }
+    }
+
+    &+.widget-discussion-post {
+        border-top-color: $bg3;
+    }
+
+
+    .post-header {
+        .user-handle {
+            color:$t2;
+        }
+        .user-role {
+            background:$bg2;
+            color:$t2;
+        }
+        .created-at {
+            color:$t4;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.announcement-bar {
+    background:#fff;//$error-red-color;
+    color: #666;
+    a {
+        color: #666;
+    }
+}

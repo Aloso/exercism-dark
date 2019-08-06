@@ -1,0 +1,89 @@
+@import '../variables';
+@import '../mixins';
+
+#team-page {
+    .header {
+        background-color:$color-2;
+        h1 {
+            color:#fff;
+        }
+        h3 {
+            color:#fff;
+            a {
+                color:#fff;
+                border-bottom:1px solid #ddd;
+            }
+        }
+    }
+    .changes {
+        border-top:1px solid #eee;
+    }
+
+    p.subheading {
+        color:#999;
+    }
+
+    .core {
+        border-bottom:1px solid #eee;
+    }
+    .widget-maintainer, .widget-mentor {
+        .bio {
+            color:$t3;
+        }
+    }
+    .core {
+        .core-person {
+            border-color: #ddd;
+            &:hover {
+                background: #fafafa;
+            }
+
+            h3 {
+                color:$color-2;
+                text-overflow:ellipsis;
+            }
+            .bio {
+                color:#555;
+            }
+            .tags {
+                .tag {
+                    background:$color-2;
+                    color:#fff;
+                }
+            }
+        }
+
+    }
+
+    .contributors {
+        .contributor {
+            border:1px solid #ddd;
+            color:#333;
+            &:hover {
+                background:#fafafa;
+            }
+
+            img {
+                border-right:1px solid #ddd;
+            }
+            h3 {
+                color:$color-2;
+                text-overflow:ellipsis;
+            }
+            .num-contributions {
+                color:#999;
+                background:#eee;
+                border:1px solid #ddd;
+            }
+        }
+        .pure-button {
+            border:1px solid $color-2;
+            background:#fff;
+            color:$color-2;
+            &:hover {
+                background:$color-2;
+                color:#fff;
+            }
+        }
+    }
+}

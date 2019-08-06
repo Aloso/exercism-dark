@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixins';
+
+#mentor-registration-page {
+    .lhs {
+    }
+    .rhs {
+        #widget-code-person {
+        }
+    }
+    h1 {
+        color:#555;
+        border-bottom:1px solid #ddd;
+    }
+    h2 {
+        color:$color-2;
+    }
+    p a {
+        color:#666;
+    }
+
+    label {
+        background:rgba($color-2, 0.1);
+    }
+
+    .pure-button {
+        background:$color-2;
+        color:#fff;
+    }
+}

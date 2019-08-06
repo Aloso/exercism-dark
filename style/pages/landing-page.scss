@@ -1,0 +1,118 @@
+@import '../variables';
+@import '../mixins';
+
+#landing-page {
+    .welcome-section {
+        .rhs {
+            h1 {
+                color:$color-2;
+                img {
+                    background:$bg;
+                    box-shadow: 0 0 1px 1px $bg;
+                }
+            }
+            p {
+                color:$t3;
+            }
+            .pure-button {
+                &.sign-up-button {
+                    background:$color-3;
+                    color:$t1;
+                }
+                &.languages-button {
+                    border-color: lighten($color-3, 17%);
+                    color: lighten($color-3, 17%);
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .tracks-section,
+    .how-section {
+        .title-block {
+            p {
+                a {
+                    color:$link;
+                }
+            }
+        }
+    }
+    .tracks-section {
+        background:$bg;
+        border: none;
+        .title-block {
+            p {
+                color:$t2;
+                a {
+                    color:$link;
+                }
+            }
+        }
+        .tracks {
+            .row {
+                .track {
+                    filter: invert(0.93) hue-rotate(180deg) brightness(1.4);
+                }
+            }
+        }
+        .tracks-mini {
+            a {
+                color: $link;
+                .track-mini {   
+                    border-color: $color-2;
+                    .logo {
+                        background-color: $color-2;
+                        color: $color-2;
+                    }
+                    .title {
+                        background-color:transparent;
+                    }
+                }
+                &:hover .track-mini, &:hover .track-mini .title {
+                    background-color: $color-2 !important;
+                    color: $t1;
+                }
+            }
+        }
+    }
+    .how-section {
+        .divider {
+            border-bottom-color: $bord;
+        }
+    }
+    .pr-section {
+        // must be bright, because of the images
+        background:linear-gradient(#ccc, #fff 56%, #fff 64%, #ccc);
+        border: none;
+        h2 {
+            color:#444;
+        }
+    }
+    .cta-section {
+        background: $color-2t;
+        h2 {
+            color:#fff;
+        }
+        .pure-button {
+            border:1px solid #fff;
+            background:$color-2;
+            color:#fff;
+        }
+    }
+
+}
+
+#modal.announcement {
+    h2 {
+        color:#555;
+    }
+    p {
+        color:#555;
+        a {
+            color:#555;
+        }
+    }
+    .pure-button {
+        background:$color-1;
+    }
+}

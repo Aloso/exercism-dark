@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+#cli-walkthrough {
+  h1 {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  a {
+    color: #333;
+  }
+
+  blockquote {
+    border-left-color: #eceeef;
+  }
+
+  hr {
+    color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  //TODO
+  pre {
+    border-color: #ddd;
+    background: #fafafa;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../variables';
+@import '../mixins';
+
+.widget-solution-comment {
+    &.delete {
+        .avatar, .comment-body {
+            opacity:0.3;
+        }
+    }
+    &+.widget-solution-comment {
+        border-top-color: $bg3;
+    }
+
+    .comment-header {
+        .user-handle {
+            color:$t2;
+            a {
+                color:$link;
+            }
+        }
+        .user-role {
+            background:$bg2;
+            color: $t2;
+        }
+        .created-at {
+            color:$t3;
+            border-bottom-color: $bord;
+        }
+    }
+}
+

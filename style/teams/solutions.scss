@@ -1,0 +1,70 @@
+@import '../variables';
+@import '../mixins';
+
+#teams-solutions-page {
+    .num-solutions {
+        color:#999;
+    }
+
+    .widget-side-exercise {
+        .stats {
+            .language {
+                border-right-color: $t3;
+                color: $t3;
+            }
+            .num-iterations {
+                color: $t3;
+            }
+        }
+        .status {
+            color: $t4;
+        }
+    }
+
+    .solution {
+        border:1px solid #ddd;
+        &:hover {
+            border-color:$color-2;
+        }
+        .icons {
+            .exercise {
+                background:#fff;
+                border:1px solid $color-2;
+            }
+            .joiner {
+                border-bottom:2px solid $color-2;
+            }
+            .person {
+                border:1px solid $color-2;
+            }
+        }
+        .details {
+            border-left:2px solid #ddd;
+            .difficulty {
+                &.easy { color: $color-1; }
+                &.medium { color: #f48b00 }
+                &.hard { color: #f34a56 }
+            }
+            .title {
+                color:#666;
+                text-overflow: ellipsis;
+
+                .handle {
+                    color:#333;
+                }
+            }
+
+            .extra {
+                color:#bbb;
+                .divider {
+                    border-right:1px solid #bbb;
+                }
+            }
+            .status {
+                color:#666;
+            }
+        }
+
+    }
+
+}

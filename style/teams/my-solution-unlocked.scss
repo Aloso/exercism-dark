@@ -1,0 +1,46 @@
+@import '../variables';
+@import '../mixins';
+
+#teams-my-solution-unlocked-page {
+    .instructions {
+        .rendered {
+            h2 {
+                border-bottom:1px solid #eee;
+            }
+            a {
+                color:#333;
+                border-bottom:1px solid #ccc;
+            }
+
+        }
+        .pure-button {
+            background:$color-1;
+            color:#fff;
+        }
+    }
+
+    .experienced {
+        border:1px solid #e5e5e5;
+    }
+    .newbie {
+        background:#fafffe;
+        border:1px solid $color-1;
+        .pure-button {
+            background:$color-1;
+            color:#fff;
+        }
+    }
+}
+
+body:not(.prism-dark) #teams-my-solution-unlocked-page {
+    .instructions {
+        .rendered {
+            pre {
+                background:#f6f6f6;
+            }
+            code {
+                color:#666;
+            }
+        }
+    }
+}

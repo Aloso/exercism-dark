@@ -1,0 +1,26 @@
+@import '../../variables';
+@import '../../mixins';
+
+#my-track-page .danger-zone {
+    .leave-track-btn,
+    .pause-track-btn,
+    .change-to-independent-btn,
+    .change-to-mentored-btn {
+        background: transparent;
+        color: $color-1;
+        border-color: $color-1;
+        &:hover {
+            background:$color-1;
+            border-color:$color-1;
+            color:#fff;
+        }
+    }
+}
+
+#my-track-page .independent-mode .danger-zone {
+    background: $bg;
+    border-top-color: $bord;
+    h3 {
+        border-bottom-color: $bord;
+    }
+}

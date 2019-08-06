@@ -1,0 +1,17 @@
+@import '../variables';
+@import '../mixins';
+
+#admin-users-page {
+    h1 {
+        font-weight:400
+    }
+    h2 {
+        font-weight:400
+    }
+    .discussion-post {
+        border-bottom:1px solid #ccc;
+        .solution {
+            color:#666;
+        }
+    }
+}

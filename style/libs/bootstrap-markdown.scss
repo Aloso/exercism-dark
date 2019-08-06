@@ -1,0 +1,16 @@
+.md-editor{border:1px solid #ddd}
+.md-editor .md-footer,.md-editor>.md-header{background:#f5f5f5}
+.md-editor>.md-preview{background:#fff;border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;}
+.md-editor>textarea{border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;background:#eee}
+.md-editor>textarea:focus{background:$bg}
+.md-editor.active{border-color:#66afe9;-webkit-box-shadow:none;box-shadow:none;border-color:$color-2t!important}
+.md-editor .md-controls .md-control{color:#bebebe}
+.md-editor .md-controls .md-control:hover{color:#333}
+.md-editor.md-fullscreen-mode{background:#fff!important}
+.md-editor.md-fullscreen-mode .md-input,.md-editor.md-fullscreen-mode .md-preview{color:#999;background:#fff!important;}
+.md-editor.md-fullscreen-mode .md-preview{color:#333;}
+.md-editor.md-fullscreen-mode .md-input:focus,.md-editor.md-fullscreen-mode .md-input:hover{color:#333;background:$bg!important}
+.md-editor.md-fullscreen-mode .btn{background:0 0;color:#b3b3b3}
+.md-editor.md-fullscreen-mode .btn.active,.md-editor.md-fullscreen-mode .btn:active,.md-editor.md-fullscreen-mode .btn:focus,.md-editor.md-fullscreen-mode .btn:hover{color:#333}
+.md-editor.md-fullscreen-mode .md-fullscreen-controls a{color:#b3b3b3}
+.md-editor.md-fullscreen-mode .md-fullscreen-controls a:hover{color:#333;}

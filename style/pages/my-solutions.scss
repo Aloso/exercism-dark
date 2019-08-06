@@ -1,0 +1,56 @@
+@import '../variables';
+@import '../mixins';
+
+#my-solutions {
+    .header {
+        background: $color-1t;
+
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+        }
+
+    }
+    .num-solutions {
+        color:$t4;
+    }
+    .solutions {
+        .solution {
+            color:$t2;
+            border-color: $bord;
+            .icon {
+                border-color: $color-1;
+                background: $color-1;
+            }
+            .title-bar {
+                .title {
+                    border-bottom-color: $bord2;
+                    color:$t2;
+                    &:hover {
+                        border-bottom-color: lighten($bord2, 7%);
+                    }
+                }
+                .track {
+                    border-left-color: $bord;
+                    color: $t3;
+                }
+            }
+            .options {
+                .option {
+                    color:$t3;
+
+                    .true {
+                        background: $color-1 !important;
+                        color:#fff;
+                    }
+                    .false {
+                        background:#c11220;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

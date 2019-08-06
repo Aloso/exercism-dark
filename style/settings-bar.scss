@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+#settings-bar.lo-settings-bar {
+    background:#eee;
+    a {
+        color:#666;
+        &.selected {
+            color:$color-2;
+            border-bottom:3px solid $color-2;
+        }
+    }
+}

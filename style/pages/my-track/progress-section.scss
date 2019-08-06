@@ -1,0 +1,83 @@
+@import '../../variables';
+@import '../../mixins';
+
+#my-track-page .progress-section {
+    @include width-large() {
+        background: $bg2;
+    }
+    h2 {
+        color:$color-1;
+    }
+    .h2-subtitle {
+        color:$t4;
+    }
+    .core, .topics, .side, .guides, .danger-zone {
+        background: $bg2;
+        @include width-large() {
+            background:$bg;
+        }
+        h3 {
+            border-bottom-color: $bord;
+            color: $t1;
+        }
+    }
+    .core {
+        .percentage {
+            color:$color-1;
+        }
+        .number {
+            color:$t3;
+        }
+        .completed {
+            color:$t3;
+        }
+    }
+    .topics {
+        .extra-button {
+            background: transparent;
+            color: $color-1;
+            border-color: $color-1;
+            &:hover {
+                background: $color-1;
+                border-color: $color-1;
+                color: #fff;
+            }
+        }
+
+        .topic {
+            color: $t3;
+            .bar .filled {
+                background: rgba($color-1, 0.1);
+            }
+        }
+    }
+    .side {
+        .completed {
+            color:$t4;
+        }
+        .squares {
+            .square {
+                background:$bord2;
+                &.completed {
+                    background: $color-1;
+                }
+            }
+        }
+        .pure-button {
+            background: transparent;
+            color:$color-1;
+            border-color: $color-1;
+            &:hover {
+                background: $color-1;
+                border-color: $color-1;
+                color:#fff;
+            }
+        }
+    }
+    .guides {
+        a {
+            color:$link;
+            border-bottom-color: $bord2;
+        }
+    }
+}

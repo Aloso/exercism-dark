@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'mixins';
+
+.new-editable-text {
+    form {
+        .md-editor,
+        .preview-area,
+        textarea {
+            border-color: $bord;
+        }
+    }
+
+    .pure-button {
+        background:$color-2;
+        color:#fff;
+    }
+}
+

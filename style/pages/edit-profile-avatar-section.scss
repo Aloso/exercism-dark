@@ -1,0 +1,22 @@
+@import '../variables';
+@import '../mixins';
+
+#modal.edit-profile {
+    .avatar-section {
+        > *:last-child {
+            align-items:stretch;
+        }
+
+        h3 {
+            color: $t2;
+        }
+
+        .text-hint {
+            color: $t4;
+        }
+
+        .text-error {
+            color: red;
+        }
+    }
+}

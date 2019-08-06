@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+
+#nav.lo-nav-bar {
+    background:$bg2;
+    //margin-bottom:20px;
+    border-bottom: 1px solid rgba(#22333b, 0.5);
+    a {
+        color: $link;
+        &:before {
+            background: $bord2;
+        }
+
+        &:nth-child(n+1):after {
+            opacity: 0.2;
+        }
+    }
+
+}
+
+#nav.lo-external-nav-bar {
+    background:#eee;
+}
+

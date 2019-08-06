@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+#cta-footer {
+    background:$color-2;
+    color:#fff;
+    .logo {
+        color:#fff;
+    }
+
+    h2 {
+    }
+    p {
+        color:#fff;
+    }
+    .pure-button {
+        &.sign-up-button,
+        &.languages-button {
+            border:1px solid #fff;
+            color:#fff;
+            background:$color-2;
+            &:hover {
+                color:$color-2;
+                background:#fff;
+            }
+        }
+    }
+}

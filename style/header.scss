@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+.lo-general-header {
+    background-color:$color-2;
+    background-image:image-url('background-overlay-2.png');
+    background-size:cover;
+    h1 {
+        color:#fff;
+    }
+    .h1-subtitle {
+        color:#fff;
+    }
+}

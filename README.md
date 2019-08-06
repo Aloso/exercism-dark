@@ -21,5 +21,9 @@ Possible bugs include:
 - ugly white lines and areas
 - anything that looks ugly, or is inconsistent
 
+### Contributing
+
+Described [here](CONTRIBUTING.md).
+
 ### License
 MIT license

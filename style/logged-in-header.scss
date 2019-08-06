@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'mixins';
+
+// done
+
+header.logged-in {
+    position: relative;
+    box-shadow: 0 0 5px rgba(black, 0.3);
+
+    background:$bg3;
+    border-bottom: none;
+
+    .misc-menu {
+        //?
+        .in-situ {
+            img {
+                border:1px solid rgba(#fff, 0.5);
+            }
+            i {
+                color:#d7d7d7;
+            }
+        }
+        .dropdown {
+            background: $bg3;
+            border:1px solid $bord;
+            box-shadow: 0 0 3px rgba(black, 0.3);
+            i {
+                color: $t1;
+                &:after {
+                    color: $t1;
+                }
+            }
+
+            .person {
+                color:$t1;
+            }
+            ul{
+                border-top: 1px solid $bord;
+            }
+
+            a {
+                color:$t2;
+                &:hover {
+                    background: $bg2;
+                }
+            }
+        }
+    }
+    .notifications {
+        color:rgba(#fff, 0.9);
+        background:rgba(#fff, 0.06);
+        color:#bababa;
+        text-shadow: 0 0 1px solid rgba(0,0,0,0.7);
+        &.active {
+            &:before {
+                background:#f34a56;
+            }
+        }
+    }
+}

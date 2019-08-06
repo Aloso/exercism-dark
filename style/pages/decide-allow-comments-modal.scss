@@ -1,0 +1,23 @@
+@import '../variables';
+@import '../mixins';
+
+#modal-wrapper #modal.decide-allow-comments {
+    h2 {
+        color:#555;
+    }
+    p {
+        color:#555;
+    }
+    .pure-button {
+        border:1px solid $color-1;
+        &.yes-button {
+            background:$color-1;
+        }
+        &.no-button {
+            border:1px solid $color-1;
+            background:#fff;
+            color:$color-1;
+        }
+    }
+}
+

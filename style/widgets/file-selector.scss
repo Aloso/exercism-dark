@@ -1,0 +1,15 @@
+@import '../variables';
+@import '../mixins';
+
+.file-selector {
+  border-color: $color-1;
+  color: $color-1;
+  &:hover {
+    background: #fafafa;
+  }
+
+  input {
+    opacity: 0;
+    background: red;
+  }
+}

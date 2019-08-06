@@ -1,0 +1,19 @@
+.pagination {
+    background: transparent;
+    .page, .next, .last, .prev, .first {
+        border: 1px solid $bord;
+        &.current {
+            background: $color-1;
+            color: #fff;
+            border-color: $color-1;
+        }
+        &.gap {
+            color: $t2;
+        }
+        a {
+            color: $t2;
+        }
+    }
+}
+
+

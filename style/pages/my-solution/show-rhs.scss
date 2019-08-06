@@ -1,0 +1,66 @@
+@import '../../variables';
+@import '../../mixins';
+
+#my-solution-page .rhs,
+#teams-solution-page .rhs,
+#teams-my-solution-page .rhs {
+    h3.rhs-heading {
+        border-bottom-color: $bord;
+        color:$t1;
+        &.disabled {
+            color:$t4;
+        }
+    }
+    p.disabled {
+        a {
+            color:$link;
+        }
+    }
+    .approved-section,
+    .next-steps {
+        background:rgba($color-1, 0.05);
+        .title {
+            color:$color-1;
+        }
+        p a {
+            color:$link;
+        }
+    }
+    form {
+        textarea, .preview-area {
+            border-color: $bord;
+        }
+    }
+    .complete-button {
+        &.unapproved {
+            background:transparent;
+            border-color: $bord;
+            color: $t3;
+            &:hover {
+                border:1px solid red;
+                color:red;
+            }
+        }
+        &.independent {
+            background:$color-1;
+            color:#fff;
+        }
+        &.approved {
+            background:$color-1;
+            color:#fff;
+        }
+    }
+    .comment-button {
+        background:$color-1;
+        color:#fff;
+        &.faded {
+            background:#fff;
+            border:1px solid #aaa;
+            color:#666;
+        }
+    }
+    .request-mentoring {
+        background:$color-1;
+        color:#fff;
+    }
+}

@@ -1,0 +1,50 @@
+@import '../variables';
+@import '../mixins';
+
+#new-profile-page {
+    .header {
+        background: $color-1;
+        background-image:image-url('background-overlay-1.png');
+        background-size:cover;
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+        }
+    }
+}
+
+#modal.new-profile {
+    .progress {
+        i {
+            color:#ddd;
+            &.filled {
+                color:$color-1;
+            }
+        }
+    }
+    h2 {
+        color:#444;
+    }
+    p, li {
+        color:#666;
+    }
+    .pure-button {
+        background:$color-1;
+        color:#fff;
+        &.cancel {
+            border:1px solid $color-1;
+            color:$color-1;
+            background:#fff;
+        }
+    }
+    .page-2 {
+        input {
+            border:1px solid #ddd;
+        }
+        textarea {
+            border:1px solid #ddd;
+        }
+    }
+}

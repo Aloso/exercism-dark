@@ -1,0 +1,51 @@
+@import '../variables';
+@import '../mixins';
+
+body.devise {
+    color:white;
+    background-color: $bg;
+}
+.lo-devise-page {
+    .frame {
+        background: $bg2;
+    }
+    h1 {
+        color:$color-2;
+    }
+    .github-button {
+        background: lighten($bg3, 5%);
+        color:$t1;
+    }
+    .or {
+        color:$t4;
+        &:before,
+        &:after {
+            border-top-color: $bord2;
+        }
+    }
+    input {
+        border-color: $bord;
+        background-color: $bg;
+        color: $t2;
+        &:focus {
+            outline: none;
+            border-color: $color-2;
+        }
+    }
+    button {
+        background: $color-2t;
+        color:#fff;
+    }
+    .sign-up,
+    .log-in,
+    .reset-password,
+    .confirmation-instructions {
+        a {
+            color:$link;
+        }
+    }
+    #notice {
+        border-color: $bord;
+        background:#fff;
+    }
+}

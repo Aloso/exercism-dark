@@ -1,0 +1,145 @@
+@import '../variables';
+@import '../mixins';
+
+#teams-landing-page {
+    .welcome-section {
+        .rhs {
+            h1 {
+                color:$color-2;
+                img {
+                    background:white;
+                }
+            }
+            p {
+                color:#333;
+            }
+            .pure-button {
+                &.sign-up-button {
+                    background:$color-3;
+                    color:#fff;
+                }
+                &.languages-button {
+                    border:1px solid $color-2;
+                    color:$color-2;
+                    background:#fff;
+                }
+            }
+        }
+    }
+    .tracks-section,
+    .how-section {
+        .title-block {
+            p a {
+                color:#333;
+            }
+        }
+    }
+    .tracks-section {
+        background:#fafefe;
+        border:solid #eee;
+        .title-block {
+            p {
+                color:#666;
+                a {
+                    color:#666;
+                }
+            }
+        }
+        .tracks {
+            @media screen and (min-width: 1200px) {
+            }
+            //background:rgba(#fff, 0.5);
+            .row {
+                .track {
+                    background-size:93px;
+                    background-repeat: no-repeat;
+                    background-position:center center;
+
+                    .title {
+                        color:#fff;
+                    }
+                    &:hover {
+                        background-image:image-url("turquoise-hex.png") !important;
+                    }
+                    .left-eye,
+                    .right-eye {
+                        background:white;
+                        .pupil {
+                            background:#000;
+                        }
+                    }
+                }
+            }
+        }
+        .tracks-mini {
+            a {
+                color: #333;
+                .track-mini {   
+                    border-color: $color-2;
+                    .logo {
+                        background-color: $color-2;
+                        color: $color-2;
+                    }
+                    .title {
+                        background-color:#fff;
+                        text-overflow:ellipsis;
+                    }
+                }
+                &:hover .track-mini, &:hover .track-mini .title {
+                    background-color: $color-2 !important;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .how-section {
+        .divider {
+            border-bottom:1px solid #ddd;
+            @include width-small() {
+                border-bottom:1px solid #eee;
+            }
+        }
+        .step.step-4 {
+            .waterfall {
+                background-image:image-url("how-step-4-exercises.png");
+                background-size:100%;
+            }
+          }
+    }
+    .pr-section {
+        // must be bright, because of the images
+        background:linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
+        border: none;
+        h2 {
+            color:#444;
+        }
+    }
+    .cta-section {
+        background:$color-2;
+        h2 {
+            color:#fff;
+        }
+        .pure-button {
+            border:1px solid #fff;
+            background:#00bac9;
+            color:#fff;
+        }
+    }
+
+}
+
+#modal.announcement {
+    h2 {
+        color:#555;
+    }
+    p {
+        color:#555;
+        a {
+            color:#555;
+        }
+    }
+    .pure-button {
+        background:$color-1;
+    }
+}
+

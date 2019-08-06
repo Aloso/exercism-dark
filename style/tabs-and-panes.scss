@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+.tabs-and-panes {
+    &>.tabs {
+        border-bottom:1px solid $bord;
+        .tab {
+            color: $t3;
+            border-color:transparent;
+            border-bottom-color:$bord;
+        }
+    }
+
+    &.selected-1>.tabs>.tab-1,
+    &.selected-2>.tabs>.tab-2,
+    &.selected-3>.tabs>.tab-3,
+    &.selected-4>.tabs>.tab-4,
+    &.selected-5>.tabs>.tab-5,
+    &.selected-6>.tabs>.tab-6 {
+        border-left-color:$bord;
+        border-right-color:$bord;
+        border-bottom-color:$bg;
+        border-top-color:$color-1;
+        color:white;
+    }
+}

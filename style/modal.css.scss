@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+#modal-wrapper {
+    background:rgba(#000,0.5);
+
+    #modal {
+        background:$bg;
+        @include width-small() {
+            box-shadow:0 0 1px 1px rgba(#000, 0.13);
+        }
+    }
+
+    #modal-close-button  {
+        background:#fff;
+        color:#aaa;
+    }
+}
+

@@ -1,0 +1,129 @@
+@import '../variables';
+@import '../mixins';
+
+#my-settings-page,
+#my-preferences-page,
+#my-track-settings-page {
+    .settings-section {
+        &.toggle {
+            input[type='checkbox'] {
+                opacity:0;
+                &:checked {
+                    &+.toggles {
+                        i.fa.fa-toggle-on { display:block; }
+                        i.fa.fa-toggle-off { display:none; }
+                    }
+                }
+            }
+            .toggles {
+                i.fa.fa-toggle-on {
+                    color: $color-2;
+                }
+                i.fa.fa-toggle-off {
+                    color: #aaa;
+                }
+            }
+            label {
+                color:#666;
+            }
+        }
+    }
+}
+
+#my-settings-page,
+#my-track-settings-page,
+#my-settings-delete-account-page {
+    h2 {
+        color:#555;
+    }
+    .settings-section {
+        border-bottom:1px solid #ddd;
+        &:last-child {
+            border-bottom:none;
+        }
+        &.danger {
+            border:1px solid red;
+            background:rgba(red, 0.03);
+            h2 {
+                i {
+                    color:darkred;
+                }
+            }
+            .pure-button {
+                background:darkred;
+            }
+        }
+        .alert {
+            color:red;
+            a {
+                color:red;
+            }
+        }
+    }
+    p,
+    ul,
+    .token-explanation {
+        color:#666;
+    }
+    .token-reset {
+        .pure-button {
+            background:#dd0000;
+        }
+    }
+    .field {
+        label {
+            color:#666;
+        }
+        input {
+            border:1px solid #ddd;
+        }
+    }
+    .pure-button {
+        background:$color-2;
+        color:#fff;
+    }
+    .tracks {
+        th {
+            border-bottom:1px solid #eee;
+        }
+    }
+    .track {
+        .default,
+        .anon {
+            .handle {
+                color:#666;
+            }
+            input[type='text'] {
+                border:1px solid #ddd;
+            }
+        }
+        input[type='checkbox'] {
+            opacity:0;
+            &:checked {
+                &+.toggles {
+                    i.fa.fa-toggle-on { display:block; }
+                    i.fa.fa-toggle-off { display:none; }
+                }
+            }
+        }
+        .toggles {
+            i.fa.fa-toggle-on {
+                color: $color-2;
+            }
+            i.fa.fa-toggle-off {
+                color: #aaa;
+            }
+        }
+        .error {
+            color:red;
+        }
+    }
+}
+
+#my-settings-delete-account-page {
+    .field, .field.checkbox {
+        label {
+            color:#666;
+        }
+    }
+}

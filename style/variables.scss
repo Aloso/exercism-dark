@@ -1,0 +1,43 @@
+$color-1: #2fc26c;
+$color-1t: rgba($color-1, .7);
+
+$color-2: #00b2c2;
+$color-2t: rgba($color-2, .7);
+
+$color-2-opaque: #131a1d;
+$color-3: #6f17b8;
+
+$bg: #141414;
+$bg2: #222222;
+$bg3: #303030;
+$bord: #404040;
+$bord2: #505050;
+
+$t1: white;
+$t2: rgba(255, 255, 255, 0.8);
+$t3: rgba(255, 255, 255, 0.6);
+$t4: rgba(255, 255, 255, 0.4);
+
+$link: #95caff;
+
+$line-color-1:#444444;
+$background-grey-1:#333333;
+$background-grey-2:#222222;
+
+$primary-blue: #3898ff;
+$header-color-1: $color-1;
+$header-color-2: $color-2;
+
+$error-red-color:#ffe3e3;
+$error-red-text-color:darken(#f34a56, 5%);
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$bold: 600;
+$black: 700;
+
+$fw-regular: $regular;
+$fw-semibold: 500;
+$fw-bold: $bold;
+$fw-black: $black;

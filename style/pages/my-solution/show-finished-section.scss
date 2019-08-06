@@ -1,0 +1,28 @@
+@import '../../variables';
+@import '../../mixins';
+
+#my-solution-page .finished-section {
+    color:$t2;
+    .title-block,
+    .next-block {
+        border:1px solid $color-1;
+        i {
+            color:$color-1;
+        }
+    }
+
+    .next-block {
+        &:before {
+            border-left:1px solid $color-1;
+        }
+    }
+    .next-option {
+        p {
+            border-left:3px solid $color-1;
+        }
+        .pure-button {
+            background:$color-1;
+            color:#fff;
+        }
+    }
+}

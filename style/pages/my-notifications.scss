@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../mixins';
+#notifications-page {
+    .header {
+        background-color: $color-2t;
+    }
+    .header-bar {
+        .mark-all-button {
+            background: transparent;
+            border: 1px solid $color-2;
+            color: $color-2;
+        }
+    }
+    .notification {
+        border:1px solid $bord;
+        transition: opacity 0.2s;
+        &.read {
+            opacity: 0.4;
+        }
+
+        .image {
+            color:#333;
+            border-right-color: $bord;
+        }
+        .info {
+            color:$t2;
+
+            .when {
+                color: $t3;
+            }
+        }
+        .mark-as-read-button {
+            background-color: $color-2;
+            border-color: $color-2;
+        }
+    }
+    .no-notifications {
+        color: $t2;
+    }
+
+    .pure-button {
+        background: $color-2;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../mixins';
+@import '../variables';
+
+#teams-invitations-page {
+    p {
+        color:#999;
+    }
+    textarea {
+        border:1px solid #ccc;
+    }
+    .pure-button {
+        background:$color-2;
+    }
+}
+
+#teams-invitation-page {
+    strong {
+    }
+    p {
+    }
+    .pure-button {
+        background:$color-2;
+    }
+}

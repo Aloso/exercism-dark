@@ -1,0 +1,36 @@
+@import '../variables';
+@import '../mixins';
+
+#my-preferences-page {
+    #notice {
+    }
+    .lhs {
+        @include width-medium() {
+            border-right:1px solid #eee;
+        }
+    }
+    .rhs {
+    }
+    h3 {
+        color:#555;
+    }
+    p {
+        color:#666;
+    }
+
+    .settings-section {
+        border-bottom:1px solid #ddd;
+        &:last-child {
+            border-bottom:none;
+        }
+    }
+
+    label {
+        color:#666;
+    }
+
+    .pure-button {
+        background:$color-2;
+        color:#fff;
+    }
+}

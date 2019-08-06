@@ -1,0 +1,14 @@
+@import '../variables';
+@import '../mixins';
+
+#not-published-solution-page {
+    h1 a {
+        color:#333;
+    }
+    p {
+        margin-bottom:10px
+    }
+    .pure-button {
+        background:$color-2;
+    }
+}

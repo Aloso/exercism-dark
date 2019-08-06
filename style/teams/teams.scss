@@ -1,0 +1,40 @@
+@import '../mixins';
+@import '../variables';
+
+#teams-teams-page {
+    .invitations {
+        .pure-button {
+            background:$color-2;
+            color:#fff;
+        }
+    }
+    .team,
+    .new-team {
+        border:1px solid #ccc;
+        color:#333;
+        &:hover {
+            border-color:rgba($color-2, 0.5);
+            .img {
+                border-color:rgba($color-2, 0.5);
+            }
+        }
+        .img {
+            border:1px solid #ccc;
+            background:#fff;
+        }
+    }
+    .team {
+        h3 {
+        }
+        .members {
+            color:#aaa;
+        }
+    }
+    .new-team {
+        .img {
+            i {
+                color:#666;
+            }
+        }
+    }
+}

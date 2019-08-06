@@ -1,0 +1,10 @@
+@import '../variables';
+@import '../mixins';
+
+#mentor-analysis {
+    .analysis {
+        pre {
+            background: #eee;
+        }
+    }
+}

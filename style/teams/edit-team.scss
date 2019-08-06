@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../mixins';
+
+#teams-edit-team-page {
+    form {
+        .field {
+            p {
+                color:#999;
+            }
+            input, textarea {
+                border:1px solid #ccc;
+            }
+        }
+        .pure-button {
+            background:$color-2;
+        }
+    }
+}
+

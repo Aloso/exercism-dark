@@ -1,0 +1,72 @@
+@import '../variables';
+@import '../mixins';
+#my-tracks-page {
+    .header {
+        background-color: $color-2t;
+    }
+    form {
+        .search-bar:before {
+            color: $t3;
+        }
+        input {
+            background-color: $bg2;
+            border-color: $bord;
+        }
+        input:focus {
+            outline: none;
+            border-color: $color-2t;
+        }
+        button {
+            border-color: $bord;
+            background-color: $bg3;
+            color: white;
+        }
+
+    }
+    .no-results {
+        h4 {
+            color:$t2;
+        }
+        p {
+            border-left-color: $bord;
+            color: $t2;
+            a {
+                color:$link;
+            }
+        }
+
+    }
+    .num-tracks {
+        color: $t3;
+    }
+    .track {
+        background:$bg2;
+        color:$t2;
+        border-color: $bord;
+        &:hover {
+            border-color:$color-2t;
+        }
+
+        img {
+            filter: invert(0.9) hue-rotate(180deg) brightness(1.4);
+        }
+
+        .num-exercises,
+        .progress {
+            color:$t2;
+        }
+        .num-exercises {
+            background: $bg3;
+        }
+        .progress {
+            background:$bg3;
+            border-color: transparent;
+            .filled {
+                background:rgba($color-2, 0.33);
+            }
+        }
+        .enrolled {
+            color:$t2;
+        }
+    }
+}

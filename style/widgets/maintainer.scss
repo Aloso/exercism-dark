@@ -1,0 +1,25 @@
+@import '../variables';
+@import '../mixins';
+
+.widget-maintainer,
+.widget-mentor {
+    border-color: $bord;
+
+    h3 {
+        color:$color-2;
+        a {
+            border-left:1px solid $bord2;
+            color:$t4;
+        }
+    }
+    .bio {
+        color:$t3;
+        .holding-text {
+            color:$t3;
+        }
+    }
+   .banner {
+        background: $color-2;
+        color: $t1;
+    }
+}

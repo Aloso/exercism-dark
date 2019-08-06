@@ -1,0 +1,18 @@
+@import '../mixins';
+@import '../variables';
+
+#teams-new-team-page {
+    form {
+        .field {
+            p {
+                color:#999;
+            }
+            input, textarea {
+                border:1px solid #ccc;
+            }
+        }
+        .pure-button {
+            background:$color-2;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'mixins';
+
+body .md-editor {
+    .btn-toolbar {
+        background: $bg;
+    }
+   .btn-group {
+        button {
+            background: $bg;
+        }
+    }
+    textarea {
+        background: $bg;
+        border-top-color: $bg3 !important;
+    }
+}
+
+.editable-text .editable-text-html,
+.new-editable-text .preview-area {
+    blockquote {
+        border-left-color: $bord;
+    }
+    a {
+        color: $link;
+    }
+
+    pre {
+        border:1px solid #f3f3f3;
+        background:#fafafa;
+    }
+
+    p, li {
+        code {
+            border-color: $bg2;
+            background: darken($bg2, 2%);
+        }
+    }
+
+    table {
+        th, td {
+            border:1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background:#fafafa;
+
+        }
+    }
+}

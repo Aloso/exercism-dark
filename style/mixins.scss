@@ -1,0 +1,31 @@
+@import 'variables';
+
+@mixin width-small() {
+    @media screen and (min-width: 35.5em) {
+        @content;
+    }
+}
+
+@mixin width-smaller-than-medium() {
+    @media screen and (max-width: 48em) {
+        @content;
+    }
+}
+
+@mixin width-medium() {
+    @media screen and (min-width: 48em) {
+        @content;
+    }
+}
+
+@mixin width-large() {
+    @media screen and (min-width: 64em) {
+        @content;
+    }
+}
+
+@mixin width-xl() {
+    @media screen and (min-width: 80em) {
+        @content;
+    }
+}

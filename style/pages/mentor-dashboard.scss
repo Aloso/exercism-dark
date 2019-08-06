@@ -1,0 +1,196 @@
+@import '../variables';
+@import '../mixins';
+
+$blue: #4A90E2;
+
+#mentor-dashboard-page,
+#mentor-next-solutions-page {
+    .header {
+        background: $color-2t;
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+            a {
+                color:#fff;
+            }
+        }
+        .header-tabs {
+            .header-tab {
+                background:darken($color-2, 20%);
+                color:#fff;
+                &.selected {
+                    background:$bg;
+                    color: $t2;
+                }
+            }
+        }
+    }
+    .subheading {
+        color:$t3;
+    }
+    .no-solutions-section {
+        i {
+            color:$t3;
+        }
+        h2 {
+            color:$color-2;
+        }
+        p {
+            color:$t3;
+        }
+    }
+    .no-your-solutions,
+    .no-next-solutions {
+        background:rgba($color-2, 0.05);
+        border-color: $color-2;
+        color:$t2;
+    }
+
+    .solution {
+        border-color: $bord;
+        &:hover {
+            border-color:$color-2;
+        }
+        &.core {
+            border-color:$blue;
+        }
+
+        .core {
+            color:$blue;
+        }
+        .side,
+        .independent {
+            color:$t3;
+        }
+        .icons {
+            .exercise {
+                background: transparent;
+                border-color: $color-2;
+            }
+            .joiner {
+                border-bottom:2px solid $color-2;
+            }
+            .person {
+                border:1px solid $color-2;
+            }
+        }
+        .details {
+            @include width-medium() {
+                border-left-color: #ddd;
+            }
+            .difficulty {
+                &.easy { color: $color-1; }
+                &.medium { color: #f48b00 }
+                &.hard { color: #f34a56 }
+            }
+            .title {
+                color:$t3;
+                .handle {
+                    color:$t2;
+                }
+            }
+
+            .extra {
+                color:$t3;
+                .divider {
+                    border-right-color: $bord;
+                }
+            }
+        }
+    }
+
+    .help-section,
+    .rating-section,
+    .weekly-section,
+    .contributions-section,
+    .celebration-section {
+        background:$bg2;
+        h2 {
+            color:$color-2;
+        }
+        .h2-subtitle {
+            color:$t3;
+        }
+        .box {
+            background:$bg;
+            strong {
+                color:$color-2;
+            }
+            a {
+                color:$t3;
+                border-bottom-color: $bord2;
+            }
+        }
+    }
+    .rating-section {
+        border-color: $bord;
+        h2 {
+            background-color: lighten($bg, 3%);
+            border-bottom-color: $bg3;
+            color:$color-2;
+            letter-spacing:-0.7px
+        }
+        .rating {
+            color:$color-2;
+            border-bottom:1px solid rgba($color-1, 0.2);
+        }
+    }
+    .weekly-section {
+        .bar-widget {
+            .bar {
+                background:#ddd;
+                .fill {
+                    background:$color-2;
+                }
+            }
+            .count {
+                background:#fff;
+                border:1px solid $color-2;
+            }
+            &.completed {
+                .fill { background-color: $blue; }
+                .count { border-color: $blue;}
+            }
+        }
+        .hr {
+            border-top:1px solid #ddd;
+        }
+    }
+}
+
+
+#mentor-next-solutions-page {
+    .next-exercises-navigation {
+        .label {
+            color: $t2;
+            &.zero-count {
+                color:$t3;
+            }
+            &.selected {
+                color:$color-2 !important;
+            }
+        }
+        .title {
+            .label {
+                color:$t1;
+            }
+        }
+        .subtitle {
+            .label {
+                color:$t1;
+            }
+        }
+        .exercises {
+            border-left-color: $bord;
+            .label {
+                &.selected {
+                    &:before {
+                        border-left:2px solid $color-2;
+                    }
+                }
+            }
+        }
+    }
+}

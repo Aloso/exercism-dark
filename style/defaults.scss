@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    color:$t2;
+    background-color: $bg;
+}
+
+button,
+input,
+select,
+textarea {
+    color:white;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ddd;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ddd;
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ddd;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ddd;
+}
+.pure-button {
+    color:#fff;
+    &:focus {
+      box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+    }
+}
+input {
+    border:1px solid #aaa;
+}
+.styled-select {
+    border:1px solid #ccc;
+    select {
+        background:transparent;
+    }
+}

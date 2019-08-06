@@ -1,0 +1,167 @@
+@import '../../variables';
+@import '../../mixins';
+
+body.namespace-my.controller-tracks.action-show {
+    footer {
+        background: $bg2;
+    }
+}
+#my-track-page {
+    .header {
+        background-color: $color-1t;
+
+        .status {
+            background:#fff;
+            color: #333;
+            border: none;
+            color:#555;
+            @media screen and (max-width: 300px) {
+                margin-top:43px
+            }
+        }
+    }
+    .top-section {
+        border-bottom-color: $bg2;
+
+        .lo-container {
+            overflow: hidden;
+        }
+    }
+    .core-exercises {
+        &:before {
+            background:$background-grey-1;
+        }
+        .exercise-wrapper {
+            &:last-child:before {
+                background:transparent;
+            }
+
+            &:after {
+                background:$background-grey-1;
+            }
+
+            .circle {
+                background:$bg2;
+            }
+            
+            .exercise {
+                color: $t2;
+                border-color: $line-color-1;
+                background:$bg;
+                .status {
+                    color:$t3;
+                }
+                .position {
+                    color:$t3;
+                }
+                .title {
+                    color: $t2;
+                }
+                .blurb {
+                    color:$t3;
+                }
+                .topics {
+                    .topic {
+                        background:$bg2;
+                        color: $t2;
+                    }
+                }
+            }
+
+            &.in-progress {
+                .exercise {
+                    border-color: $color-1;
+                    box-shadow: 0 0 0 1px $color-1;
+                    background: $bg2;
+                }
+                .circle {
+                    border: 2px solid $color-1;
+                    background: $color-1;
+                    &:before {
+                        border-color: $bg;
+                    }
+                }
+                &:after {
+                    background:$color-1;
+                }
+                .status {
+                    color: $t2;
+                }
+            }
+            &.completed {
+                .exercise {
+                    border-color: $color-1;
+                    .status {
+                        color: $color-1;
+                        &.completed-unmentored {
+                            color:$t1;
+                        }
+
+                    }
+                }
+                &:after {
+                    background: $color-1;
+                }
+                .circle {
+                    border-color: $color-1;
+                    background: $bg;
+                }
+            }
+            &.in-progress, &.completed {
+                .exercise {
+                    &:hover {
+                        background: rgba($color-1, 0.05);
+                    }
+
+                    .title {
+                        color: $t1;
+                    }
+                    .position {
+                        color: $t2;
+                    }
+                    .blurb {
+                        color: $t2;
+                    }
+                }
+
+                &:before {
+                    background:$color-1;
+                }
+            }
+        }
+        .unlocked-exercises-section {
+            border-color: rgba($color-2, 0.5);
+            &:before {
+                background: $color-2;
+            }
+            h3 {
+                color: rgba($color-2, 0.9);
+                background: rgba($color-1, 0.04);
+                border-bottom: 1px solid rgba($color-2, 0.1);
+            }
+            .unlocked-exercise {
+                border: 1px solid rgba($color-2, 0.5);
+                background: $bg;
+                &:hover {
+                    background: $color-2;
+                }
+            }
+        }
+    }
+    .side-exercises {
+        .num-extra-exercises {
+            color: $t3;
+        }
+
+        .no-results {
+            color: $t3;
+        }
+    }
+    .deprecated-exercises,
+    .side-exercises {
+        background: $bg;
+        .h2-subtitle {
+            color: $t3;
+        }
+    }
+}

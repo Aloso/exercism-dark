@@ -1,0 +1,18 @@
+@import '../variables';
+@import '../mixins';
+
+// Also see /pages/solutions-page.scss
+#my-starred-solutions-page {
+    .header {
+        background-color:$color-2t;
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+        }
+    }
+    .no-solutions {
+        color:$t3;
+    }
+}

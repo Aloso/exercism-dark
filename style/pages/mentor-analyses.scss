@@ -1,0 +1,21 @@
+@import '../variables';
+@import '../mixins';
+
+#mentor-analyses {
+    form {
+        .pure-button {
+            background:$color-1;
+        }
+    }
+    th {
+        border-bottom:1px solid #aaa;
+    }
+    td {
+        border-bottom:1px solid #ddd;
+        border-right:1px solid #eee;
+        &:last-child {
+            border-right:none;
+        }
+    }
+}
+

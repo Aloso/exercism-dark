@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+#alert, #errors {
+    background:$error-red-color;
+    color:$error-red-text-color;
+    a {
+        color:$error-red-text-color;
+    }
+}
+
+#notice {
+    background:#f5fdfb;
+    color:$color-1;
+}

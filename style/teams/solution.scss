@@ -1,0 +1,50 @@
+@import '../variables';
+@import '../mixins';
+
+#teams-solution-page,
+#teams-my-solution-page,
+#teams-my-solution-unlocked-page {
+    .solution-header {
+        .content {
+            border-bottom:1px solid #ddd;
+        }
+        img {
+            border:1px solid #fff;
+        }
+        .inner {
+            color:#333;
+            .widget-iterations-nav {
+                a, .current {
+                    .idx {
+                        color:$color-2;
+                        border-color:$color-2;
+                    }
+                    .num-comments {
+                        &:after { 
+                            color:$color-2;
+                            text-shadow:0 0 2px #fff;
+                        }
+                        .num { color:#fff; }
+                    }
+                    &.current {
+                        .idx {
+                            background: $color-2;
+                            border-color:$color-2;
+                            color:#fff;
+                        }
+                        .num-comments {
+                            &:after { 
+                                color:#fff;
+                                text-shadow: -1px -1px 0 $color-2,  1px -1px 0 $color-2, -1px 1px 0 $color-2, 1px 1px 0 $color-2;
+                            }
+                            .num { color:$color-2; }
+                        }
+                    }
+                }
+            }
+            .byline a {
+                color:#fff;
+            }
+        }
+    }
+}

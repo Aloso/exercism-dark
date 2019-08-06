@@ -1,0 +1,119 @@
+@import '../variables';
+@import '../mixins';
+
+#track-page,
+#track-maintainers-page,
+#track-mentors-page,
+#my-track-not-joined-page {
+    .header {
+        background-color: $color-2t;
+
+        .pure-button {
+            border-color: $color-3;
+            background: $color-3;
+            color:#fff;
+        }
+    }
+    .overview-section {
+        background: $bg2;
+        border-bottom-color: transparent;
+        .icon {
+            border-right-color: $bord;
+
+            img[alt="Track mentors"] {
+                filter: invert(0.9) hue-rotate(180deg) brightness(1.25);
+            }
+        }
+        h3 {
+            color:$t3;
+        }
+        .info {
+            color:$t3;
+        }
+    }
+    .about-section {
+        .code-sample {
+            filter: invert(0.93) hue-rotate(180deg);
+        }
+        p {
+            color:$t2;
+            a {
+                color:$link;
+            }
+        }
+        .pure-button {
+            background:transparent;
+            border-color: $color-2;
+            color: $color-2;
+        }
+    }
+    .testimonal-section {
+        border-color: white;
+        filter: invert(1);
+
+        .frame {
+            filter: invert(1);
+            border-color: $color-2;
+            background: $bg2;
+            img {
+                background: $color-2;
+            }
+            h2 {
+                color:$t1;
+            }
+            .byline {
+                color: $t3;
+            }
+        }
+    }
+    .mentors-section,
+    .exercises-section,
+    .maintainers-section {
+        border-bottom-color: $bord;
+
+        .h2-subtitle {
+            color:$t3;
+        }
+        p a {
+            color:$t2;
+        }
+    }
+
+    .exercises-section {
+        background:$bg;
+
+        .widget-side-exercise {
+            background: $bg2;
+            border-color: $bord;
+            .title {
+                color: $t2;
+            }
+            &:hover {
+                background: $bg;
+                border-color: $bord2;
+            }
+        }
+    }
+    .cta-section {
+        background: $color-2t;
+        h2 {
+            color:#fff;
+        }
+        .pure-button {
+            border-color: #fff;
+            background:#00bac9;
+            color:#fff;
+        }
+    }
+}
+
+#track-maintainers-page,
+#track-mentors-page {
+    .pure-g.people {
+        .widget-maintainer, .widget-mentor {
+            .bio {
+                color:$link;
+            }
+        }
+    }
+}

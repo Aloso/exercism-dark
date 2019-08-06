@@ -1,0 +1,175 @@
+@import '../variables';
+@import '../mixins';
+
+#solution-page,
+#mentor-solution-page,
+#my-solution-page,
+#teams-solution-page,
+#teams-my-solution-page {
+    .legacy-warning {
+        background: $bg2;
+        color: $t2;
+        border-color: $bord;
+    }
+    .pane.instructions {
+        h2 {
+            border-bottom-color: $bord;
+        }
+        a {
+            color:$link;
+        }
+    }
+
+    .test-suite,
+    .solution.multi-file {
+        background: #f9f9f9;
+        h3 {
+            background: $bg2;
+            color: $t2;
+            border-bottom: none;
+        }
+    }
+    .test-suite pre {
+        background:#f9f9f9;
+    }
+    .solution pre {
+        background:#fff;
+    }
+
+    .lhs-content {
+        .panes {
+            border-color: $bord;
+        }
+    }
+    .new-editable-text {
+        .warning {
+            background: $bg2;
+            border-color: $bord;
+            color:$t2;
+        }
+        .md-editor.active+.warning {
+            background: #EBF7F8;
+            color: #666;
+            h4 {
+                color:$color-2;
+            }
+        }
+    }
+}
+
+body:not(.prism-dark) #solution-page,
+body:not(.prism-dark) #mentor-solution-page,
+body:not(.prism-dark) #my-solution-page,
+body:not(.prism-dark) #teams-solution-page,
+body:not(.prism-dark) #teams-my-solution-page {
+    .pane.instructions {
+        pre {
+            background:#f6f6f6;
+        }
+        code {
+            color:#666;
+        }
+    }
+}
+
+#solution-page {
+    .header {
+        border-color: $bord;
+
+        .avatar {
+            background-color:#fff;
+            border-color: $color-2;
+        }
+        .info {
+            h2 {
+                color:#999;
+                a {
+                    color:$t2;
+                    border-bottom-color: $bord2;
+                }
+                .track {
+                    color:$t2;
+                    .title {
+                        color:green;
+                    }
+                }
+            }
+            h1 {
+                color: $t1;
+            }
+        }
+        .details {
+            .starred-count {
+                color:$color-1;
+            }
+            .star-button {
+                border-color: $color-1;
+                background:transparent;
+                color: $color-1;
+            }
+            .published-at {
+                color: $t3;
+            }
+        }
+    }
+   .info-bar {
+        background:rgba($color-1, 0.1);
+        color:$color-1;
+
+        a {
+            color:$color-1;
+        }
+    }
+
+    .reflection,
+    .no-reflection {
+        border-color: $bg3;
+        background: $bg2;
+    }
+    .no-reflection {
+        p, li {
+            color:$t3;
+        }
+    }
+    .comments-disabled {
+        border-color: $bord;
+        background: $bg2;
+        .text {
+            color: $t4;
+        }
+
+        .pure-button {
+            background: $color-2;
+            color:#fff;
+        }
+    }
+
+    .comments-section {
+        border-top-color: $bord;
+        .h2-subtitle {
+            color:$t3;
+        }
+        .disable-comments {
+            color:$t3;
+        }
+    }
+}
+
+body.prism-dark {
+    #solution-page,
+    #mentor-solution-page,
+    #my-solution-page,
+    #teams-solution-page,
+    #teams-my-solution-page {
+        .test-suite,
+        .solution.multi-file {
+            background:$bg;
+        }
+        .test-suite pre {
+            background:$bg;
+        }
+        .solution pre {
+            background:$bg;
+        }
+    }
+}

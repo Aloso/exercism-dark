@@ -1,0 +1,38 @@
+/* PrismJS 1.15.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+c+asciidoc+csharp+autohotkey+autoit+bash+basic+batch+bison+brainfuck+bro+cpp+aspnet+coffeescript+ruby+css-extras+d+dart+diff+django+docker+eiffel+elixir+markup-templating+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+less+handlebars+haskell+haxe+http+icon+inform7+ini+j+java+jolie+json+julia+keyman+kotlin+latex+markdown+livescript+lolcode+lua+makefile+crystal+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+sql+powershell+processing+prolog+properties+protobuf+scss+puppet+pure+python+q+qore+r+jsx+typescript+reason+rest+rip+roboconf+textile+rust+sas+sass+stylus+scala+scheme+smalltalk+smarty+swift+yaml+tcl+haml+twig+vbnet+verilog+vhdl+vim+wiki+xojo&plugins=line-highlight+line-numbers */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+body.prism-dark code[class*="language-"],
+body.prism-dark pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Code blocks */
+body.prism-dark :not(pre) > code[class*="language-"],
+body.prism-dark pre[class*="language-"] {
+	background: lighten($bg, 2%);
+	border-color: $bg3;
+}
+
+body.prism-dark .line-highlight:before,
+body.prism-dark .line-highlight[data-end]:after {
+	background-color: hsla(24, 20%, 50%,.4);
+	color: hsl(24, 20%, 95%);
+	box-shadow: 0 1px white;
+}
+
+body.prism-dark .line-numbers .line-numbers-rows {
+	width: 3em; /* works for line-numbers below 1000 lines */
+	border-right: 1px solid #999;
+
+}
+
+body.prism-dark .line-numbers-rows > span:before {
+	color: $t4;
+}

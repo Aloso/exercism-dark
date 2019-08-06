@@ -1,0 +1,38 @@
+@import '../variables';
+@import '../mixins';
+
+.widget-iterations-nav {
+    .iterations {
+        .current, a {
+
+            .idx {
+                border:1px solid;
+            }
+            .num-comments {
+                .num {
+                    color:#333;
+                }
+            }
+            .idx {
+                color:#fff;
+                border-color:#fff;
+            }
+            .num-comments {
+                &:after {
+                    color:#fff;
+                    text-shadow: -1px -1px 0 $color-1,  1px -1px 0 $color-1,
+                                 -1px 1px 0 $color-1, 1px 1px 0 $color-1;
+                }
+                .num { color:$color-1; }
+            }
+            &.current {
+                .idx {
+                    background: #fff;
+                    border-color:#fff;
+                    color:$color-1;
+                }
+            }
+        }
+    }
+}
+

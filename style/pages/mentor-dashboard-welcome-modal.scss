@@ -1,0 +1,17 @@
+@import '../variables';
+@import '../mixins';
+
+#modal.welcome-to-mentoring {
+    h2 {
+        color:#555;
+    }
+    p, li {
+        a {
+            color:#333;
+        }
+    }
+
+    .pure-button {
+        background:$color-2;
+    }
+}

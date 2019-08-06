@@ -1,0 +1,35 @@
+@import '../variables';
+@import '../mixins';
+
+#tracks-page {
+    .header {
+        background-color:$color-2;
+        background-image:image-url('background-overlay-2.png');
+        background-size:cover;
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+        }
+    }
+    .num-tracks {
+        color:#666;
+    }
+    .track {
+        background:#fff;
+        color:#333;
+        border:1px solid #c2c3c3;
+
+        &:hover {
+            border-color:$color-2;
+        }
+
+        .title {
+            .num-exercises {
+                color:#999;
+                background:#f3f3f3;
+            }
+        }
+    }
+}

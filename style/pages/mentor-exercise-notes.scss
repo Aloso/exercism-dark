@@ -1,0 +1,42 @@
+@import '../variables';
+@import '../mixins';
+
+#mentor-exercise-notes {
+    p,ul,ol {
+        a {
+            color:#333;
+            border-bottom:1px solid #aaa;
+        }
+    }
+    pre {
+        border: 1px solid #ddd;
+    }
+
+    .changes {
+        border-top:1px solid #ddd;
+    }
+}
+body.namespace-mentor.controller-exercise_notes.action-show {
+    #mentor-exercise-notes {
+        .header {
+            background-image:image-url('background-overlay-2.png');
+            background-size:cover;
+            background-color:$color-2;
+            h1 {
+                color:#fff;
+            }
+        }
+    }
+}
+#modal-wrapper #modal.mentor-exercise-notes {
+    h1 {
+        background:$color-1;
+        color:#fff;
+    }
+    #modal-close-button {
+        background:$color-1;
+        color:#fff;
+        i {
+        }
+    }
+}

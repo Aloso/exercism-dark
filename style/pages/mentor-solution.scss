@@ -1,0 +1,97 @@
+@import '../variables';
+@import '../mixins';
+
+#mentor-solution-page {
+    .track-header {
+        background: $color-1t;
+        img {
+            border:1px solid #fff;
+        }
+    }
+
+    .tools-bar {
+        background: darken($color-1t, 15%);
+        border: none;
+        .mentoring-notes {
+            background:#fff;
+            color:$color-1;
+            &:hover {
+                background: rgba(#fff, 0.9);
+            }
+        }
+        .notification {
+            color:#fff;
+            .ignore {
+                color:#fff;
+                background: #fff;
+                color: $color-1;
+            }
+        }
+    }
+    .discussion,
+    .new-editable-text {
+        h3 {
+            border-bottom-color: $bord;
+            color: $t1;
+        }
+    }
+    .new-editable-text {
+        .approved {
+            color: $color-1;
+        }
+        .button {
+            background: $color-1;
+            border-color: $color-1;
+            color: #fff;
+            &.approve-button,
+            &.approve-and-comment-button {
+                color: $color-1;
+                background: transparent;
+                border-color: $color-1;
+            }
+
+            &.leave-button,
+            &.pass-button {
+                background: transparent;
+                border-color: $bord;
+                color: #999;
+                &:hover {
+                    background: $color-1;
+                    border-color: $color-1;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .claim-section {
+        h3 {
+            border-bottom-color: $bord;
+            color: $t1;
+        }
+        .pure-button {
+            background:$color-1;
+            color:#fff;
+        }
+        .force {
+            p {
+                strong {
+                    color:red;
+                }
+            }
+
+            .pure-button {
+                border-color: $color-1;
+                &.mentor-button {
+                    background: #fff;
+                    color: $color-1;
+                }
+            }
+        }
+    }
+    .download-section {
+        h3 {
+            border-bottom-color: $bord;
+            color: $t1;
+        }
+    }
+}

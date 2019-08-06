@@ -1,0 +1,91 @@
+@import '../variables';
+@import '../mixins';
+
+#profile-page {
+    .header {
+        background: $color-1t;
+        .btns .edit-button {
+            border-color: #fff;
+            background:$color-1;
+        }
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#fff;
+        }
+
+    }
+    .lhs {
+        .sidebar {
+            background: $bg2;
+            .bio {
+                color:$t3;
+            }
+            .hr {
+                border-bottom-color: $bord;
+            }
+            h3 {
+                color:$t3;
+            }
+            .badges .badge {
+                color:$t3;
+                border-color: $color-1;
+                background:$bg2;
+            }
+            .member-since,
+            .helped-count,
+            .external-link {
+                i {
+                    color:$t3;
+                }
+                color:$t3;
+            }
+            .helped-count {
+                .count {
+                    color:$color-1;
+                }
+            }
+            .external-link {
+                color:$link;
+                span {
+                    border-bottom-color: $bord2;
+                }
+                &:hover i {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+    .rhs {
+        .num-solutions {
+            color: $t3;
+        }
+        .solutions {
+            .solution {
+                color: $t2;
+                border-color: $bord;
+                .icon {
+                    border-color: $color-1;
+                    background: $color-1;
+                }
+                .title-bar {
+                    .title {
+                        color:$t2;
+                    }
+                    .track {
+                        border-left-color: $bord;
+                        color: $t3;
+                    }
+                }
+                .details {
+                    .published-at,
+                    .detail {
+                        color: $t3;
+                    }
+                }
+            }
+        }
+    }
+}
+

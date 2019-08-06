@@ -1,0 +1,55 @@
+@import '../variables';
+@import '../mixins';
+
+#exercise-page,
+#solutions-page {
+    .header {
+        background-color:$color-2t;
+        .track {
+            .title {
+                color:#fff;
+            }
+        }
+        .icon {
+            border-right:1px solid rgba(#fff, 0.5);
+        }
+
+        h1 {
+            color:#fff;
+        }
+        .h1-subtitle {
+            color:#eee;
+            a {
+                color:#fff;
+            }
+        }
+    }
+}
+
+#exercise-page {
+    .info-section {
+        border-bottom:1px solid #ddd;
+        .length {
+            border-right:1px solid #aaa;
+            color:#aaa;
+        }
+        .difficulty {
+            &.easy { color: $color-1; }
+            &.medium { color: #f48b00 }
+            &.hard { color: #f34a56 }
+        }
+
+        .topics {
+            .topic {
+                background: $bg3;
+                color: $t2;
+            }
+        }
+    }
+    .more-button {
+       border:1px solid $color-2;
+       color:$color-2;
+       background:#fff;
+    }
+}
+

@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+footer {
+    border-top: none;
+    background: $bg2;
+    h4 {
+        color: $t2;
+    }
+
+    a {
+        color: $t3;
+        &:hover {
+            color: $link;
+        }
+    }
+    .legal {
+        border-top-color: $bord;
+        .created-by {
+            i {
+                color: $t4;
+            }
+        }
+        .copyright, a, .created-by {
+            color: $t4;
+        }
+        a:hover {
+            border-bottom: none;
+        }
+    }
+}
+

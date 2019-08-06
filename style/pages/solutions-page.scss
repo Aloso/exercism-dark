@@ -1,0 +1,59 @@
+@import '../variables';
+@import '../mixins';
+
+#solutions-page,
+#my-starred-solutions-page,
+#exercise-page {
+    .user-solution,
+    .solution {
+        border-color: $bord;
+        &:hover {
+            border-color:$color-2;
+        }
+
+        .exercise {
+            color:$t2;
+        }
+        .track {
+            color:$t3;
+        }
+        .details-bar {
+            .handle,
+            .published-at,
+            .detail {
+                color:$t3;
+            }
+        }
+    }
+    .user-solution {
+        background:#fafafa;
+        border:1px solid #ddd;
+        color:#999;
+        .not-published {
+            border:1px solid $color-2;
+            color:$color-2;
+            background:#fafafa;
+        }
+    }
+    .solution {
+        .reactions {
+            background:#fafafa;
+            border:1px solid #eee;
+            .reaction {
+                border-right:1px solid #eee;
+                &.highlight {
+                    i, .count {
+                        color:$color-2;
+                    }
+                }
+                .count {
+                    color:#888;
+                }
+
+                i {
+                    color:#aaa;
+                }
+            }
+        }
+    }
+}
