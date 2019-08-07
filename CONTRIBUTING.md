@@ -37,8 +37,6 @@ Shortcuts:
     - The message disappears after 4 seconds, unless you move the cursor over it
     - When the cursor leaves the message, it disappears
 
-To compare the dark theme with the default theme, press <kbd>X</kbd> to switch between them.
-
 ### Other configurations
 
 If you use a different server, make sure it runs on port 8080, or edit the corresponding line in `greasemonkey.js`.
