@@ -6,10 +6,10 @@
 #teams-my-solution-unlocked-page {
     .solution-header {
         .content {
-            border-bottom:1px solid #ddd;
+            border-bottom-color: #ddd;
         }
         img {
-            border:1px solid #fff;
+            border-color: #fff;
         }
         .inner {
             color:#333;
@@ -24,17 +24,17 @@
                             color:$color-2;
                             text-shadow:0 0 2px #fff;
                         }
-                        .num { color:#fff; }
+                        .num { color: $t1; }
                     }
                     &.current {
                         .idx {
                             background: $color-2;
                             border-color:$color-2;
-                            color:#fff;
+                            color: $t1;
                         }
                         .num-comments {
                             &:after { 
-                                color:#fff;
+                                color: $t1;
                                 text-shadow: -1px -1px 0 $color-2,  1px -1px 0 $color-2, -1px 1px 0 $color-2, 1px 1px 0 $color-2;
                             }
                             .num { color:$color-2; }
@@ -43,7 +43,7 @@
                 }
             }
             .byline a {
-                color:#fff;
+                color: $t1;
             }
         }
     }

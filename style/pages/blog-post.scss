@@ -3,69 +3,71 @@
 
 #blog-post {
     .header {
-        background-image:image-url('background-overlay-2.png');
-        background-size:cover;
-        background-color:$color-2;
+        background-color:$color-2t;
         .heading {
             a {
-                color:#fff;
-                border-bottom:1px solid transparent;
+                color: $t1;
+                border-bottom-color: transparent;
                 &:hover {
-                    border-bottom-color:rgba(#fff, 0.5);
+                    border-bottom-color: rgba(#fff, 0.5);
                 }
             }
         }
         .subheading {
-            color:#fff;
+            color: $t1;
         }
     }
     .blog-content {
         a {
-            color:$color-2;
+            color: lighten($color-2, 7%);
         }
     }
     h1 {
-        color:#333;
+        color: $t2;
     }
     .byline {
-        border-bottom:1px solid #ccc;
+        border-bottom-color: $bord;
         a {
-            color:#333;
+            color: $link;
         }
     }
     .categories {
         a {
-            background: #eee;
-            color:#333;
+            background: $bg3;
+            color: $t2;
         }
     }
 
     .author {
-        border-top:1px solid #eee;
+        border-top-color: $bord;
         img {
-            background:#eee;
+            background: #eee;
         }
         .bio {
-            color:#333;
+            color: $t3;
         }
         a {
-            background: #fff;
-            border:1px solid $color-2;
-            color:$color-2;
+            background: transparent;
+            border-color: $color-2;
+            color: $color-2;
+            &:hover {
+                background: $color-2;
+                color: $t1;
+            }
         }
     }
 
     .comments-section {
-        border-top:1px solid #eee;
+        border-top-color: $bord;
         .comments {
             .no-comments {
-                color:#666;
+                color: $t4;
             }
         }
 
         .blog-comment {
             .divider {
-                background:#eaeaea;
+                background: $bg3;
             }
             &.delete {
                 .avatar, .comment-body {
@@ -74,10 +76,13 @@
             }
 
             .comment-footer {
-                color:#666;
+                color: $t3;
 
                 a {
-                    color:#666;
+                    color: $t4;
+                    &:hover {
+                        color: $link;
+                    }
                 }
             }
         }

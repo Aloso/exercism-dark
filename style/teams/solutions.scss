@@ -22,42 +22,41 @@
     }
 
     .solution {
-        border:1px solid #ddd;
+        border-color: #ddd;
         &:hover {
             border-color:$color-2;
         }
         .icons {
             .exercise {
                 background:#fff;
-                border:1px solid $color-2;
+                border-color: $color-2;
             }
             .joiner {
-                border-bottom:2px solid $color-2;
+                border-bottom-color: $color-2;
             }
             .person {
-                border:1px solid $color-2;
+                border-color: $color-2;
             }
         }
         .details {
-            border-left:2px solid #ddd;
+            border-left-color: #ddd;
             .difficulty {
                 &.easy { color: $color-1; }
                 &.medium { color: #f48b00 }
                 &.hard { color: #f34a56 }
             }
             .title {
-                color:#666;
-                text-overflow: ellipsis;
+                color: #666;
 
                 .handle {
-                    color:#333;
+                    color: #333;
                 }
             }
 
             .extra {
                 color:#bbb;
                 .divider {
-                    border-right:1px solid #bbb;
+                    border-right-color: #bbb;
                 }
             }
             .status {

@@ -5,15 +5,11 @@ header.logged-out {
     background: $bg3;
     border-bottom: none;
 
-    a.logo {
-        img {
-        }
-    }
     .options {
         a {
-            color:rgba(#fff, 0.9);
+            color: rgba(#fff, 0.9);
             &+a {
-                border-left:1px solid rgba(#fff, 0.3);
+                border-left-color: rgba(#fff, 0.3);
             }
         }
     }

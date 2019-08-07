@@ -20,12 +20,12 @@
         }
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
 
     .experienced {
-        border:1px solid #e5e5e5;
+        border-color: #e5e5e5;
         p {
             color:$t2;
         }
@@ -35,7 +35,7 @@
         border-color: $color-1;
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
 

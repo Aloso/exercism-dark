@@ -7,20 +7,20 @@
         background-color:$color-2t;
         .track {
             .title {
-                color:#fff;
+                color: $t1;
             }
         }
         .icon {
-            border-right:1px solid rgba(#fff, 0.5);
+            border-right-color: rgba(#fff, 0.5);
         }
 
         h1 {
-            color:#fff;
+            color: $t1;
         }
         .h1-subtitle {
             color:#eee;
             a {
-                color:#fff;
+                color: $t1;
             }
         }
     }
@@ -28,9 +28,9 @@
 
 #exercise-page {
     .info-section {
-        border-bottom:1px solid #ddd;
+        border-bottom-color: #ddd;
         .length {
-            border-right:1px solid #aaa;
+            border-right-color: #aaa;
             color:#aaa;
         }
         .difficulty {
@@ -47,7 +47,7 @@
         }
     }
     .more-button {
-       border:1px solid $color-2;
+       border-color: $color-2;
        color:$color-2;
        background:#fff;
     }

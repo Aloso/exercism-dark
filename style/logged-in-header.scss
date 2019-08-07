@@ -14,7 +14,7 @@ header.logged-in {
         //?
         .in-situ {
             img {
-                border:1px solid rgba(#fff, 0.5);
+                border-color: rgba(#fff, 0.5);
             }
             i {
                 color:#d7d7d7;
@@ -22,12 +22,12 @@ header.logged-in {
         }
         .dropdown {
             background: $bg3;
-            border:1px solid $bord;
+            border-color: $bord;
             box-shadow: 0 0 3px rgba(black, 0.3);
             i {
-                color: $t1;
+                color: $bord;
                 &:after {
-                    color: $t1;
+                    color: $bg3;
                 }
             }
 
@@ -35,7 +35,7 @@ header.logged-in {
                 color:$t1;
             }
             ul{
-                border-top: 1px solid $bord;
+                border-top-color: $bord;
             }
 
             a {
@@ -50,7 +50,7 @@ header.logged-in {
         color:rgba(#fff, 0.9);
         background:rgba(#fff, 0.06);
         color:#bababa;
-        text-shadow: 0 0 1px solid rgba(0,0,0,0.7);
+        text-shadow: 0 0 1px rgba(0,0,0,0.7);
         &.active {
             &:before {
                 background:#f34a56;

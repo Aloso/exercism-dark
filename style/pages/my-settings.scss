@@ -6,15 +6,6 @@
 #my-track-settings-page {
     .settings-section {
         &.toggle {
-            input[type='checkbox'] {
-                opacity:0;
-                &:checked {
-                    &+.toggles {
-                        i.fa.fa-toggle-on { display:block; }
-                        i.fa.fa-toggle-off { display:none; }
-                    }
-                }
-            }
             .toggles {
                 i.fa.fa-toggle-on {
                     color: $color-2;
@@ -24,7 +15,7 @@
                 }
             }
             label {
-                color:#666;
+                color: $t3;
             }
         }
     }
@@ -34,76 +25,64 @@
 #my-track-settings-page,
 #my-settings-delete-account-page {
     h2 {
-        color:#555;
+        color: $t2;
     }
     .settings-section {
-        border-bottom:1px solid #ddd;
-        &:last-child {
-            border-bottom:none;
-        }
+        border-bottom-color: $bord;
         &.danger {
-            border:1px solid red;
+            border-color: red;
             background:rgba(red, 0.03);
-            h2 {
-                i {
-                    color:darkred;
-                }
+            h2 i {
+                color: red;
             }
             .pure-button {
-                background:darkred;
+                background: darkred;
             }
         }
         .alert {
-            color:red;
+            color: red;
             a {
-                color:red;
+                color: red;
             }
         }
     }
-    p,
-    ul,
-    .token-explanation {
-        color:#666;
+    p, ul, .token-explanation {
+        color: $t2;
     }
     .token-reset {
         .pure-button {
-            background:#dd0000;
+            background: darkred;
         }
     }
     .field {
         label {
-            color:#666;
+            color: $t3;
         }
         input {
-            border:1px solid #ddd;
+            border-color: $bord;
+            background: $bg2;
+            &:focus {
+                outline: none;
+                border-color: $color-2t;
+            }
         }
     }
     .pure-button {
-        background:$color-2;
-        color:#fff;
+        background: $color-2;
+        color: $t1;
     }
     .tracks {
         th {
-            border-bottom:1px solid #eee;
+            border-bottom-color: $bord;
         }
     }
     .track {
-        .default,
-        .anon {
+        .default, .anon {
             .handle {
-                color:#666;
+                color: $t2;
             }
-            input[type='text'] {
-                border:1px solid #ddd;
-            }
-        }
-        input[type='checkbox'] {
-            opacity:0;
-            &:checked {
-                &+.toggles {
-                    i.fa.fa-toggle-on { display:block; }
-                    i.fa.fa-toggle-off { display:none; }
-                }
+            input[type=text] {
+                border-color: $bord;
             }
         }
         .toggles {
@@ -111,11 +90,11 @@
                 color: $color-2;
             }
             i.fa.fa-toggle-off {
-                color: #aaa;
+                color: $t3;
             }
         }
         .error {
-            color:red;
+            color: red;
         }
     }
 }
@@ -123,7 +102,7 @@
 #my-settings-delete-account-page {
     .field, .field.checkbox {
         label {
-            color:#666;
+            color: $t3;
         }
     }
 }

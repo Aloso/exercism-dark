@@ -5,7 +5,7 @@
     .header {
         background-color: $color-2;
         .h1-subtitle {
-            color:#fff;
+            color: $t1;
             opacity:0.75;
         }
         .num-solutions {
@@ -13,17 +13,14 @@
         }
         .status {
             background:#fff;
-            color:333;
-            border:1px solid $color-2;
+            border-color: $color-2;
             color:#555;
         }
         .pure-button {
-            border:1px solid #fff;
+            border-color: #fff;
             background:#00bac9;
-            color:#fff;
-
             background:$color-3;
-            color:#fff;
+            color: $t1;
         }
     }
     .exercises {
@@ -32,14 +29,14 @@
         .exercise {
             background:#fff;
             color:#333;
-            border:1px solid $line-color-1;
+            border-color: $line-color-1;
             &:hover {
                 background:$color-2-opaque;
                 border-color:$color-2;
             }
 
             .icon {
-                border:1px solid $color-2;
+                border-color: $color-2;
                 background:#fff;
 
                 .img {
@@ -50,7 +47,7 @@
             }
             .stats {
                 .length {
-                    border-right:1px solid #aaa;
+                    border-right-color: #aaa;
                     color:#aaa;
                 }
                 .difficulty {

@@ -3,70 +3,69 @@
 
 #blog-posts {
     .header {
-        background-image:image-url('background-overlay-2.png');
-        background-size:cover;
-        background-color:$color-2;
+        background-color: $color-2t;
         .heading {
-            color:#fff;
+            color: $t1;
             a {
-                color:#fff;
-                border-bottom:1px solid transparent;
+                color: $t1;
+                border-bottom-color: transparent;
                 &:hover {
-                    border-bottom-color:rgba(#fff, 0.5);
+                    border-bottom-color: $bord;
                 }
             }
         }
         .subheading {
-            color:#fff;
+            color: $t1;
         }
     }
     .sidebar {
         @include width-smaller-than-medium() {
-            border-top:1px solid #ddd;
+            border-top-color: $bord;
         }
         @include width-medium() {
-            border-top:0;
-            border-left:1px solid #ddd;
+            border-left-color: $bord;
         }
         ul a {
-            color:#333;
-            border-bottom:1px solid #ccc;
+            color: $link;
+            border-bottom-color: $bord2;
+            &:hover {
+                border-color: $link;
+            }
         }
 
         h3 {
             @include width-smaller-than-medium() {
-                color:$color-2;
+                color: $color-2;
             }
         }
     }
 
     h2 {
-        color:$color-2;
+        color: $color-2;
     }
 
     .blog-post {
-        color:#333;
-        border-left:3px solid #eee;
+        color: $t2;
+        border-left-color: $bg3;
         &:hover {
-            border-left-color:$color-2;
+            border-left-color: $color-2;
             h3 .text {
-                border-bottom-color:#ddd;
+                border-bottom-color: $bord;
             }
             .img {
                 box-shadow: 0 0 0 2px $color-2;
+                border-color: $color-2;
             }
         }
         .img {
-            background-position:center center;
-            background-size:cover;
-            border:1px solid #fff;
-            box-shadow: 0 0 0 2px #eee;
+            border-color: $bg3;
+            box-shadow: 0 0 0 2px $bg3;
         }
         h3 .text {
-            border-bottom: 1px solid transparent;
+            border-bottom-color: transparent;
         }
         .details {
-            color:#888;
+            color: $t3;
         }
     }
 

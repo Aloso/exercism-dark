@@ -9,8 +9,6 @@
 #modal.leave-track,
 #modal.pause-track,
 #modal.unpause-track {
-    img {
-    }
     h2 {
         color:#555;
     }
@@ -27,17 +25,16 @@
 
 #modal.my-track-started {
     .learn-more {
-        border-top: 1px solid #ddd;
+        border-top-color: #ddd;
         a {
             color:#333;
         }
     }
-    p strong { font-weight:500 }
     .buttons {
         .pure-button {
-            border:1px solid $color-1;
+            border-color: $color-1;
             &.independent-mode-button {
-                border:1px solid $color-1;
+                border-color: $color-1;
                 background:#fff;
                 color:$color-1;
             }
@@ -47,9 +44,9 @@
 
 #modal.my-track-v1-migration {
     .pure-button {
-        border:1px solid $color-1;
+        border-color: $color-1;
         &.independent-mode {
-            border:1px solid $color-1;
+            border-color: $color-1;
             background:#fff;
             color:$color-1;
         }
@@ -62,9 +59,9 @@
 #modal.pause-track,
 #modal.unpause-track {
     .pure-button {
-        border:1px solid $color-1;
+        border-color: $color-1;
         &.cancel-button {
-            border:1px solid $color-1;
+            border-color: $color-1;
             background:#fff;
             color:$color-1;
         }

@@ -2,15 +2,9 @@
 @import '../mixins';
 
 #mentor-registration-page {
-    .lhs {
-    }
-    .rhs {
-        #widget-code-person {
-        }
-    }
     h1 {
         color:#555;
-        border-bottom:1px solid #ddd;
+        border-bottom-color: #ddd;
     }
     h2 {
         color:$color-2;
@@ -25,6 +19,6 @@
 
     .pure-button {
         background:$color-2;
-        color:#fff;
+        color: $t1;
     }
 }

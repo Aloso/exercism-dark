@@ -3,19 +3,11 @@
 
 $inner-width: 800px;
 
-/*body.controller-pages.action-index {
-    footer {
-    }
-}*/
-
 #become-a-mentor-page {
     .welcome-section {
-        background-image:image-url('mentor-bg.jpg');
-        background-repeat:repeat;
-        background-size:400px;
         .box {
-            background:rgba(#fff, 0.95);
-            border:1px solid $color-2;
+            background: rgba(#fff, 0.95);
+            border-color: $color-2;
             h1 {
                 color:$color-2;
             }
@@ -25,10 +17,10 @@ $inner-width: 800px;
             .pure-button {
                 &.register-button {
                     background:$color-3;
-                    color:#fff;
+                    color: $t1;
                 }
                 &.learn-more-button {
-                    border:1px solid $color-2;
+                    border-color: $color-2;
                     color:$color-2;
                     background:#fff;
                 }
@@ -58,18 +50,18 @@ $inner-width: 800px;
         }
     }
     .vision-section .box {
-        border:1px solid #d4d4d4;
+        border-color: #d4d4d4;
     }
     .role-section {
         background:#fafafa;
     }
     .benefits-section,
     .great-mentor-section {
-        border-bottom:1px solid #ddd;
+        border-bottom-color: #ddd;
     }
     .cta-section {
         .box {
-            border:1px solid #aaa;
+            border-color: #aaa;
             background:#fafafa;
         }
         .pure-button {

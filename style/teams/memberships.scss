@@ -3,7 +3,7 @@
 
 #teams-memberships-page {
     h3 {
-        border-bottom: 1px solid #ddd;
+        border-bottom-color: #ddd;
         color: #333;
     }
     .pure-button {
@@ -12,11 +12,11 @@
 
     table.memberships-table {
         th {
-            border-bottom:1px solid #eee;
+            border-bottom-color: #eee;
         }
         td a {
             color:$color-2;
-            border-bottom:1px solid rgba($color-2, 0.3);
+            border-bottom-color: rgba($color-2, 0.3);
         }
     }
 }

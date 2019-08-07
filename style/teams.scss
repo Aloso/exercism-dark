@@ -5,7 +5,7 @@ body.namespace-teams {
     a.logo {
         color: #fff;
         span {
-            border-left:1px solid #fff;
+            border-left-color: #fff;
         }
     }
 }
@@ -20,17 +20,17 @@ body.namespace-teams {
     #team-header {
         background:#eee;
         .avatar {
-            border:1px solid rgba(#fff, 0.5);
+            border-color: rgba(#fff, 0.5);
         }
         h1 {
             background-color:$color-2;
-            color:#fff;
+            color: $t1;
         }
         a {
             color:#666;
             &.selected {
                 color:$color-2;
-                border-bottom:3px solid $color-2;
+                border-bottom-color: $color-2;
             }
         }
     }

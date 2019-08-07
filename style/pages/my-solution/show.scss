@@ -5,9 +5,9 @@
 #my-solution-page {
     .track-header-container {
         background:#3ab292;
-        color:#fff;
+        color: $t1;
         a {
-            color:#fff;
+            color: $t1;
         }
         @include width-small() {
             background:none;
@@ -74,17 +74,17 @@
                 color:$color-1;
                 text-shadow:0 0 2px #fff;
             }
-            .num { color:#fff; }
+            .num { color: $t1; }
         }
         &.current {
             .idx {
                 background: $color-1;
                 border-color:$color-1;
-                color:#fff;
+                color: $t1;
             }
             .num-comments {
                 &:after {
-                    color:#fff;
+                    color: $t1;
                     text-shadow: -1px -1px 0 $color-1,  1px -1px 0 $color-1, -1px 1px 0 $color-1, 1px 1px 0 $color-1;
                 }
                 .num { color:$color-1; }
@@ -98,7 +98,7 @@
 #teams-solution-page {
     .migration-bar {
         background:rgba(red, 0.05);
-        border:1px solid rgba(red, 0.2);
+        border-color: rgba(red, 0.2);
         color:#e73b3b;
         a {
             color:$link;
@@ -117,7 +117,7 @@
             color:$color-1;
 
             @include width-small() {
-                border:1px solid rgba($color-1, 0.2);
+                border-color: rgba($color-1, 0.2);
                 background:rgba($color-1, 0.05);
             }
             a {
@@ -139,7 +139,7 @@
     .update-exercise-section {
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
 
@@ -161,7 +161,7 @@
             color:#555;
         }
         .pure-button {
-            border:1px solid #ccc;
+            border-color: #ccc;
             background:#fff;
             color:#333;
         }
@@ -214,7 +214,7 @@
 
     .pure-button {
         background:$color-1;
-        color:#fff;
+        color: $t1;
     }
 }
 
@@ -224,7 +224,7 @@
         color:#555;
     }
     textarea {
-        border:1px solid #e9e9e9;
+        border-color: #e9e9e9;
     }
 }
 
@@ -257,7 +257,7 @@
 
         .feedback {
             textarea {
-                border: 1px solid #e9e9e9;
+                border-color: #e9e9e9;
             }
         }
     }
@@ -274,7 +274,7 @@
         color:#555;
     }
     .core-exercise {
-        border:1px solid $color-1;
+        border-color: $color-1;
         color:#333;
 
         .icon {

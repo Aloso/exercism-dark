@@ -6,16 +6,16 @@
     border-color: $bord;
 
     h3 {
-        color:$color-2;
+        color: $color-2;
         a {
-            border-left:1px solid $bord2;
-            color:$t4;
+            border-left-color: $bord;
+            color: $link;
         }
     }
     .bio {
-        color:$t3;
+        color: $t3;
         .holding-text {
-            color:$t3;
+            color: $t3;
         }
     }
    .banner {

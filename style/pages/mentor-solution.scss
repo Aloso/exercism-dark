@@ -5,7 +5,7 @@
     .track-header {
         background: $color-1t;
         img {
-            border:1px solid #fff;
+            border-color: #fff;
         }
     }
 
@@ -20,9 +20,9 @@
             }
         }
         .notification {
-            color:#fff;
+            color: $t1;
             .ignore {
-                color:#fff;
+                color: $t1;
                 background: #fff;
                 color: $color-1;
             }
@@ -70,7 +70,7 @@
         }
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
         .force {
             p {

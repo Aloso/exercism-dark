@@ -9,12 +9,12 @@
         color:#555;
     }
     .pure-button {
-        border:1px solid $color-1;
+        border-color: $color-1;
         &.yes-button {
             background:$color-1;
         }
         &.no-button {
-            border:1px solid $color-1;
+            border-color: $color-1;
             background:#fff;
             color:$color-1;
         }

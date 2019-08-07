@@ -34,7 +34,7 @@ body.devise {
     }
     button {
         background: $color-2t;
-        color:#fff;
+        color: $t1;
     }
     .sign-up,
     .log-in,
@@ -46,6 +46,6 @@ body.devise {
     }
     #notice {
         border-color: $bord;
-        background:#fff;
+        background: $bg2;
     }
 }

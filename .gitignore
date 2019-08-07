@@ -1,1 +1,4 @@
 .vscode/*
+.idea/*
+!.vscode/tasks.json
+!.idea/watcherTasks.xml

@@ -9,10 +9,10 @@
             background:$color-1;
         }
         h1 {
-            color:#fff;
+            color: $t1;
         }
         .h1-subtitle {
-            color:#fff;
+            color: $t1;
         }
 
     }
@@ -20,7 +20,7 @@
         .sidebar {
             background: $bg2;
             .bio {
-                color:$t3;
+                color: $t3;
             }
             .hr {
                 border-bottom-color: $bord;

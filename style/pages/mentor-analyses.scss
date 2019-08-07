@@ -8,11 +8,11 @@
         }
     }
     th {
-        border-bottom:1px solid #aaa;
+        border-bottom-color: #aaa;
     }
     td {
-        border-bottom:1px solid #ddd;
-        border-right:1px solid #eee;
+        border-bottom-color: #ddd;
+        border-right-color: #eee;
         &:last-child {
             border-right:none;
         }

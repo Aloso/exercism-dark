@@ -7,12 +7,12 @@
     .header-bar {
         .mark-all-button {
             background: transparent;
-            border: 1px solid $color-2;
+            border-color: $color-2;
             color: $color-2;
         }
     }
     .notification {
-        border:1px solid $bord;
+        border-color: $bord;
         transition: opacity 0.2s;
         &.read {
             opacity: 0.4;

@@ -2,13 +2,11 @@
 @import 'mixins';
 
 .lo-general-header {
-    background-color:$color-2;
-    background-image:image-url('background-overlay-2.png');
-    background-size:cover;
+    background-color: $color-2t;
     h1 {
-        color:#fff;
+        color: $t1;
     }
     .h1-subtitle {
-        color:#fff;
+        color: $t1;
     }
 }

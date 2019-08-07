@@ -5,25 +5,23 @@
     p,ul,ol {
         a {
             color:#333;
-            border-bottom:1px solid #aaa;
+            border-bottom-color: #aaa;
         }
     }
     pre {
-        border: 1px solid #ddd;
+        border-color: #ddd;
     }
 
     .changes {
-        border-top:1px solid #ddd;
+        border-top-color: #ddd;
     }
 }
 body.namespace-mentor.controller-exercise_notes.action-show {
     #mentor-exercise-notes {
         .header {
-            background-image:image-url('background-overlay-2.png');
-            background-size:cover;
-            background-color:$color-2;
+            background-color:$color-2t;
             h1 {
-                color:#fff;
+                color: $t1;
             }
         }
     }
@@ -31,12 +29,10 @@ body.namespace-mentor.controller-exercise_notes.action-show {
 #modal-wrapper #modal.mentor-exercise-notes {
     h1 {
         background:$color-1;
-        color:#fff;
+        color: $t1;
     }
     #modal-close-button {
         background:$color-1;
-        color:#fff;
-        i {
-        }
+        color: $t1;
     }
 }

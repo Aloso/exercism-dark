@@ -5,9 +5,9 @@
     .welcome-section {
         .rhs {
             h1 {
-                color:$color-2;
+                color: $color-2;
                 img {
-                    background:white;
+                    background: white;
                 }
             }
             p {
@@ -16,10 +16,10 @@
             .pure-button {
                 &.sign-up-button {
                     background:$color-3;
-                    color:#fff;
+                    color: $t1;
                 }
                 &.languages-button {
-                    border:1px solid $color-2;
+                    border-color: $color-2;
                     color:$color-2;
                     background:#fff;
                 }
@@ -36,7 +36,7 @@
     }
     .tracks-section {
         background:#fafefe;
-        border:solid #eee;
+        border-color: #eee;
         .title-block {
             p {
                 color:#666;
@@ -46,9 +46,6 @@
             }
         }
         .tracks {
-            @media screen and (min-width: 1200px) {
-            }
-            //background:rgba(#fff, 0.5);
             .row {
                 .track {
                     background-size:93px;
@@ -56,14 +53,11 @@
                     background-position:center center;
 
                     .title {
-                        color:#fff;
-                    }
-                    &:hover {
-                        background-image:image-url("turquoise-hex.png") !important;
+                        color: $t1;
                     }
                     .left-eye,
                     .right-eye {
-                        background:white;
+                        background: #fff;
                         .pupil {
                             background:#000;
                         }
@@ -81,8 +75,7 @@
                         color: $color-2;
                     }
                     .title {
-                        background-color:#fff;
-                        text-overflow:ellipsis;
+                        background-color: #fff;
                     }
                 }
                 &:hover .track-mini, &:hover .track-mini .title {
@@ -94,17 +87,11 @@
     }
     .how-section {
         .divider {
-            border-bottom:1px solid #ddd;
+            border-bottom-color: #ddd;
             @include width-small() {
-                border-bottom:1px solid #eee;
+                border-bottom-color: #eee;
             }
         }
-        .step.step-4 {
-            .waterfall {
-                background-image:image-url("how-step-4-exercises.png");
-                background-size:100%;
-            }
-          }
     }
     .pr-section {
         // must be bright, because of the images
@@ -117,12 +104,12 @@
     .cta-section {
         background:$color-2;
         h2 {
-            color:#fff;
+            color: $t1;
         }
         .pure-button {
-            border:1px solid #fff;
+            border-color: #fff;
             background:#00bac9;
-            color:#fff;
+            color: $t1;
         }
     }
 

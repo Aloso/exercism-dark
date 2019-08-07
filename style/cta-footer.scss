@@ -3,21 +3,19 @@
 
 #cta-footer {
     background:$color-2;
-    color:#fff;
+    color: $t1;
     .logo {
-        color:#fff;
+        color: $t1;
     }
 
-    h2 {
-    }
     p {
-        color:#fff;
+        color: $t1;
     }
     .pure-button {
         &.sign-up-button,
         &.languages-button {
-            border:1px solid #fff;
-            color:#fff;
+            border-color: #fff;
+            color: $t1;
             background:$color-2;
             &:hover {
                 color:$color-2;

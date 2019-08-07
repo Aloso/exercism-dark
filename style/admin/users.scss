@@ -2,14 +2,8 @@
 @import '../mixins';
 
 #admin-users-page {
-    h1 {
-        font-weight:400
-    }
-    h2 {
-        font-weight:400
-    }
     .discussion-post {
-        border-bottom:1px solid #ccc;
+        border-bottom-color: #ccc;
         .solution {
             color:#666;
         }

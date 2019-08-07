@@ -3,7 +3,7 @@
 
 .tabs-and-panes {
     &>.tabs {
-        border-bottom:1px solid $bord;
+        border-bottom-color: $bord;
         .tab {
             color: $t3;
             border-color:transparent;

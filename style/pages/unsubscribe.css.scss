@@ -10,7 +10,7 @@
     }
 
     .settings-section {
-        border-bottom:1px solid #ddd;
+        border-bottom-color: #ddd;
         &:last-child {
             border-bottom:none;
         }
@@ -22,7 +22,7 @@
 
     .pure-button {
         background:$color-2;
-        color:#fff;
+        color: $t1;
     }
 }
 

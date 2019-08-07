@@ -3,14 +3,12 @@
 
 #new-profile-page {
     .header {
-        background: $color-1;
-        background-image:image-url('background-overlay-1.png');
-        background-size:cover;
+        background: $color-1t;
         h1 {
-            color:#fff;
+            color: $t1;
         }
         .h1-subtitle {
-            color:#fff;
+            color: $t1;
         }
     }
 }
@@ -32,19 +30,19 @@
     }
     .pure-button {
         background:$color-1;
-        color:#fff;
+        color: $t1;
         &.cancel {
-            border:1px solid $color-1;
+            border-color: $color-1;
             color:$color-1;
             background:#fff;
         }
     }
     .page-2 {
         input {
-            border:1px solid #ddd;
+            border-color: #ddd;
         }
         textarea {
-            border:1px solid #ddd;
+            border-color: #ddd;
         }
     }
 }

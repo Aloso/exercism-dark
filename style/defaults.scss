@@ -28,16 +28,16 @@ textarea {
     color: #ddd;
 }
 .pure-button {
-    color:#fff;
+    color: $t1;
     &:focus {
-      box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+        box-shadow: 0 0 8px rgba(0,0,0,.4) inset;
     }
 }
 input {
-    border:1px solid #aaa;
+    border-color: #aaa;
 }
 .styled-select {
-    border:1px solid #ccc;
+    border-color: #ccc;
     select {
         background:transparent;
     }

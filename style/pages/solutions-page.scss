@@ -27,10 +27,10 @@
     }
     .user-solution {
         background:#fafafa;
-        border:1px solid #ddd;
+        border-color: #ddd;
         color:#999;
         .not-published {
-            border:1px solid $color-2;
+            border-color: $color-2;
             color:$color-2;
             background:#fafafa;
         }
@@ -38,9 +38,9 @@
     .solution {
         .reactions {
             background:#fafafa;
-            border:1px solid #eee;
+            border-color: #eee;
             .reaction {
-                border-right:1px solid #eee;
+                border-right-color: #eee;
                 &.highlight {
                     i, .count {
                         color:$color-2;

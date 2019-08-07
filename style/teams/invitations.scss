@@ -6,7 +6,7 @@
         color:#999;
     }
     textarea {
-        border:1px solid #ccc;
+        border-color: #ccc;
     }
     .pure-button {
         background:$color-2;
@@ -14,10 +14,6 @@
 }
 
 #teams-invitation-page {
-    strong {
-    }
-    p {
-    }
     .pure-button {
         background:$color-2;
     }

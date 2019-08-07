@@ -14,12 +14,12 @@
                 }
             }
             .idx {
-                color:#fff;
+                color: $t1;
                 border-color:#fff;
             }
             .num-comments {
                 &:after {
-                    color:#fff;
+                    color: $t1;
                     text-shadow: -1px -1px 0 $color-1,  1px -1px 0 $color-1,
                                  -1px 1px 0 $color-1, 1px 1px 0 $color-1;
                 }

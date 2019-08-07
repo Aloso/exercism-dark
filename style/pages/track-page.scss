@@ -11,7 +11,7 @@
         .pure-button {
             border-color: $color-3;
             background: $color-3;
-            color:#fff;
+            color: $t1;
         }
     }
     .overview-section {
@@ -80,7 +80,7 @@
     }
 
     .exercises-section {
-        background:$bg;
+        background: $bg;
 
         .widget-side-exercise {
             background: $bg2;
@@ -97,12 +97,12 @@
     .cta-section {
         background: $color-2t;
         h2 {
-            color:#fff;
+            color: $t1;
         }
         .pure-button {
             border-color: #fff;
-            background:#00bac9;
-            color:#fff;
+            background: #00bac9;
+            color: $t1;
         }
     }
 }
@@ -112,7 +112,7 @@
     .pure-g.people {
         .widget-maintainer, .widget-mentor {
             .bio {
-                color:$link;
+                color: $t3;
             }
         }
     }

@@ -37,30 +37,30 @@
             border-color: $bord;
             color: $t3;
             &:hover {
-                border:1px solid red;
+                border-color: red;
                 color:red;
             }
         }
         &.independent {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
         &.approved {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
     .comment-button {
         background:$color-1;
-        color:#fff;
+        color: $t1;
         &.faded {
             background:#fff;
-            border:1px solid #aaa;
+            border-color: #aaa;
             color:#666;
         }
     }
     .request-mentoring {
         background:$color-1;
-        color:#fff;
+        color: $t1;
     }
 }

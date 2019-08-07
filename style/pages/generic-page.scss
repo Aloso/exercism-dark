@@ -3,24 +3,25 @@
 
 #generic-page {
     .header {
-        background-image:image-url('background-overlay-2.png');
-        background-size:cover;
-        background-color:$color-2;
+        background-color: $color-2t;
         h1 {
-            color:#fff;
+            color: $t1;
         }
     }
     .changes, .links {
-        border-top:1px solid #eee;
+        border-top-color: $bord;
     }
 
-    p,ul,ol {
+    p, ul, ol {
         a {
-            color:#333;
-            border-bottom:1px solid #aaa;
+            color: $link;
+            border-bottom-color: $bord2;
+            &:hover {
+                border-bottom-color: $link;
+            }
         }
     }
     pre {
-        border: 1px solid #ddd;
+        border-color: $bord;
     }
 }

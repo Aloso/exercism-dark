@@ -3,14 +3,12 @@
 
 #tracks-page {
     .header {
-        background-color:$color-2;
-        background-image:image-url('background-overlay-2.png');
-        background-size:cover;
+        background-color:$color-2t;
         h1 {
-            color:#fff;
+            color: $t1;
         }
         .h1-subtitle {
-            color:#fff;
+            color: $t1;
         }
     }
     .num-tracks {
@@ -19,7 +17,7 @@
     .track {
         background:#fff;
         color:#333;
-        border:1px solid #c2c3c3;
+        border-color: #c2c3c3;
 
         &:hover {
             border-color:$color-2;

@@ -5,12 +5,12 @@
     .invitations {
         .pure-button {
             background:$color-2;
-            color:#fff;
+            color: $t1;
         }
     }
     .team,
     .new-team {
-        border:1px solid #ccc;
+        border-color: #ccc;
         color:#333;
         &:hover {
             border-color:rgba($color-2, 0.5);
@@ -19,22 +19,18 @@
             }
         }
         .img {
-            border:1px solid #ccc;
+            border-color: #ccc;
             background:#fff;
         }
     }
     .team {
-        h3 {
-        }
         .members {
             color:#aaa;
         }
     }
     .new-team {
-        .img {
-            i {
-                color:#666;
-            }
+        .img i {
+            color: #666;
         }
     }
 }

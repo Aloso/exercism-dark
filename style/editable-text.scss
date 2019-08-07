@@ -21,13 +21,13 @@
     .editable-text-editor {
         .buttons {
             .update-button {
-                border: 1px solid $color-2;
+                border-color: $color-2;
                 background: $color-2;
                 color: #fff;
             }
             .cancel-button {
                 background:#fff;
-                border:1px solid #ccc;
+                border-color: #ccc;
                 color:#999;
             }
         }

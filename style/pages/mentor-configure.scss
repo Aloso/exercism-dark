@@ -3,28 +3,26 @@
 
 #mentor-configure-page {
     .header {
-        background: $color-2;
-        background-image:image-url('background-overlay-2.png');
-        background-size:cover;
+        background: $color-2t;
         h1 {
-            color:#fff;
+            color: $t1;
         }
         .h1-subtitle {
-            color:#fff;
+            color: $t1;
             a {
-                color:#fff;
+                color: $t1;
             }
         }
     }
 
     label {
         background:rgba($color-2, 0.1);
-        border:1px solid rgba($color-2, 0.2);
+        border-color: rgba($color-2, 0.2);
     }
 
     .pure-button {
         background:$color-2;
-        color:#fff;
+        color: $t1;
     }
 }
 

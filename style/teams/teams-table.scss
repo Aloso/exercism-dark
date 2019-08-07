@@ -2,20 +2,12 @@
 @import "../mixins";
 
 .teams-table {
-    border:1px solid #eee;
-	tr {
-		&:nth-child(odd) {
-			background:#fafafa;
-		}
+    border-color: #eee;
+	tr:nth-child(odd) {
+		background: #fafafa;
 	}
-	td {
-		&:first-child {
-		}
-		&:last-child {
-		}
-		a {
-			color:$color-2;
-		}
+	td a {
+		color: $color-2;
 	}
 }
 

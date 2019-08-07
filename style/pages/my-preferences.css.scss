@@ -2,35 +2,28 @@
 @import '../mixins';
 
 #my-preferences-page {
-    #notice {
-    }
     .lhs {
         @include width-medium() {
-            border-right:1px solid #eee;
+            border-right-color: $bord;
         }
     }
-    .rhs {
-    }
     h3 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#666;
+        color: $t2;
     }
 
     .settings-section {
-        border-bottom:1px solid #ddd;
-        &:last-child {
-            border-bottom:none;
-        }
+        border-bottom-color: $bord;
     }
 
     label {
-        color:#666;
+        color: $t3;
     }
 
     .pure-button {
-        background:$color-2;
-        color:#fff;
+        background: $color-2;
+        color: $t1;
     }
 }

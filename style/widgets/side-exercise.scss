@@ -17,7 +17,7 @@
         .status {
             color: $t4;
         }
-        border-color: rgba($color-2, 0.6);
+        border-color: $color-2t;
     }
     &.in-progress, &.mentoring-requested, &.approved {
         border-color: $color-2;
@@ -30,7 +30,7 @@
         }
     }
     &.completed {
-        border-color: $color-2;
+        border-color: $color-2t;
         .icon {
             background: $color-2;
             border-color: $color-2;
@@ -39,7 +39,7 @@
             color: #fff;
 
             &:before {
-                background: $color-2;
+                background: $color-2t;
                 transform: rotate(45deg);
             }
         }

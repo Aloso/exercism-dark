@@ -5,29 +5,29 @@
     .instructions {
         .rendered {
             h2 {
-                border-bottom:1px solid #eee;
+                border-bottom-color: #eee;
             }
             a {
                 color:#333;
-                border-bottom:1px solid #ccc;
+                border-bottom-color: #ccc;
             }
 
         }
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
 
     .experienced {
-        border:1px solid #e5e5e5;
+        border-color: #e5e5e5;
     }
     .newbie {
         background:#fafffe;
-        border:1px solid $color-1;
+        border-color: $color-1;
         .pure-button {
             background:$color-1;
-            color:#fff;
+            color: $t1;
         }
     }
 }

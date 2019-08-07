@@ -6,7 +6,7 @@
     background-color: $bg2;
     button {
         background:$color-1;
-        border: 1px solid $color-1;
+        border-color: $color-1;
         transition:all 0.3s;
         &.copied {
             background: #fff;
