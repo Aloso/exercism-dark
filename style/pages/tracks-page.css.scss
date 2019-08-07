@@ -12,21 +12,21 @@
         }
     }
     .num-tracks {
-        color:#666;
+        color: $t2;
     }
     .track {
-        background:#fff;
-        color:#333;
-        border-color: #c2c3c3;
+        background: $bg2;
+        color: $t2;
+        border-color: $bord;
 
         &:hover {
-            border-color:$color-2;
+            border-color: $color-2t;
         }
 
         .title {
             .num-exercises {
-                color:#999;
-                background:#f3f3f3;
+                color: $t2;
+                background: $bg3;
             }
         }
     }

@@ -63,9 +63,12 @@
                     .logo {
                         background-color: $color-2;
                         color: $color-2;
+                        img {
+                            filter: brightness(1.14);
+                        }
                     }
                     .title {
-                        background-color:transparent;
+                        background-color: transparent;
                     }
                 }
                 &:hover .track-mini, &:hover .track-mini .title {

@@ -1141,6 +1141,9 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-track-page .header {
   background-color: rgba(47, 194, 108, 0.7);
 }
+#my-track-page .header .visual-section img.logo {
+  filter: hue-rotate(-12deg);
+}
 #my-track-page .header .status {
   background: #fff;
   border: none;
@@ -1775,19 +1778,19 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #tracks-page .num-tracks {
-  color: #666;
+  color: rgba(255, 255, 255, 0.8);
 }
 #tracks-page .track {
-  background: #fff;
-  color: #333;
-  border-color: #c2c3c3;
+  background: #222222;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #404040;
 }
 #tracks-page .track:hover {
-  border-color: #00b2c2;
+  border-color: rgba(0, 178, 194, 0.7);
 }
 #tracks-page .track .title .num-exercises {
-  color: #999;
-  background: #f3f3f3;
+  color: rgba(255, 255, 255, 0.8);
+  background: #303030;
 }
 
 #modal.edit-profile .avatar-section > *:last-child {
@@ -2502,6 +2505,9 @@ body.namespace-my.controller-tracks.action-show footer {
 #landing-page .tracks-section .tracks-mini a .track-mini .logo {
   background-color: #00b2c2;
   color: #00b2c2;
+}
+#landing-page .tracks-section .tracks-mini a .track-mini .logo img {
+  filter: brightness(1.14);
 }
 #landing-page .tracks-section .tracks-mini a .track-mini .title {
   background-color: transparent;

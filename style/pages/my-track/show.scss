@@ -10,6 +10,12 @@ body.namespace-my.controller-tracks.action-show {
     .header {
         background-color: $color-1t;
 
+        .visual-section {
+            img.logo {
+                filter: hue-rotate(-12deg);
+            }
+        }
+
         .status {
             background:#fff;
             border: none;
