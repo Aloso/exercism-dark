@@ -566,6 +566,17 @@ footer .legal .copyright, footer .legal a, footer .legal .created-by {
   color: #2fc26c;
 }
 
+body:not(.prism-dark) > header.logged-in {
+  height: 80px;
+}
+body:not(.prism-dark) > header.logged-in::before {
+  content: "Please go to SETTINGS ➔ PREFERENCES and enable »Dark Code Theme«";
+  display: block;
+  font-size: 16px;
+  padding: 10px 10px 0;
+  text-align: center;
+}
+
 header.logged-in {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background: #303030;
