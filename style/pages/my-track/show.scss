@@ -23,6 +23,7 @@ body.namespace-my.controller-tracks.action-show {
     }
     .top-section {
         border-bottom-color: $bg2;
+        overflow: hidden; // important
     }
     .core-exercises {
         &:before {

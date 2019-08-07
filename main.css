@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #admin-users-page .discussion-post {
   border-bottom-color: #ccc;
 }
@@ -1146,6 +1147,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-track-page .top-section {
   border-bottom-color: #222222;
+  overflow: hidden;
 }
 #my-track-page .core-exercises:before {
   background: #333333;
