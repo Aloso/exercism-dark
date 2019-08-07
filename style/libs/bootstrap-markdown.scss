@@ -2,7 +2,7 @@
 @import '../variables';
 
 .md-editor {
-  border: 1px solid #ddd;
+  border-color: $bord;
 }
 
 .md-editor .md-footer, .md-editor > .md-header {
@@ -11,13 +11,13 @@
 
 .md-editor > .md-preview {
   background: #fff;
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
 }
 
 .md-editor > textarea {
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
   background: #eee;
 }
 

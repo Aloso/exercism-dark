@@ -6,7 +6,7 @@
 }
 
 .md-editor {
-  border: 1px solid #ddd;
+  border-color: #404040;
 }
 
 .md-editor .md-footer, .md-editor > .md-header {
@@ -15,13 +15,13 @@
 
 .md-editor > .md-preview {
   background: #fff;
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
 }
 
 .md-editor > textarea {
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
   background: #eee;
 }
 
@@ -106,9 +106,7 @@ body.prism-dark .line-highlight[data-end]:after {
 }
 
 body.prism-dark .line-numbers .line-numbers-rows {
-  width: 3em;
-  /* works for line-numbers below 1000 lines */
-  border-right-color: #999;
+  border-right-color: #404040;
 }
 
 body.prism-dark .line-numbers-rows > span:before {
@@ -129,7 +127,6 @@ body.prism-dark .line-numbers-rows > span:before {
 .widget-code-snippet button {
   background: #2fc26c;
   border-color: #2fc26c;
-  transition: all 0.3s;
 }
 .widget-code-snippet button.copied {
   background: #fff;
@@ -230,15 +227,12 @@ body.prism-dark .line-numbers-rows > span:before {
   color: white;
 }
 
-.widget-iterations-nav .iterations .current .idx, .widget-iterations-nav .iterations a .idx {
-  border: 1px solid;
-}
 .widget-iterations-nav .iterations .current .num-comments .num, .widget-iterations-nav .iterations a .num-comments .num {
   color: #333;
 }
 .widget-iterations-nav .iterations .current .idx, .widget-iterations-nav .iterations a .idx {
   color: white;
-  border-color: #fff;
+  border-color: #404040;
 }
 .widget-iterations-nav .iterations .current .num-comments:after, .widget-iterations-nav .iterations a .num-comments:after {
   color: white;
@@ -321,7 +315,6 @@ body.prism-dark .line-numbers-rows > span:before {
 }
 .widget-side-exercise.completed .status:before {
   background: rgba(0, 178, 194, 0.7);
-  transform: rotate(45deg);
 }
 .widget-side-exercise .icon {
   border-color: #444444;
@@ -528,7 +521,7 @@ input {
 }
 
 footer {
-  border-top: none;
+  border-top-color: transparent;
   background: #222222;
 }
 footer h4 {
@@ -548,9 +541,6 @@ footer .legal .created-by i {
 }
 footer .legal .copyright, footer .legal a, footer .legal .created-by {
   color: rgba(255, 255, 255, 0.4);
-}
-footer .legal a:hover {
-  border-bottom: none;
 }
 
 .lo-general-header {
@@ -577,10 +567,8 @@ footer .legal a:hover {
 }
 
 header.logged-in {
-  position: relative;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background: #303030;
-  border-bottom: none;
 }
 header.logged-in .misc-menu .in-situ img {
   border-color: rgba(255, 255, 255, 0.5);
@@ -623,7 +611,7 @@ header.logged-in .notifications.active:before {
 
 header.logged-out {
   background: #303030;
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 header.logged-out .options a {
   color: rgba(255, 255, 255, 0.9);
@@ -873,9 +861,6 @@ body.devise {
 }
 #unsubscribe-page .settings-section {
   border-bottom-color: #ddd;
-}
-#unsubscribe-page .settings-section:last-child {
-  border-bottom: none;
 }
 #unsubscribe-page label {
   color: #666;
@@ -1146,19 +1131,10 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-track-page .header .status {
   background: #fff;
-  border: none;
   color: #555;
-}
-@media screen and (max-width: 300px) {
-  #my-track-page .header .status {
-    margin-top: 43px;
-  }
 }
 #my-track-page .top-section {
   border-bottom-color: #222222;
-}
-#my-track-page .top-section .lo-container {
-  overflow: hidden;
 }
 #my-track-page .core-exercises:before {
   background: #333333;
@@ -1384,11 +1360,6 @@ body.namespace-my.controller-tracks.action-show footer {
   border-color: #00b2c2;
   background: #fff;
 }
-#exercises-page .exercises .exercise .icon .img {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
 #exercises-page .exercises .exercise .stats .length {
   border-right-color: #aaa;
   color: #aaa;
@@ -1478,7 +1449,6 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #team-page .contributors .contributor h3 {
   color: #00b2c2;
-  text-overflow: ellipsis;
 }
 #team-page .contributors .contributor .num-contributions {
   color: #999;
@@ -1793,9 +1763,6 @@ body.namespace-my.controller-tracks.action-show footer {
   background: #303030;
 }
 
-#modal.edit-profile .avatar-section > *:last-child {
-  align-items: stretch;
-}
 #modal.edit-profile .avatar-section h3 {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -2040,7 +2007,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-solution-page .tools-bar {
   background: rgba(32, 132, 74, 0.7);
-  border: none;
+  border-color: transparent;
 }
 #mentor-solution-page .tools-bar .mentoring-notes {
   background: #fff;
@@ -2128,7 +2095,6 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #become-a-mentor-page .pr-section {
   background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
-  border: none;
 }
 #become-a-mentor-page .pr-section h2 {
   color: #444;
@@ -2362,7 +2328,6 @@ body.namespace-my.controller-tracks.action-show footer {
   background-color: #1c1c1c;
   border-bottom-color: #303030;
   color: #00b2c2;
-  letter-spacing: -0.7px;
 }
 #mentor-dashboard-page .rating-section .rating,
 #mentor-next-solutions-page .rating-section .rating {
@@ -2485,7 +2450,6 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #landing-page .tracks-section {
   background: #141414;
-  border: none;
 }
 #landing-page .tracks-section .title-block p {
   color: rgba(255, 255, 255, 0.8);
@@ -2521,7 +2485,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #landing-page .pr-section {
   background: linear-gradient(#ccc, #fff 56%, #fff 64%, #ccc);
-  border: none;
+  border-color: transparent;
 }
 #landing-page .pr-section h2 {
   color: #444;
@@ -2689,7 +2653,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-right-color: #eee;
 }
 #mentor-analyses td:last-child {
-  border-right: none;
+  border-right-color: transparent;
 }
 
 #my-settings-page .settings-section.toggle .toggles i.fa.fa-toggle-on,
@@ -2837,7 +2801,6 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #notifications-page .notification {
   border-color: #404040;
-  transition: opacity 0.2s;
 }
 #notifications-page .notification.read {
   opacity: 0.4;
@@ -3198,9 +3161,6 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: white;
 }
 
-#modal.solution-confirm-unapproved-completion #modal-close-button {
-  border-top-right-radius: 6px;
-}
 #modal.solution-confirm-unapproved-completion .warning-bar {
   background: #ffe3e3;
   color: #f34a56;
@@ -3276,9 +3236,6 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 }
 #modal.solution-mentor-ratings .mentor-review .details .interactions {
   color: #888;
-}
-#modal.solution-mentor-ratings .mentor-review .stars input {
-  display: none;
 }
 #modal.solution-mentor-ratings .mentor-review .stars label {
   color: #ddd;
@@ -3397,7 +3354,6 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #teams-my-solution-page .solution.multi-file h3 {
   background: #222222;
   color: rgba(255, 255, 255, 0.8);
-  border-bottom: none;
 }
 #solution-page .test-suite pre,
 #mentor-solution-page .test-suite pre,
@@ -3560,9 +3516,6 @@ body.prism-dark #teams-my-solution-page .solution pre {
 #not-published-solution-page h1 a {
   color: #333;
 }
-#not-published-solution-page p {
-  margin-bottom: 10px;
-}
 #not-published-solution-page .pure-button {
   background: #00b2c2;
 }
@@ -3644,11 +3597,6 @@ body.prism-dark #teams-my-solution-page .solution pre {
 #teams-landing-page .tracks-section .title-block p a {
   color: #666;
 }
-#teams-landing-page .tracks-section .tracks .row .track {
-  background-size: 93px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 #teams-landing-page .tracks-section .tracks .row .track .title {
   color: white;
 }
@@ -3687,10 +3635,9 @@ body.prism-dark #teams-my-solution-page .solution pre {
 }
 #teams-landing-page .pr-section {
   background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
-  border: none;
 }
 #teams-landing-page .pr-section h2 {
-  color: #444;
+  color: rgba(255, 255, 255, 0.8);
 }
 #teams-landing-page .cta-section {
   background: #00b2c2;

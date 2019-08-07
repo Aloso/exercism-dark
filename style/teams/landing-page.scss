@@ -48,10 +48,6 @@
         .tracks {
             .row {
                 .track {
-                    background-size:93px;
-                    background-repeat: no-repeat;
-                    background-position:center center;
-
                     .title {
                         color: $t1;
                     }
@@ -95,14 +91,13 @@
     }
     .pr-section {
         // must be bright, because of the images
-        background:linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
-        border: none;
+        background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
         h2 {
-            color:#444;
+            color: $t2;
         }
     }
     .cta-section {
-        background:$color-2;
+        background: $color-2;
         h2 {
             color: $t1;
         }

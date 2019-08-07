@@ -13,7 +13,6 @@
     }
     .notification {
         border-color: $bord;
-        transition: opacity 0.2s;
         &.read {
             opacity: 0.4;
         }

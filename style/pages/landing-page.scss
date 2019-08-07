@@ -39,7 +39,6 @@
     }
     .tracks-section {
         background:$bg;
-        border: none;
         .title-block {
             p {
                 color:$t2;
@@ -86,7 +85,7 @@
     .pr-section {
         // must be bright, because of the images
         background:linear-gradient(#ccc, #fff 56%, #fff 64%, #ccc);
-        border: none;
+        border-color: transparent;
         h2 {
             color:#444;
         }

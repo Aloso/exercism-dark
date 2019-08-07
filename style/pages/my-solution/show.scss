@@ -146,9 +146,6 @@
 }
 
 #modal.solution-confirm-unapproved-completion {
-    #modal-close-button {
-        border-top-right-radius: 6px;
-    }
     .warning-bar {
         background:#ffe3e3;
         color:#f34a56;
@@ -239,8 +236,6 @@
             }
         }
         .stars {
-            input { display: none; }
-
             label {
               color: #ddd;
             }

@@ -129,20 +129,19 @@ $blue: #4A90E2;
         h2 {
             background-color: lighten($bg, 3%);
             border-bottom-color: $bg3;
-            color:$color-2;
-            letter-spacing:-0.7px
+            color: $color-2;
         }
         .rating {
-            color:$color-2;
+            color: $color-2;
             border-bottom-color: rgba($color-1, 0.2);
         }
     }
     .weekly-section {
         .bar-widget {
             .bar {
-                background:#ddd;
+                background: #ddd;
                 .fill {
-                    background:$color-2;
+                    background: $color-2;
                 }
             }
             .count {

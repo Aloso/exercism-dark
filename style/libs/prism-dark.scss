@@ -31,8 +31,7 @@ body.prism-dark .line-highlight[data-end]:after {
 }
 
 body.prism-dark .line-numbers .line-numbers-rows {
-	width: 3em; /* works for line-numbers below 1000 lines */
-	border-right-color: #999;
+	border-right-color: $bord;
 
 }
 

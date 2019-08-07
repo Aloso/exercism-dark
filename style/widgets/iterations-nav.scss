@@ -4,10 +4,6 @@
 .widget-iterations-nav {
     .iterations {
         .current, a {
-
-            .idx {
-                border:1px solid;
-            }
             .num-comments {
                 .num {
                     color:#333;
@@ -15,7 +11,7 @@
             }
             .idx {
                 color: $t1;
-                border-color:#fff;
+                border-color: $bord;
             }
             .num-comments {
                 &:after {

@@ -18,19 +18,11 @@ body.namespace-my.controller-tracks.action-show {
 
         .status {
             background:#fff;
-            border: none;
             color:#555;
-            @media screen and (max-width: 300px) {
-                margin-top:43px
-            }
         }
     }
     .top-section {
         border-bottom-color: $bg2;
-
-        .lo-container {
-            overflow: hidden;
-        }
     }
     .core-exercises {
         &:before {

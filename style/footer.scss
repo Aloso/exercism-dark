@@ -2,7 +2,7 @@
 @import 'mixins';
 
 footer {
-    border-top: none;
+    border-top-color: transparent;
     background: $bg2;
     h4 {
         color: $t2;
@@ -23,9 +23,6 @@ footer {
         }
         .copyright, a, .created-by {
             color: $t4;
-        }
-        a:hover {
-            border-bottom: none;
         }
     }
 }
