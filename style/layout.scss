@@ -2,14 +2,14 @@
 @import 'mixins';
 
 #alert, #errors {
-    background:$error-red-color;
-    color:$error-red-text-color;
+    background: $error-red-color;
+    color: $error-red-text-color;
     a {
-        color:$error-red-text-color;
+        color: $error-red-text-color;
     }
 }
 
 #notice {
     background: $bg2;
-    color:$color-1;
+    color: $color-1;
 }

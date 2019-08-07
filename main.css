@@ -375,21 +375,21 @@ body.prism-dark .line-numbers-rows > span:before {
 }
 
 #cli-walkthrough h1 {
-  border-bottom-color: #e5e5e5;
+  border-bottom-color: #404040;
 }
 #cli-walkthrough a {
-  color: #333;
+  color: #95caff;
 }
 #cli-walkthrough blockquote {
-  border-left-color: #eceeef;
+  border-left-color: #404040;
 }
 #cli-walkthrough hr {
-  color: #e5e5e5;
-  background-color: #e5e5e5;
+  color: #404040;
+  background-color: #404040;
 }
 #cli-walkthrough pre {
-  border-color: #ddd;
-  background: #fafafa;
+  border-color: #404040;
+  background: #222222;
 }
 
 body .md-editor .btn-toolbar {
@@ -564,7 +564,7 @@ footer .legal a:hover {
 }
 
 #alert, #errors {
-  background: #ffe3e3;
+  background: rgba(255, 20, 20, 0.15);
   color: #f13240;
 }
 #alert a, #errors a {
@@ -847,6 +847,12 @@ body.devise {
 .lo-devise-page button {
   background: rgba(0, 178, 194, 0.7);
   color: white;
+}
+.lo-devise-page .sign-up,
+.lo-devise-page .log-in,
+.lo-devise-page .reset-password,
+.lo-devise-page .confirmation-instructions {
+  color: rgba(255, 255, 255, 0.6);
 }
 .lo-devise-page .sign-up a,
 .lo-devise-page .log-in a,
@@ -2044,7 +2050,6 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #mentor-solution-page .tools-bar .notification .ignore {
-  color: white;
   background: #fff;
   color: #2fc26c;
 }
@@ -2100,14 +2105,14 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #become-a-mentor-page .welcome-section .box {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.92);
   border-color: #00b2c2;
 }
 #become-a-mentor-page .welcome-section .box h1 {
   color: #00b2c2;
 }
 #become-a-mentor-page .welcome-section .box p {
-  color: #333;
+  color: rgba(255, 255, 255, 0.8);
 }
 #become-a-mentor-page .welcome-section .box .pure-button.register-button {
   background: #6f17b8;
@@ -2116,7 +2121,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #become-a-mentor-page .welcome-section .box .pure-button.learn-more-button {
   border-color: #00b2c2;
   color: #00b2c2;
-  background: #fff;
+  background: transparent;
 }
 #become-a-mentor-page .pr-section {
   background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
@@ -2126,27 +2131,28 @@ body.namespace-my.controller-tracks.action-show footer {
   color: #444;
 }
 #become-a-mentor-page .section h2 strong {
-  color: #6f17b8;
+  color: #9636e6;
 }
 #become-a-mentor-page .section h3 {
-  color: #7b7b7b;
+  color: white;
 }
 #become-a-mentor-page .section li a {
-  color: #333;
+  color: rgba(255, 255, 255, 0.8);
 }
 #become-a-mentor-page .vision-section .box {
-  border-color: #d4d4d4;
+  border-color: #404040;
 }
-#become-a-mentor-page .role-section {
-  background: #fafafa;
+#become-a-mentor-page .role-section,
+#become-a-mentor-page .great-mentor-section {
+  background: #1c1c1c;
 }
 #become-a-mentor-page .benefits-section,
 #become-a-mentor-page .great-mentor-section {
-  border-bottom-color: #ddd;
+  border-bottom-color: transparent;
 }
 #become-a-mentor-page .cta-section .box {
-  border-color: #aaa;
-  background: #fafafa;
+  border-color: #404040;
+  background: #222222;
 }
 #become-a-mentor-page .cta-section .pure-button {
   background: #6f17b8;
@@ -2390,7 +2396,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-next-solutions-page .next-exercises-navigation .label.zero-count {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
 }
 #mentor-next-solutions-page .next-exercises-navigation .label.selected {
   color: #00b2c2 !important;
@@ -2402,7 +2408,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #mentor-next-solutions-page .next-exercises-navigation .exercises {
-  border-left-color: #404040;
+  border-left-color: #303030;
 }
 #mentor-next-solutions-page .next-exercises-navigation .exercises .label.selected:before {
   border-left-color: #00b2c2;
@@ -3960,4 +3966,3 @@ body:not(.prism-dark) #teams-my-solution-unlocked-page .instructions .rendered c
 #teams-teams-page .new-team .img i {
   color: #666;
 }
-

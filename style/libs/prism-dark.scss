@@ -6,6 +6,9 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * @author ocodia
  */
 
+@import '../variables';
+@import '../mixins';
+
 body.prism-dark code[class*="language-"],
 body.prism-dark pre[class*="language-"] {
 	color: #f8f8f2;

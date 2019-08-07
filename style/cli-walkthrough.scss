@@ -3,25 +3,24 @@
 
 #cli-walkthrough {
   h1 {
-    border-bottom-color: #e5e5e5;
+    border-bottom-color: $bord;
   }
 
   a {
-    color: #333;
+    color: $link;
   }
 
   blockquote {
-    border-left-color: #eceeef;
+    border-left-color: $bord;
   }
 
   hr {
-    color: #e5e5e5;
-    background-color: #e5e5e5;
+    color: $bord;
+    background-color: $bord;
   }
 
-  //TODO
   pre {
-    border-color: #ddd;
-    background: #fafafa;
+    border-color: $bord;
+    background: $bg2;
   }
 }

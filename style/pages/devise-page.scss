@@ -40,6 +40,7 @@ body.devise {
     .log-in,
     .reset-password,
     .confirmation-instructions {
+        color: $t3;
         a {
             color:$link;
         }

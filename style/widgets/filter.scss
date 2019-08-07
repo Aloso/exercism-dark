@@ -39,8 +39,7 @@
 }
 
 .selectize-input,
-.selectize-control.single
-.selectize-input.input-active {
+.selectize-control.single .selectize-input.input-active {
     background-color: $bg2;
 }
 .selectize-input.full {

@@ -166,7 +166,7 @@ $blue: #4A90E2;
         .label {
             color: $t2;
             &.zero-count {
-                color:$t3;
+                color:$t4;
             }
             &.selected {
                 color:$color-2 !important;
@@ -183,7 +183,7 @@ $blue: #4A90E2;
             }
         }
         .exercises {
-            border-left-color: $bord;
+            border-left-color: $bg3;
             .label {
                 &.selected {
                     &:before {

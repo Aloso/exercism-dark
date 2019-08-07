@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .pagination {
     background: transparent;
     .page, .next, .last, .prev, .first {

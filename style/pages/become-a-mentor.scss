@@ -6,63 +6,68 @@ $inner-width: 800px;
 #become-a-mentor-page {
     .welcome-section {
         .box {
-            background: rgba(#fff, 0.95);
+            background: rgba(#000, 0.92);
             border-color: $color-2;
             h1 {
-                color:$color-2;
+                color: $color-2;
             }
             p {
-                color:#333;
+                color: $t2;
             }
             .pure-button {
                 &.register-button {
-                    background:$color-3;
+                    background: $color-3;
                     color: $t1;
                 }
                 &.learn-more-button {
                     border-color: $color-2;
-                    color:$color-2;
-                    background:#fff;
+                    color: $color-2;
+                    background: transparent;
                 }
             }
         }
     }
     .pr-section {
         // must be bright, because of the images
-        background:linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
+        background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
         border: none;
         h2 {
-            color:#444;
+            color: #444;
         }
     }
 
     .section {
         h2 {
             strong {
-                color:$color-3;
+                color: lighten($color-3, 15%);
             }
         }
         h3 {
-            color:#7b7b7b;
+            color: $t1;
         }
         li a {
-            color:#333;
+            color: $t2;
         }
     }
+
     .vision-section .box {
-        border-color: #d4d4d4;
+        border-color: $bord;
     }
-    .role-section {
-        background:#fafafa;
+
+    .role-section,
+    .great-mentor-section {
+        background: lighten($bg, 3%);
     }
+
     .benefits-section,
     .great-mentor-section {
-        border-bottom-color: #ddd;
+        border-bottom-color: transparent;
     }
+
     .cta-section {
         .box {
-            border-color: #aaa;
-            background:#fafafa;
+            border-color: $bord;
+            background: $bg2;
         }
         .pure-button {
             background:$color-3;
