@@ -2,8 +2,8 @@
 @import 'mixins';
 
 #nav.lo-nav-bar {
-    background:$bg2;
-    border-bottom-color: rgba(#22333b, 0.5);
+    background: $bg2;
+    border-bottom-color: transparent;
     a {
         color: $link;
         &:before {

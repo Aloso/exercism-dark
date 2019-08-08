@@ -14,7 +14,8 @@ body:not(.prism-dark) > header.logged-in {
 
 header.logged-in {
     box-shadow: 0 0 5px rgba(black, 0.3);
-    background:$bg3;
+    background: $bg3;
+    border-bottom-color: transparent;
 
     .misc-menu {
         //?

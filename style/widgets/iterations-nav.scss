@@ -6,26 +6,28 @@
         .current, a {
             .num-comments {
                 .num {
-                    color:#333;
+                    color: $bg;
                 }
             }
             .idx {
                 color: $t1;
-                border-color: $bord;
+                border-color: $t3;
             }
             .num-comments {
                 &:after {
                     color: $t1;
-                    text-shadow: -1px -1px 0 $color-1,  1px -1px 0 $color-1,
-                                 -1px 1px 0 $color-1, 1px 1px 0 $color-1;
+                    text-shadow: -1px -1px 0 darken($color-1, 7%), 1px -1px 0 darken($color-1, 7%),
+                                 -1px  1px 0 darken($color-1, 7%), 1px  1px 0 darken($color-1, 7%);
                 }
-                .num { color:$color-1; }
+                .num {
+                    color: $color-1;
+                }
             }
             &.current {
                 .idx {
-                    background: #fff;
-                    border-color:#fff;
-                    color:$color-1;
+                    background: $t1;
+                    border-color: $t1;
+                    color: $color-1;
                 }
             }
         }

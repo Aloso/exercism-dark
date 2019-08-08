@@ -19,6 +19,7 @@ body.namespace-my.controller-tracks.action-show {
         .status {
             background:#fff;
             color:#555;
+            border: none; // important;
         }
     }
     .top-section {

@@ -229,22 +229,22 @@ body.prism-dark .line-numbers-rows > span:before {
 }
 
 .widget-iterations-nav .iterations .current .num-comments .num, .widget-iterations-nav .iterations a .num-comments .num {
-  color: #333;
+  color: #141414;
 }
 .widget-iterations-nav .iterations .current .idx, .widget-iterations-nav .iterations a .idx {
   color: white;
-  border-color: #404040;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 .widget-iterations-nav .iterations .current .num-comments:after, .widget-iterations-nav .iterations a .num-comments:after {
   color: white;
-  text-shadow: -1px -1px 0 #2fc26c, 1px -1px 0 #2fc26c, -1px 1px 0 #2fc26c, 1px 1px 0 #2fc26c;
+  text-shadow: -1px -1px 0 #28a55c, 1px -1px 0 #28a55c, -1px 1px 0 #28a55c, 1px 1px 0 #28a55c;
 }
 .widget-iterations-nav .iterations .current .num-comments .num, .widget-iterations-nav .iterations a .num-comments .num {
   color: #2fc26c;
 }
 .widget-iterations-nav .iterations .current.current .idx, .widget-iterations-nav .iterations a.current .idx {
-  background: #fff;
-  border-color: #fff;
+  background: white;
+  border-color: white;
   color: #2fc26c;
 }
 
@@ -499,26 +499,29 @@ input {
 }
 
 .editable-text .editable-text-viewer .editable-text-options {
-  color: #999;
+  color: rgba(255, 255, 255, 0.6);
 }
 .editable-text .editable-text-viewer .editable-text-options a {
-  color: #999;
+  color: rgba(255, 255, 255, 0.6);
 }
 .editable-text .editable-text-viewer .editable-text-options a:hover {
-  color: #666;
+  color: white;
 }
 .editable-text .editable-text-viewer .edited-status {
-  color: #999;
+  color: rgba(255, 255, 255, 0.6);
 }
 .editable-text .editable-text-editor .buttons .update-button {
   border-color: #00b2c2;
   background: #00b2c2;
-  color: #fff;
+  color: white;
 }
 .editable-text .editable-text-editor .buttons .cancel-button {
-  background: #fff;
-  border-color: #ccc;
-  color: #999;
+  background: transparent;
+  border-color: #404040;
+  color: rgba(255, 255, 255, 0.6);
+}
+.editable-text .editable-text-editor .buttons .cancel-button:hover {
+  color: white;
 }
 
 footer {
@@ -581,6 +584,7 @@ body:not(.prism-dark) > header.logged-in::before {
 header.logged-in {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background: #303030;
+  border-bottom-color: transparent;
 }
 header.logged-in .misc-menu .in-situ img {
   border-color: rgba(255, 255, 255, 0.5);
@@ -650,7 +654,7 @@ header.logged-out .options a + a {
 
 #nav.lo-nav-bar {
   background: #222222;
-  border-bottom-color: rgba(34, 51, 59, 0.5);
+  border-bottom-color: transparent;
 }
 #nav.lo-nav-bar a {
   color: #95caff;
@@ -1144,6 +1148,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-track-page .header .status {
   background: #fff;
   color: #555;
+  border: none;
 }
 #my-track-page .top-section {
   border-bottom-color: #222222;
@@ -2991,9 +2996,14 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #my-solution-page .rhs .comment-button.faded,
 #teams-solution-page .rhs .comment-button.faded,
 #teams-my-solution-page .rhs .comment-button.faded {
-  background: #fff;
-  border-color: #aaa;
-  color: #666;
+  background: transparent;
+  border-color: #404040;
+  color: rgba(255, 255, 255, 0.6);
+}
+#my-solution-page .rhs .comment-button.faded:hover,
+#teams-solution-page .rhs .comment-button.faded:hover,
+#teams-my-solution-page .rhs .comment-button.faded:hover {
+  color: white;
 }
 #my-solution-page .rhs .request-mentoring,
 #teams-solution-page .rhs .request-mentoring,
@@ -3004,7 +3014,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 
 #my-solution-unlocked-page .track-header-container,
 #my-solution-page .track-header-container {
-  background: #3ab292;
+  background: #2fc26c;
   color: white;
 }
 #my-solution-unlocked-page .track-header-container a,
@@ -3076,24 +3086,24 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #my-solution-page .small-iterations-nav .widget-iterations-nav a .num-comments:after,
 #my-solution-page .small-iterations-nav .widget-iterations-nav .current .num-comments:after {
   color: #2fc26c;
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 2px #141414;
 }
 #my-solution-page .inner .widget-iterations-nav a .num-comments .num, #my-solution-page .inner .widget-iterations-nav .current .num-comments .num,
 #my-solution-page .small-iterations-nav .widget-iterations-nav a .num-comments .num,
 #my-solution-page .small-iterations-nav .widget-iterations-nav .current .num-comments .num {
-  color: white;
+  color: #141414;
 }
 #my-solution-page .inner .widget-iterations-nav a.current .idx, #my-solution-page .inner .widget-iterations-nav .current.current .idx,
 #my-solution-page .small-iterations-nav .widget-iterations-nav a.current .idx,
 #my-solution-page .small-iterations-nav .widget-iterations-nav .current.current .idx {
   background: #2fc26c;
   border-color: #2fc26c;
-  color: white;
+  color: #141414;
 }
 #my-solution-page .inner .widget-iterations-nav a.current .num-comments:after, #my-solution-page .inner .widget-iterations-nav .current.current .num-comments:after,
 #my-solution-page .small-iterations-nav .widget-iterations-nav a.current .num-comments:after,
 #my-solution-page .small-iterations-nav .widget-iterations-nav .current.current .num-comments:after {
-  color: white;
+  color: #141414;
   text-shadow: -1px -1px 0 #2fc26c, 1px -1px 0 #2fc26c, -1px 1px 0 #2fc26c, 1px 1px 0 #2fc26c;
 }
 #my-solution-page .inner .widget-iterations-nav a.current .num-comments .num, #my-solution-page .inner .widget-iterations-nav .current.current .num-comments .num,
@@ -3147,7 +3157,12 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #my-solution-page .notifications-bar .notification a,
 #teams-my-solution-page .notifications-bar .notification a,
 #teams-solution-page .notifications-bar .notification a {
-  color: #333;
+  color: rgba(255, 255, 255, 0.8);
+}
+#my-solution-page .notifications-bar .notification a:hover,
+#teams-my-solution-page .notifications-bar .notification a:hover,
+#teams-solution-page .notifications-bar .notification a:hover {
+  color: #95caff;
 }
 #my-solution-page .notifications-bar .notification i,
 #teams-my-solution-page .notifications-bar .notification i,
@@ -3552,383 +3567,4 @@ body.prism-dark #teams-my-solution-page .solution pre {
 #mentor-configure-page .pure-button {
   background: #00b2c2;
   color: white;
-}
-
-#teams-edit-team-page form .field p {
-  color: #999;
-}
-#teams-edit-team-page form .field input, #teams-edit-team-page form .field textarea {
-  border-color: #ccc;
-}
-#teams-edit-team-page form .pure-button {
-  background: #00b2c2;
-}
-
-#teams-invitations-page p {
-  color: #999;
-}
-#teams-invitations-page textarea {
-  border-color: #ccc;
-}
-#teams-invitations-page .pure-button {
-  background: #00b2c2;
-}
-
-#teams-invitation-page .pure-button {
-  background: #00b2c2;
-}
-
-#teams-landing-page .welcome-section .rhs h1 {
-  color: #00b2c2;
-}
-#teams-landing-page .welcome-section .rhs h1 img {
-  background: white;
-}
-#teams-landing-page .welcome-section .rhs p {
-  color: #333;
-}
-#teams-landing-page .welcome-section .rhs .pure-button.sign-up-button {
-  background: #6f17b8;
-  color: white;
-}
-#teams-landing-page .welcome-section .rhs .pure-button.languages-button {
-  border-color: #00b2c2;
-  color: #00b2c2;
-  background: #fff;
-}
-#teams-landing-page .tracks-section .title-block p a,
-#teams-landing-page .how-section .title-block p a {
-  color: #333;
-}
-#teams-landing-page .tracks-section {
-  background: #fafefe;
-  border-color: #eee;
-}
-#teams-landing-page .tracks-section .title-block p {
-  color: #666;
-}
-#teams-landing-page .tracks-section .title-block p a {
-  color: #666;
-}
-#teams-landing-page .tracks-section .tracks .row .track .title {
-  color: white;
-}
-#teams-landing-page .tracks-section .tracks .row .track .left-eye,
-#teams-landing-page .tracks-section .tracks .row .track .right-eye {
-  background: #fff;
-}
-#teams-landing-page .tracks-section .tracks .row .track .left-eye .pupil,
-#teams-landing-page .tracks-section .tracks .row .track .right-eye .pupil {
-  background: #000;
-}
-#teams-landing-page .tracks-section .tracks-mini a {
-  color: #333;
-}
-#teams-landing-page .tracks-section .tracks-mini a .track-mini {
-  border-color: #00b2c2;
-}
-#teams-landing-page .tracks-section .tracks-mini a .track-mini .logo {
-  background-color: #00b2c2;
-  color: #00b2c2;
-}
-#teams-landing-page .tracks-section .tracks-mini a .track-mini .title {
-  background-color: #fff;
-}
-#teams-landing-page .tracks-section .tracks-mini a:hover .track-mini, #teams-landing-page .tracks-section .tracks-mini a:hover .track-mini .title {
-  background-color: #00b2c2 !important;
-  color: #fff;
-}
-#teams-landing-page .how-section .divider {
-  border-bottom-color: #ddd;
-}
-@media screen and (min-width: 35.5em) {
-  #teams-landing-page .how-section .divider {
-    border-bottom-color: #eee;
-  }
-}
-#teams-landing-page .pr-section {
-  background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
-}
-#teams-landing-page .pr-section h2 {
-  color: rgba(255, 255, 255, 0.8);
-}
-#teams-landing-page .cta-section {
-  background: #00b2c2;
-}
-#teams-landing-page .cta-section h2 {
-  color: white;
-}
-#teams-landing-page .cta-section .pure-button {
-  border-color: #fff;
-  background: #00bac9;
-  color: white;
-}
-
-#modal.announcement h2 {
-  color: #555;
-}
-#modal.announcement p {
-  color: #555;
-}
-#modal.announcement p a {
-  color: #555;
-}
-#modal.announcement .pure-button {
-  background: #2fc26c;
-}
-
-#teams-memberships-page h3 {
-  border-bottom-color: #ddd;
-  color: #333;
-}
-#teams-memberships-page .pure-button {
-  background: #00b2c2;
-}
-#teams-memberships-page table.memberships-table th {
-  border-bottom-color: #eee;
-}
-#teams-memberships-page table.memberships-table td a {
-  color: #00b2c2;
-  border-bottom-color: rgba(0, 178, 194, 0.3);
-}
-
-#teams-my-solution-unlocked-page .instructions .rendered h2 {
-  border-bottom-color: #eee;
-}
-#teams-my-solution-unlocked-page .instructions .rendered a {
-  color: #333;
-  border-bottom-color: #ccc;
-}
-#teams-my-solution-unlocked-page .instructions .pure-button {
-  background: #2fc26c;
-  color: white;
-}
-#teams-my-solution-unlocked-page .experienced {
-  border-color: #e5e5e5;
-}
-#teams-my-solution-unlocked-page .newbie {
-  background: #fafffe;
-  border-color: #2fc26c;
-}
-#teams-my-solution-unlocked-page .newbie .pure-button {
-  background: #2fc26c;
-  color: white;
-}
-
-body:not(.prism-dark) #teams-my-solution-unlocked-page .instructions .rendered pre {
-  background: #f6f6f6;
-}
-body:not(.prism-dark) #teams-my-solution-unlocked-page .instructions .rendered code {
-  color: #666;
-}
-
-#teams-my-solutions-page .num-solutions {
-  color: rgba(255, 255, 255, 0.6);
-}
-#teams-my-solutions-page .widget-side-exercise .stats .language {
-  border-right-color: rgba(255, 255, 255, 0.6);
-  color: rgba(255, 255, 255, 0.6);
-}
-#teams-my-solutions-page .widget-side-exercise .stats .num-iterations {
-  color: rgba(255, 255, 255, 0.6);
-}
-#teams-my-solutions-page .widget-side-exercise .status {
-  color: rgba(255, 255, 255, 0.4);
-}
-#teams-my-solutions-page .pure-button {
-  background: #00b2c2;
-}
-
-#teams-new-solution-page .exercise-radio-button:checked + .widget-side-exercise {
-  border-color: #009cab;
-  box-shadow: 0 0 0 1px #009cab;
-}
-#teams-new-solution-page .pure-button {
-  background: #00b2c2;
-}
-
-#teams-new-team-page form .field p {
-  color: #999;
-}
-#teams-new-team-page form .field input, #teams-new-team-page form .field textarea {
-  border-color: #ccc;
-}
-#teams-new-team-page form .pure-button {
-  background: #00b2c2;
-}
-
-#teams-solution-page .solution-header .content,
-#teams-my-solution-page .solution-header .content,
-#teams-my-solution-unlocked-page .solution-header .content {
-  border-bottom-color: #ddd;
-}
-#teams-solution-page .solution-header img,
-#teams-my-solution-page .solution-header img,
-#teams-my-solution-unlocked-page .solution-header img {
-  border-color: #fff;
-}
-#teams-solution-page .solution-header .inner,
-#teams-my-solution-page .solution-header .inner,
-#teams-my-solution-unlocked-page .solution-header .inner {
-  color: #333;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a .idx, #teams-solution-page .solution-header .inner .widget-iterations-nav .current .idx,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a .idx,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current .idx,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a .idx,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current .idx {
-  color: #00b2c2;
-  border-color: #00b2c2;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a .num-comments:after, #teams-solution-page .solution-header .inner .widget-iterations-nav .current .num-comments:after,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a .num-comments:after,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current .num-comments:after,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a .num-comments:after,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current .num-comments:after {
-  color: #00b2c2;
-  text-shadow: 0 0 2px #fff;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a .num-comments .num, #teams-solution-page .solution-header .inner .widget-iterations-nav .current .num-comments .num,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a .num-comments .num,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current .num-comments .num,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a .num-comments .num,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current .num-comments .num {
-  color: white;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a.current .idx, #teams-solution-page .solution-header .inner .widget-iterations-nav .current.current .idx,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a.current .idx,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current.current .idx,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a.current .idx,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current.current .idx {
-  background: #00b2c2;
-  border-color: #00b2c2;
-  color: white;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a.current .num-comments:after, #teams-solution-page .solution-header .inner .widget-iterations-nav .current.current .num-comments:after,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a.current .num-comments:after,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current.current .num-comments:after,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a.current .num-comments:after,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current.current .num-comments:after {
-  color: white;
-  text-shadow: -1px -1px 0 #00b2c2, 1px -1px 0 #00b2c2, -1px 1px 0 #00b2c2, 1px 1px 0 #00b2c2;
-}
-#teams-solution-page .solution-header .inner .widget-iterations-nav a.current .num-comments .num, #teams-solution-page .solution-header .inner .widget-iterations-nav .current.current .num-comments .num,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav a.current .num-comments .num,
-#teams-my-solution-page .solution-header .inner .widget-iterations-nav .current.current .num-comments .num,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav a.current .num-comments .num,
-#teams-my-solution-unlocked-page .solution-header .inner .widget-iterations-nav .current.current .num-comments .num {
-  color: #00b2c2;
-}
-#teams-solution-page .solution-header .inner .byline a,
-#teams-my-solution-page .solution-header .inner .byline a,
-#teams-my-solution-unlocked-page .solution-header .inner .byline a {
-  color: white;
-}
-
-#teams-solutions-page .num-solutions {
-  color: #999;
-}
-#teams-solutions-page .widget-side-exercise .stats .language {
-  border-right-color: rgba(255, 255, 255, 0.6);
-  color: rgba(255, 255, 255, 0.6);
-}
-#teams-solutions-page .widget-side-exercise .stats .num-iterations {
-  color: rgba(255, 255, 255, 0.6);
-}
-#teams-solutions-page .widget-side-exercise .status {
-  color: rgba(255, 255, 255, 0.4);
-}
-#teams-solutions-page .solution {
-  border-color: #ddd;
-}
-#teams-solutions-page .solution:hover {
-  border-color: #00b2c2;
-}
-#teams-solutions-page .solution .icons .exercise {
-  background: #fff;
-  border-color: #00b2c2;
-}
-#teams-solutions-page .solution .icons .joiner {
-  border-bottom-color: #00b2c2;
-}
-#teams-solutions-page .solution .icons .person {
-  border-color: #00b2c2;
-}
-#teams-solutions-page .solution .details {
-  border-left-color: #ddd;
-}
-#teams-solutions-page .solution .details .difficulty.easy {
-  color: #2fc26c;
-}
-#teams-solutions-page .solution .details .difficulty.medium {
-  color: #f48b00;
-}
-#teams-solutions-page .solution .details .difficulty.hard {
-  color: #f34a56;
-}
-#teams-solutions-page .solution .details .title {
-  color: #666;
-}
-#teams-solutions-page .solution .details .title .handle {
-  color: #333;
-}
-#teams-solutions-page .solution .details .extra {
-  color: #bbb;
-}
-#teams-solutions-page .solution .details .extra .divider {
-  border-right-color: #bbb;
-}
-#teams-solutions-page .solution .details .status {
-  color: #666;
-}
-
-#teams-team-page a.activity:hover {
-  border-color: rgba(0, 178, 194, 0.3);
-  background: rgba(0, 178, 194, 0.05);
-}
-#teams-team-page .activity {
-  color: #333;
-  border-color: #ddd;
-}
-#teams-team-page .activity .title strong {
-  color: #00b2c2;
-}
-
-.teams-table {
-  border-color: #eee;
-}
-.teams-table tr:nth-child(odd) {
-  background: #fafafa;
-}
-.teams-table td a {
-  color: #00b2c2;
-}
-
-#teams-teams-page .invitations .pure-button {
-  background: #00b2c2;
-  color: white;
-}
-#teams-teams-page .team,
-#teams-teams-page .new-team {
-  border-color: #ccc;
-  color: #333;
-}
-#teams-teams-page .team:hover,
-#teams-teams-page .new-team:hover {
-  border-color: rgba(0, 178, 194, 0.5);
-}
-#teams-teams-page .team:hover .img,
-#teams-teams-page .new-team:hover .img {
-  border-color: rgba(0, 178, 194, 0.5);
-}
-#teams-teams-page .team .img,
-#teams-teams-page .new-team .img {
-  border-color: #ccc;
-  background: #fff;
-}
-#teams-teams-page .team .members {
-  color: #aaa;
-}
-#teams-teams-page .new-team .img i {
-  color: #666;
 }

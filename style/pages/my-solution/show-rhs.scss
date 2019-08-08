@@ -51,12 +51,15 @@
         }
     }
     .comment-button {
-        background:$color-1;
+        background: $color-1;
         color: $t1;
         &.faded {
-            background:#fff;
-            border-color: #aaa;
-            color:#666;
+            background: transparent;
+            border-color: $bord;
+            color: $t3;
+            &:hover {
+                color: $t1;
+            }
         }
     }
     .request-mentoring {

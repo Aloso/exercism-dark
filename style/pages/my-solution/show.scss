@@ -4,16 +4,16 @@
 #my-solution-unlocked-page,
 #my-solution-page {
     .track-header-container {
-        background:#3ab292;
+        background: $color-1;
         color: $t1;
         a {
             color: $t1;
         }
         @include width-small() {
-            background:none;
-            color:$t2;
+            background: none; // important
+            color: $t2;
             a {
-                color:$t2;
+                color: $t2;
             }
         }
     }
@@ -22,37 +22,37 @@
             border-color: $bord;
         }
         .icon {
-            background:$color-1;
+            background: $color-1;
             border-color: $bg;
-            box-shadow:0 0 1px 1px $color-1;
+            box-shadow: 0 0 1px 1px $color-1;
         }
         .inner {
             .track-progress {
                 h3 {
-                    color:$t3;
+                    color: $t3;
                 }
                 .dots {
                     .dot {
-                        background:transparent;
+                        background: transparent;
                         border-color: lighten($bord2, 5%);
                         &.current {
-                            border-color:$color-1;
+                            border-color: $color-1;
                         }
                         &.locked {
                             background: lighten($bord2, 5%);
                         }
                         &.completed {
-                            border-color:$color-1;
-                            background:$color-1;
+                            border-color: $color-1;
+                            background: $color-1;
                         }
                         &+.dot {
                             &:before {
-                                background:lighten($bord2, 5%);
+                                background: lighten($bord2, 5%);
                             }
                             &.completed,
                             &.current {
                                 &:before {
-                                    background:$color-1;
+                                    background: $color-1;
                                 }
                             }
                         }
@@ -66,28 +66,33 @@
 #my-solution-page .small-iterations-nav .widget-iterations-nav {
     a, .current {
         .idx {
-            color:$color-1;
-            border-color:$color-1;
+            color: $color-1;
+            border-color: $color-1;
         }
         .num-comments {
             &:after {
-                color:$color-1;
-                text-shadow:0 0 2px #fff;
+                color: $color-1;
+                text-shadow: 0 0 2px $bg;
             }
-            .num { color: $t1; }
+            .num {
+                color: $bg;
+            }
         }
         &.current {
             .idx {
                 background: $color-1;
-                border-color:$color-1;
-                color: $t1;
+                border-color: $color-1;
+                color: $bg;
             }
             .num-comments {
                 &:after {
-                    color: $t1;
-                    text-shadow: -1px -1px 0 $color-1,  1px -1px 0 $color-1, -1px 1px 0 $color-1, 1px 1px 0 $color-1;
+                    color: $bg;
+                    text-shadow: -1px -1px 0 $color-1, 1px -1px 0 $color-1,
+                                 -1px  1px 0 $color-1, 1px  1px 0 $color-1;
                 }
-                .num { color:$color-1; }
+                .num {
+                    color: $color-1;
+                }
             }
         }
     }
@@ -118,16 +123,19 @@
 
             @include width-small() {
                 border-color: rgba($color-1, 0.2);
-                background:rgba($color-1, 0.05);
+                background: rgba($color-1, 0.05);
             }
             a {
-                color:#333;
+                color: $t2;
+                &:hover {
+                    color: $link;
+                }
             }
             i {
-                color:$color-1;
+                color: $color-1;
             }
             &.action {
-                border-color:$color-1;
+                border-color: $color-1;
             }
         }
     }

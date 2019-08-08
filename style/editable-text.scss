@@ -4,17 +4,17 @@
 .editable-text {
     .editable-text-viewer {
         .editable-text-options {
-            color: #999;
+            color: $t3;
             a {
-                color: #999;
+                color: $t3;
                 &:hover {
-                    color:#666;
+                    color: $t1;
                 }
             }
         }
 
         .edited-status {
-            color: #999;
+            color: $t3;
         }
     }
 
@@ -23,12 +23,15 @@
             .update-button {
                 border-color: $color-2;
                 background: $color-2;
-                color: #fff;
+                color: $t1;
             }
             .cancel-button {
-                background:#fff;
-                border-color: #ccc;
-                color:#999;
+                background: transparent;
+                border-color: $bord;
+                color: $t3;
+                &:hover {
+                    color: $t1;
+                }
             }
         }
     }
