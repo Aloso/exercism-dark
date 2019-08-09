@@ -102,6 +102,22 @@
         return el;
     };
 
+    const mkNodeDescriptionLight = node => {
+        let s = '<span style="color:#3899ff;margin-left:-10px">' + node.tagName.toLowerCase() + '</span>';
+        if (node.id != null && node.id !== '') {
+            s += nowrapSpan('#d53d3b', '#' + node.id);
+        }
+        let classes = node.className.trim().split(/\s+/).filter(c => c.length > 0);
+        if (classes.length > 0) {
+            s += nowrapSpan('#224b00', '.' + classes.join('.'));
+        }
+
+        const el = document.createElement('div');
+        el.innerHTML = s;
+        el.__node = node;
+        return el;
+    };
+
     const display = el => {
         if (notification) notification.remove();
         if (currentHl) currentHl.remove();
@@ -188,6 +204,13 @@
         return item;
     };
 
+    const mkItemLight = bColor => {
+        const item = document.createElement('div');
+        item.setAttribute('style', `box-sizing:border-box;background:transparent;border-style:solid;
+        border-color:${bColor};border-width:1px;pointer-events:none;`);
+        return item;
+    };
+
     /** @return {number[]} */
     const getTopRightBottomLeft = (obj, prefix, suffix) =>
         ['Top', 'Right', 'Bottom', 'Left'].map(s => obj[prefix + s + suffix].replace('px', '') | 0);
@@ -220,6 +243,22 @@
         return item;
     };
 
+    const highlightLight = el => {
+        const pos = el.getBoundingClientRect();
+        const html = document.documentElement;
+
+        const item = mkItemLight('rgba(60,107,189,0.5)');
+        item.style.position = 'absolute';
+        item.style.zIndex = '100000000';
+        item.style.backgroundColor = 'rgba(60,107,189,0.15)';
+        item.style.width = Math.round(pos.width) + 'px';
+        item.style.height = Math.round(pos.height) + 'px';
+        item.style.left = pos.left + html.scrollLeft + 'px';
+        item.style.top = pos.top + html.scrollTop + 'px';
+        document.body.appendChild(item);
+        return item;
+    };
+
     const find = () => {
         const par = document.createElement('div');
         par.style.width = '350px';
@@ -227,12 +266,12 @@
         par.style.flexWrap = 'wrap';
 
         const style = document.createElement('style');
-        style.innerHTML = 'input.dev-search::placeholder { color: rgba(0,0,0,0.6); font-size: 90% }';
+        style.innerHTML = 'input.dev-search::placeholder { color: rgba(0,0,0,0.6); font-size: 100% }';
         par.appendChild(style);
 
         const search = document.createElement('input');
         search.className = 'dev-search';
-        search.placeholder = 'Regex search for CSS id/class';
+        search.placeholder = 'Search by CSS selector';
         search.style.fontSize = '22px';
         search.style.border = 'none';
         search.style.padding = '0';
@@ -245,6 +284,7 @@
 
         const counter = document.createElement('span');
         counter.style.color = 'gray';
+        counter.innerHTML = '';
 
         const results = document.createElement('div');
         results.style.maxHeight = '250px';
@@ -253,6 +293,10 @@
         results.style.padding = '5px 0 10px 10px';
         results.style.margin = '0 -10px -10px 0';
         results.style.fontSize = '14px';
+        results.innerHTML = '<div>Shortcuts:<ul>' +
+            '   <li><code>*.foo</code>: Any class containing \'foo\'</li>' +
+            '   <li><code>*#foo</code>: Any id containing \'foo\'</li>' +
+            '</ul></div>';
 
         par.appendChild(search);
         par.appendChild(counter);
@@ -261,82 +305,90 @@
         const notif = notify(par, 'background:rgba(255, 255, 255, 0.7)', true);
         search.focus();
 
-        /**
-         * @param {HTMLElement} node
-         * @param {RegExp} needle
-         * @param {function(HTMLElement)} found
-         */
-        function searchNode(node, needle, found) {
-            /** @type {string} */
-            let s = node.nodeName;
-            if (node.id != null && node.id !== '') {
-                s += '#' + node.id;
-            }
-            if (node.classList.length) {
-                const res = [];
-                for (const c of node.classList) res.push(c);
-                res.sort();
-                s += '.' + res.join('.');
-            }
-            if (needle.test(s)) found(node);
-            for (const child of node.children) {
-                searchNode(child, needle, found);
-            }
-        }
-
+        /** @type {HTMLElement[]} */
         let highlights = [];
-        function input() {
+        /** @type {HTMLElement|null} */
+        let singleHl = null;
+
+        function reset() {
             highlights.forEach(h => h.remove());
             highlights = [];
-            results.innerHTML = '';
-
-            if (search.value.length < 3) {
-                counter.innerHTML = 'Enter at least 3 characters';
-                return;
+            if (singleHl != null) {
+                singleHl.remove();
+                singleHl = null;
             }
-            counter.innerHTML = 'searching...';
-
-            // use index instead
-            const needle = new RegExp(search.value.replace(/\s+/g, '.*?'), "i");
-
-            searchNode(document.body, needle, found => {
-                let high = highlight(found);
-                let desc = mkNodeDescription(found);
-
-                highlights.push(high);
-                results.appendChild(desc);
-
-                desc.addEventListener('mouseenter', () => {
-                    for (const hl of highlights) {
-                        if (hl === high) {
-                            if (hl.parentNode == null) document.body.appendChild(hl);
-                            hl.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.5)';
-                        } else hl.remove();
-                    }
-                    optimizeHlPos(high.getBoundingClientRect(), high);
-                });
-            });
-            counter.innerHTML = highlights.length + ' results';
+            results.innerHTML = '';
         }
 
+        search.addEventListener('input', () => {
+            reset();
+
+            const chars = search.value.replace(/\s/g, '').length;
+            if (chars === 0) {
+                counter.innerHTML = '';
+            } else if (chars < 3) {
+                counter.innerHTML = 'Enter ≥ 3 characters';
+            } else {
+                let needle = search.value.trim()
+                    .replace(/\*\.([^ .#>+@\[*]+)/g, "[class*=\"$1\"]")
+                    .replace(/\*#([^ .#>+@\[*]+)/g, "[id*=\"$1\"]");
+
+                try {
+                    let foundNodes = document.querySelectorAll(needle);
+                    counter.innerHTML = foundNodes.length + ' results';
+
+                    if (foundNodes.length > 500) {
+                        results.innerHTML = '<div>Too many results. Please restrict search</div>';
+                        return;
+                    } else {
+                        results.innerHTML = '<div>Loading...</div>';
+                    }
+
+                    setTimeout(() => {
+                        for (const found of foundNodes) {
+                            highlights.push(highlightLight(found));
+                            results.appendChild(mkNodeDescriptionLight(found));
+                        }
+
+                        results.firstElementChild.remove();
+
+                        setTimeout(() => {
+                            for (const desc of results.children) {
+                                desc.addEventListener('mouseenter', () => {
+                                    if (singleHl != null) {
+                                        singleHl.remove();
+                                    } else {
+                                        highlights.forEach(hl => hl.remove());
+                                    }
+                                    singleHl = highlight(desc.__node);
+                                    singleHl.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.5)';
+                                    optimizeHlPos(singleHl.getBoundingClientRect(), singleHl);
+                                });
+                            }
+                        }, 20)
+                    }, 20);
+                } catch (e) {
+                    results.innerHTML = '<div>Invalid query: <code>' + needle + '</code></div>';
+                }
+            }
+        }, 20);
+
         results.addEventListener('mouseleave', () => {
-            for (const hl of highlights) {
-                if (hl.parentNode == null) document.body.appendChild(hl);
-                hl.style.boxShadow = '';
+            if (singleHl != null) {
+                singleHl.remove();
+                singleHl = null;
+                highlights.forEach(hl => document.body.appendChild(hl));
             }
         });
 
-        function ctrlListener(ev) {
+        search.addEventListener('keydown', ev => {
             if (!ev.ctrlKey && !ev.altKey && !ev.metaKey) {
                 if (ev.key === 'Escape') {
+                    reset();
                     notif.remove();
-                    highlights.forEach(h => h.remove());
                 }
             }
-        }
-
-        search.addEventListener('keydown', ctrlListener);
-        search.addEventListener('input', input);
+        });
     };
 
     load();

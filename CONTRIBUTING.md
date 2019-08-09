@@ -34,8 +34,11 @@ Shortcuts:
 - <kbd>R</kbd>: Refresh the theme, without reloading the page
 - <kbd>S</kbd>: Switch between the dark theme and the default theme
 - <kbd>D</kbd>: Display the CSS classes and IDs of the currently hovered element, and its parents
-    - The message disappears after 4 seconds, unless you move the cursor over it
-    - When the cursor leaves the message, it disappears
+    - The message disappears after a few seconds, unless you move the move cursor over it
+- <kbd>F</kbd>: Find all nodes matching a CSS selector.
+    - `*#foo` is substituted with `[id*="foo"]`, so it matches any ID containing ‘foo’.
+    - `*.foo` is substituted with `[class*="foo"]`, so it matches any class containing ‘foo’.
+    - Example: `div*#widget > .title` matches all elements with the ‘title’ class, whose direct parents are `<div>` elements with an ID containing ‘widget’.
 
 ### Other configurations
 
