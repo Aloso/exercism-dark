@@ -1351,7 +1351,10 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-track-page .progress-section .guides a {
   color: #95caff;
-  border-bottom-color: #505050;
+  border-bottom-color: #404040;
+}
+#my-track-page .progress-section .guides a:hover {
+  border-bottom-color: #95caff;
 }
 
 #exercises-page .header {

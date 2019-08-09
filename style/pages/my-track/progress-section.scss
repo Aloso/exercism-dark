@@ -76,8 +76,11 @@
     }
     .guides {
         a {
-            color:$link;
-            border-bottom-color: $bord2;
+            color: $link;
+            border-bottom-color: $bord;
+            &:hover {
+                border-bottom-color: $link;
+            }
         }
     }
 }
