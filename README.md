@@ -26,6 +26,20 @@ Possible bugs include:
 - ugly white lines and areas
 - anything that looks ugly, or is inconsistent
 
+## FAQ
+
+### Is Exercism: Teams Edition supported?
+
+No. I might add support in the future, when the Teams Edition is no longer in beta.
+
+### Can I change the colors?
+
+Yes! Follow these steps:
+
+1. Download this repository and edit the colors in [style/variables.scss](style/variables.scss).
+2. Compile the file [style/main.scss](style/main.scss) using [sass](https://www.npmjs.com/package/sass).
+3. Create a new userstyle for `https://exercism.io/` and insert the compiled CSS.
+
 ## Contributing
 
 Described [here](CONTRIBUTING.md).
