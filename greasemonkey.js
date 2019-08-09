@@ -83,9 +83,35 @@
     let notification = null;
     /** @type {HTMLElement} */
     let currentHl = null;
+    let currentHlTimeout = null;
 
     const breakable = '<span style="user-select:none;-moz-user-select:none;margin-right:-3px"> </span>';
     const nowrapSpan = (color, content) => `<span style="color:${color};white-space:nowrap">${content}</span>`;
+
+    const htmlColor = color =>
+        `<span style="display:inline-block;width:0.9em;height:0.9em;vertical-align:middle;border:1px solid black;
+            background-color:${color}" title="${color}"></span>`;
+
+    const isTransparent = color => /^(rgba|hsla).*, ?0\)$|^#......00$|^#...0$/.test(color);
+
+    const allBordersToString = (styles, widths, colors) => [
+        typeof styles !== "string" ? null : styles === "solid" ? null : styles,
+        typeof widths !== "string" ? null : widths.replace('px', ''),
+        typeof colors !== "string" ? null : htmlColor(colors),
+    ].filter(t => t != null).join(' ') || null;
+
+    const borderToString = (styles, widths, colors, ix, desc) => {
+        if (styles === "none" || styles[ix] === "none") {
+            return null;
+        } else {
+            let props = [
+                typeof styles !== "object" ? null : styles[ix] === "solid" ? null : styles[ix],
+                typeof widths !== "object" ? null : widths[ix].replace('px', ''),
+                typeof colors !== "object" ? null : htmlColor(colors[ix]),
+            ].filter(t => t != null).join(' ');
+            return props === '' ? null : desc + props;
+        }
+    };
 
     const mkNodeDescription = node => {
         let s = '<span style="color:#3899ff;margin-left:-10px">' + node.tagName.toLowerCase() + '</span>';
@@ -95,6 +121,32 @@
         let classes = node.className.trim().split(/\s+/).filter(c => c.length > 0);
         if (classes.length > 0) {
             s += classes.map(c => breakable + nowrapSpan('#224b00', '.' + c)).join('');
+        }
+
+        const style = getComputedStyle(node);
+        if (style.color !== '' && !isTransparent(style.color)) {
+            s += ' ' + nowrapSpan('#777', 'color:' + htmlColor(style.color));
+        }
+        if (style.backgroundColor !== '' && !isTransparent(style.backgroundColor)) {
+            s += ' ' + nowrapSpan('#777', 'bg:' + htmlColor(style.backgroundColor));
+        }
+
+        let borders = [style.borderTopStyle, style.borderRightStyle, style.borderBottomStyle, style.borderLeftStyle];
+        if (!borders.every(t => t === "none")) {
+            let widths = [style.borderTopWidth, style.borderRightWidth, style.borderBottomWidth, style.borderLeftWidth];
+            let colors = [style.borderTopColor, style.borderRightColor, style.borderBottomColor, style.borderLeftColor];
+
+            if (borders.every(t => t === borders[0])) borders = borders[0];
+            if (widths.every(t => t === widths[0])) widths = widths[0];
+            if (colors.every(t => t === colors[0])) colors = colors[0];
+
+            const all = allBordersToString(borders, widths, colors);
+            const top = borderToString(borders, widths, colors, 0, 'top: ');
+            const right = borderToString(borders, widths, colors, 1, 'right: ');
+            const bottom = borderToString(borders, widths, colors, 2, 'bottom: ');
+            const left = borderToString(borders, widths, colors, 3, 'left: ');
+            const borderHtml = [all, top, right, bottom, left].filter(t => t != null).join(', ');
+            s += ' ' + nowrapSpan('#777', `border(${borderHtml})`);
         }
 
         const el = document.createElement('div');
@@ -145,7 +197,10 @@
         notification.style.maxHeight = '250px';
         optimizePos(notification, currentHl);
 
-        let timeout = setTimeout(() => {
+        if (currentHlTimeout != null) {
+            clearTimeout(currentHlTimeout);
+        }
+        currentHlTimeout = setTimeout(() => {
             notification.remove();
             currentHl.remove();
         }, 5000);
@@ -153,12 +208,12 @@
         let switchedPosition = false;
         notification.addEventListener('mouseenter', () => {
             switchedPosition = false;
-            clearTimeout(timeout);
+            clearTimeout(currentHlTimeout);
             notification.style.maxHeight = '';
         });
 
         notification.addEventListener('mouseleave', () => {
-            clearTimeout(timeout);
+            clearTimeout(currentHlTimeout);
             if (!switchedPosition) {
                 notification.remove();
                 currentHl.remove();
@@ -224,17 +279,17 @@
         const [marginT, marginR, marginB, marginL] = getTopRightBottomLeft(style, 'margin', '');
         const [borderT, borderR, borderB, borderL] = getTopRightBottomLeft(style, 'border', 'Width');
 
-        const item = mkItem(marginT, marginR, marginB, marginL, 'rgba(255,255,50,0.2)');
+        const item = mkItem(marginT, marginR, marginB, marginL, 'rgba(255,255,50,0.25)');
         item.style.position = 'absolute';
         item.style.zIndex = '100000000';
-        item.style.boxShadow = `inset 0 ${-borderB}px 0 #ff0, inset ${-borderL}px 0 0 #ff0,
-                                inset 0 ${borderT}px 0 #ff0, inset ${borderR}px 0 0 #ff0`;
+        item.style.boxShadow = `inset 0 ${-borderB}px 0 #ff0, inset ${borderL}px 0 0 #ff0,
+                                inset 0 ${borderT}px 0 #ff0, inset ${-borderR}px 0 0 #ff0`;
         item.style.padding = `${borderT}px ${borderR}px ${borderB}px ${borderL}px`;
         item.style.left = (pos.left - Math.max(0, marginL) + html.scrollLeft) + 'px';
         item.style.top = (pos.top - Math.max(0, marginT) + html.scrollTop) + 'px';
 
-        const itemI = mkItem(paddingT, paddingR, paddingB, paddingL, 'rgba(123,46,153,0.3)');
-        itemI.style.boxShadow = 'inset 0 0 0 10000px ' + 'rgba(59,119,191,0.3)';
+        const itemI = mkItem(paddingT, paddingR, paddingB, paddingL, 'rgba(137,20,191,0.3)');
+        itemI.style.boxShadow = 'inset 0 0 0 10000px ' + 'rgba(41,118,206,0.3)';
         itemI.style.width = (pos.width - borderL - borderR) + 'px';
         itemI.style.height = (pos.height - borderT - borderB) + 'px';
         item.appendChild(itemI);
@@ -326,8 +381,6 @@
             const chars = search.value.replace(/\s/g, '').length;
             if (chars === 0) {
                 counter.innerHTML = '';
-            } else if (chars < 3) {
-                counter.innerHTML = 'Enter ≥ 3 characters';
             } else {
                 let needle = search.value.trim()
                     .replace(/\*\.([^ .#>+@\[*]+)/g, "[class*=\"$1\"]")
