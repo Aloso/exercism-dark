@@ -119,8 +119,11 @@ $blue: #4A90E2;
                 color:$color-2;
             }
             a {
-                color:$t3;
-                border-bottom-color: $bord2;
+                color: $t3;
+                border-bottom-color: $bord;
+                &:hover {
+                    color: $link;
+                }
             }
         }
     }
@@ -139,22 +142,26 @@ $blue: #4A90E2;
     .weekly-section {
         .bar-widget {
             .bar {
-                background: #ddd;
+                background: $bg2;
                 .fill {
                     background: $color-2;
                 }
             }
             .count {
-                background:#fff;
+                background: $bg;
                 border-color: $color-2;
             }
             &.completed {
-                .fill { background-color: $blue; }
-                .count { border-color: $blue;}
+                .fill {
+                    background-color: $color-2;
+                }
+                .count {
+                    border-color: $color-2;
+                }
             }
         }
         .hr {
-            border-top-color: #ddd;
+            border-top-color: $bord;
         }
     }
 }

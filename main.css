@@ -2339,7 +2339,19 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .contributions-section .box a,
 #mentor-next-solutions-page .celebration-section .box a {
   color: rgba(255, 255, 255, 0.6);
-  border-bottom-color: #505050;
+  border-bottom-color: #404040;
+}
+#mentor-dashboard-page .help-section .box a:hover,
+#mentor-dashboard-page .rating-section .box a:hover,
+#mentor-dashboard-page .weekly-section .box a:hover,
+#mentor-dashboard-page .contributions-section .box a:hover,
+#mentor-dashboard-page .celebration-section .box a:hover,
+#mentor-next-solutions-page .help-section .box a:hover,
+#mentor-next-solutions-page .rating-section .box a:hover,
+#mentor-next-solutions-page .weekly-section .box a:hover,
+#mentor-next-solutions-page .contributions-section .box a:hover,
+#mentor-next-solutions-page .celebration-section .box a:hover {
+  color: #95caff;
 }
 #mentor-dashboard-page .rating-section,
 #mentor-next-solutions-page .rating-section {
@@ -2358,7 +2370,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-dashboard-page .weekly-section .bar-widget .bar,
 #mentor-next-solutions-page .weekly-section .bar-widget .bar {
-  background: #ddd;
+  background: #222222;
 }
 #mentor-dashboard-page .weekly-section .bar-widget .bar .fill,
 #mentor-next-solutions-page .weekly-section .bar-widget .bar .fill {
@@ -2366,20 +2378,20 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-dashboard-page .weekly-section .bar-widget .count,
 #mentor-next-solutions-page .weekly-section .bar-widget .count {
-  background: #fff;
+  background: #141414;
   border-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .fill,
 #mentor-next-solutions-page .weekly-section .bar-widget.completed .fill {
-  background-color: #4A90E2;
+  background-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .count,
 #mentor-next-solutions-page .weekly-section .bar-widget.completed .count {
-  border-color: #4A90E2;
+  border-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .hr,
 #mentor-next-solutions-page .weekly-section .hr {
-  border-top-color: #ddd;
+  border-top-color: #404040;
 }
 
 #mentor-next-solutions-page .next-exercises-navigation .label {
