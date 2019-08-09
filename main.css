@@ -2209,11 +2209,11 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-dashboard-page .solution.core,
 #mentor-next-solutions-page .solution.core {
-  border-color: #4A90E2;
+  border-color: rgba(0, 178, 194, 0.7);
 }
 #mentor-dashboard-page .solution .core,
 #mentor-next-solutions-page .solution .core {
-  color: #4A90E2;
+  color: #00b2c2;
 }
 #mentor-dashboard-page .solution .side,
 #mentor-dashboard-page .solution .independent,
