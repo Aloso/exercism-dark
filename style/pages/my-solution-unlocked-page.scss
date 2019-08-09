@@ -4,45 +4,51 @@
 #my-solution-unlocked-page {
     .rhs {
         @include width-medium() {
-            border-left-color: #e5e5e5;
+            border-left-color: $bord;
         }
     }
 
     .instructions {
         .rendered {
             h2 {
-                border-left-color: #eee;
+                border-bottom-color: $bord;
             }
             a {
-                color:#333;
-                border-left-color: #ccc;
+                color: $link;
+                border-bottom-color: $bord;
+                &:hover {
+                    border-bottom-color: $link;
+                }
             }
         }
         .pure-button {
-            background:$color-1;
+            background: $color-1;
             color: $t1;
         }
     }
 
     .experienced {
-        border-color: #e5e5e5;
+        border-color: $bord;
         p {
-            color:$t2;
+            color: $t2;
         }
     }
     .newbie {
-        background:#fafffe;
+        background: $bg2;
         border-color: $color-1;
         .pure-button {
-            background:$color-1;
+            background: $color-1;
             color: $t1;
         }
     }
 
     .page-links {
-        border-color: #e5e5e5;
+        border-color: $bord;
         a {
-            color:$t2;
+            color: $t3;
+            &:hover {
+                color: $link;
+            }
         }
     }
 }

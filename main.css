@@ -652,8 +652,11 @@ header.logged-out .options a + a {
   }
 }
 #modal-wrapper #modal-close-button {
-  background: #fff;
-  color: #aaa;
+  background: #141414;
+  color: rgba(255, 255, 255, 0.6);
+}
+#modal-wrapper #modal-close-button:hover {
+  background: #222222;
 }
 
 #nav.lo-nav-bar {
@@ -767,28 +770,31 @@ body.namespace-teams a.logo span {
 
 @media screen and (min-width: 48em) {
   #my-solution-unlocked-page .rhs {
-    border-left-color: #e5e5e5;
+    border-left-color: #404040;
   }
 }
 #my-solution-unlocked-page .instructions .rendered h2 {
-  border-left-color: #eee;
+  border-bottom-color: #404040;
 }
 #my-solution-unlocked-page .instructions .rendered a {
-  color: #333;
-  border-left-color: #ccc;
+  color: #95caff;
+  border-bottom-color: #404040;
+}
+#my-solution-unlocked-page .instructions .rendered a:hover {
+  border-bottom-color: #95caff;
 }
 #my-solution-unlocked-page .instructions .pure-button {
   background: #2fc26c;
   color: white;
 }
 #my-solution-unlocked-page .experienced {
-  border-color: #e5e5e5;
+  border-color: #404040;
 }
 #my-solution-unlocked-page .experienced p {
   color: rgba(255, 255, 255, 0.8);
 }
 #my-solution-unlocked-page .newbie {
-  background: #fafffe;
+  background: #222222;
   border-color: #2fc26c;
 }
 #my-solution-unlocked-page .newbie .pure-button {
@@ -796,10 +802,13 @@ body.namespace-teams a.logo span {
   color: white;
 }
 #my-solution-unlocked-page .page-links {
-  border-color: #e5e5e5;
+  border-color: #404040;
 }
 #my-solution-unlocked-page .page-links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
+}
+#my-solution-unlocked-page .page-links a:hover {
+  color: #95caff;
 }
 
 body:not(.prism-dark) #my-solution-unlocked-page .instructions .rendered pre {

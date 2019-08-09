@@ -12,8 +12,11 @@
     }
 
     #modal-close-button  {
-        background:#fff;
-        color:#aaa;
+        background: $bg;
+        color: $t3;
+        &:hover {
+            background: $bg2;
+        }
     }
 }
 
