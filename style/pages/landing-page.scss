@@ -39,7 +39,7 @@
     }
     .tracks-section {
         background: $bg;
-        border-color: $bord;
+        border-color: transparent;
         .title-block {
             p {
                 color:$t2;
@@ -84,11 +84,14 @@
         }
     }
     .pr-section {
-        // must be bright, because of the images
-        background:linear-gradient(#ccc, #fff 56%, #fff 64%, #ccc);
+        background: lighten($bg, 2%);
         border-color: transparent;
+        color: $t1;
         h2 {
-            color:#444;
+            color: $t2;
+        }
+        img {
+            filter: invert(91.5%) grayscale(100%);
         }
     }
     .cta-section {

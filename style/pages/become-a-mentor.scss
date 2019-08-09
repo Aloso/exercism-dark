@@ -27,11 +27,16 @@ $inner-width: 800px;
             }
         }
     }
+
+    // seems like this isn't used?
     .pr-section {
-        // must be bright, because of the images
-        background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
+        background: lighten($bg, 2%);
+        color: $t1;
         h2 {
-            color: #444;
+            color: $t2;
+        }
+        img {
+            filter: invert(91.5%) grayscale(100%);
         }
     }
 

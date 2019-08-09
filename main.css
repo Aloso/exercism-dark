@@ -2128,10 +2128,14 @@ body.namespace-my.controller-tracks.action-show footer {
   background: transparent;
 }
 #become-a-mentor-page .pr-section {
-  background: linear-gradient(#ddd, #fff 57%, #fff 63%, #ddd);
+  background: #191919;
+  color: white;
 }
 #become-a-mentor-page .pr-section h2 {
-  color: #444;
+  color: rgba(255, 255, 255, 0.8);
+}
+#become-a-mentor-page .pr-section img {
+  filter: invert(91.5%) grayscale(100%);
 }
 #become-a-mentor-page .section h2 strong {
   color: #9636e6;
@@ -2496,7 +2500,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #landing-page .tracks-section {
   background: #141414;
-  border-color: #404040;
+  border-color: transparent;
 }
 #landing-page .tracks-section .title-block p {
   color: rgba(255, 255, 255, 0.8);
@@ -2531,15 +2535,15 @@ body.namespace-my.controller-tracks.action-show footer {
   border-bottom-color: #404040;
 }
 #landing-page .pr-section {
-  background: #141414;
-  color: white;
+  background: #191919;
   border-color: transparent;
+  color: white;
 }
 #landing-page .pr-section h2 {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 #landing-page .pr-section img {
-    filter: invert(91.4%) grayscale(100%);
+  filter: invert(91.5%) grayscale(100%);
 }
 #landing-page .cta-section {
   background: rgba(0, 178, 194, 0.7);
