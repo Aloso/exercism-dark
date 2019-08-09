@@ -1994,16 +1994,16 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #modal.new-profile .progress i {
-  color: #ddd;
+  color: #404040;
 }
 #modal.new-profile .progress i.filled {
   color: #2fc26c;
 }
 #modal.new-profile h2 {
-  color: #444;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.new-profile p, #modal.new-profile li {
-  color: #666;
+  color: rgba(255, 255, 255, 0.6);
 }
 #modal.new-profile .pure-button {
   background: #2fc26c;
@@ -2181,7 +2181,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-dashboard-page .no-solutions-section i,
 #mentor-next-solutions-page .no-solutions-section i {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
 }
 #mentor-dashboard-page .no-solutions-section h2,
 #mentor-next-solutions-page .no-solutions-section h2 {
@@ -2237,7 +2237,7 @@ body.namespace-my.controller-tracks.action-show footer {
 @media screen and (min-width: 48em) {
   #mentor-dashboard-page .solution .details,
 #mentor-next-solutions-page .solution .details {
-    border-left-color: #ddd;
+    border-left-color: transparent;
   }
 }
 #mentor-dashboard-page .solution .details .difficulty.easy,
@@ -3214,7 +3214,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #modal.solution-reflection .progress i,
 #modal.solution-mentor-ratings .progress i,
 #modal.solution-unlocked .progress i {
-  color: #ddd;
+  color: #404040;
 }
 #modal.solution-completed .progress i.filled,
 #modal.solution-reflection .progress i.filled,
@@ -3227,13 +3227,13 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   background: #2fc26c;
 }
 #modal.solution-completed h2 {
-  color: #555;
+  color: white;
 }
 #modal.solution-completed h3 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-completed p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-completed .pure-button {
   background: #2fc26c;
@@ -3241,15 +3241,15 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 
 #modal.solution-reflection h2,
 #modal.solution-mentor-ratings h2 {
-  color: #555;
+  color: white;
 }
 #modal.solution-reflection p,
 #modal.solution-mentor-ratings p {
-  color: #888;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-reflection p strong,
 #modal.solution-mentor-ratings p strong {
-  color: #333;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-reflection .pure-button,
 #modal.solution-mentor-ratings .pure-button {
@@ -3258,20 +3258,27 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 }
 
 #modal.solution-reflection .checkbox {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-reflection textarea {
-  border-color: #e9e9e9;
+  border-color: #404040;
+  background-color: #222222;
+}
+#modal.solution-reflection textarea:focus {
+  border-color: rgba(47, 194, 108, 0.7);
+}
+#modal.solution-reflection textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #modal.solution-mentor-ratings .mentor-review .details .handle {
-  color: #333;
+  color: white;
 }
 #modal.solution-mentor-ratings .mentor-review .details .interactions {
-  color: #888;
+  color: rgba(255, 255, 255, 0.6);
 }
 #modal.solution-mentor-ratings .mentor-review .stars label {
-  color: #ddd;
+  color: rgba(255, 255, 255, 0.4);
 }
 #modal.solution-mentor-ratings .mentor-review .stars input:checked ~ label, #modal.solution-mentor-ratings .mentor-review .stars:not(:checked) > label:hover, #modal.solution-mentor-ratings .mentor-review .stars:not(:checked) > label:hover ~ label {
   color: #FFD700;
@@ -3283,34 +3290,38 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: #FFED85;
 }
 #modal.solution-mentor-ratings .mentor-review .feedback textarea {
-  border-color: #e9e9e9;
+  border-color: #404040;
+  background-color: #222222;
+}
+#modal.solution-mentor-ratings .mentor-review .feedback textarea:focus {
+  border-color: rgba(47, 194, 108, 0.7);
 }
 
 #modal.solution-unlocked h2 {
-  color: #555;
+  color: white;
 }
 #modal.solution-unlocked h3 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-unlocked p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-unlocked .core-exercise {
   border-color: #2fc26c;
-  color: #333;
+  color: rgba(255, 255, 255, 0.6);
 }
 #modal.solution-unlocked .core-exercise .icon {
   background: #2fc26c;
 }
 #modal.solution-unlocked .core-exercise .title {
-  color: #333;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-unlocked .core-exercise .title .topics .topic {
   background: #303030;
   color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-unlocked .core-exercise .blurb {
-  color: #666;
+  color: rgba(255, 255, 255, 0.6);
 }
 #modal.solution-unlocked .side-exercises h4 {
   color: rgba(255, 255, 255, 0.6);
@@ -3322,16 +3333,16 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   border-color: rgba(0, 178, 194, 0.7);
 }
 #modal.solution-unlocked .side-exercises .side-exercise .tooltip {
-  background: #141414;
-  color: #303030;
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  background: #222222;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #404040;
+  box-shadow: none;
 }
 #modal.solution-unlocked .side-exercises .side-exercise .tooltip:before {
-  color: #444;
+  color: #404040;
 }
 #modal.solution-unlocked .side-exercises .side-exercise .tooltip:after {
-  color: #333;
+  color: #222222;
 }
 #modal.solution-unlocked .side-exercises .side-exercise:hover {
   background: #00b2c2;

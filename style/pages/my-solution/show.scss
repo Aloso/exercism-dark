@@ -179,9 +179,9 @@
 #modal.solution-unlocked {
     .progress {
         i {
-            color:#ddd;
+            color: $bord;
             &.filled {
-                color:$color-1;
+                color: $color-1;
             }
         }
     }
@@ -189,16 +189,16 @@
 
 #modal.solution-completed {
     .icon {
-        background:$color-1;
+        background: $color-1;
     }
     h2 {
-        color:#555;
+        color: $t1;
     }
     h3 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#555;
+        color: $t2;
     }
     .pure-button {
         background:$color-1;
@@ -208,17 +208,17 @@
 #modal.solution-reflection,
 #modal.solution-mentor-ratings {
     h2 {
-        color:#555;
+        color: $t1;
     }
     p {
-        color:#888;
+        color: $t2;
         strong {
-            color:#333;
+            color: $t2;
         }
     }
 
     .pure-button {
-        background:$color-1;
+        background: $color-1;
         color: $t1;
     }
 }
@@ -226,10 +226,17 @@
 
 #modal.solution-reflection {
     .checkbox {
-        color:#555;
+        color: $t2;
     }
     textarea {
-        border-color: #e9e9e9;
+        border-color: $bord;
+        background-color: $bg2;
+        &:focus {
+            border-color: $color-1t;
+        }
+        &::placeholder {
+            color: $t4;
+        }
     }
 }
 
@@ -237,30 +244,38 @@
     .mentor-review {
         .details {
             .handle {
-                color:#333;
+                color: $t1;
             }
             .interactions {
-                color:#888;
+                color: $t3;
             }
         }
         .stars {
             label {
-              color: #ddd;
+              color: $t4;
             }
 
             input:checked ~ label,
             &:not(:checked) > label:hover,
-            &:not(:checked) > label:hover ~ label { color: #FFD700;  }
+            &:not(:checked) > label:hover ~ label {
+                color: #FFD700;
+            }
 
             input:checked + label:hover,
             input:checked ~ label:hover,
             label:hover ~ input:checked ~ label,
-            input:checked ~ label:hover ~ label { color: #FFED85;  }
+            input:checked ~ label:hover ~ label {
+                color: #FFED85;
+            }
         }
 
         .feedback {
             textarea {
-                border-color: #e9e9e9;
+                border-color: $bord;
+                background-color: $bg2;
+                &:focus {
+                    border-color: $color-1t;
+                }
             }
         }
     }
@@ -268,24 +283,24 @@
 
 #modal.solution-unlocked {
     h2 {
-        color:#555;
+        color: $t1;
     }
     h3 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#555;
+        color: $t2;
     }
     .core-exercise {
         border-color: $color-1;
-        color:#333;
+        color: $t3;
 
         .icon {
-            background:$color-1;
+            background: $color-1;
         }
 
         .title {
-            color:#333;
+            color: $t2;
             .topics {
                 .topic {
                     background: $bg3;
@@ -294,7 +309,7 @@
             }
         }
         .blurb {
-            color:#666;
+            color: $t3;
         }
 
     }
@@ -308,15 +323,15 @@
         .side-exercise {
             border-color: $color-2t;
             .tooltip {
-                background:$bg;
-                color: $bg3;
-                border-color: rgba(white, 0.3);
-                box-shadow: 0 0 1px rgba(0,0,0, 0.2);
+                background: $bg2;
+                color: $t2;
+                border-color: $bord;
+                box-shadow: none;
                 &:before {
-                    color:#444;
+                    color: $bord;
                 }
                 &:after {
-                    color:#333;
+                    color: $bg2;
                 }
             }
             &:hover {

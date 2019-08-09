@@ -16,17 +16,17 @@
 #modal.new-profile {
     .progress {
         i {
-            color:#ddd;
+            color: $bord;
             &.filled {
-                color:$color-1;
+                color: $color-1;
             }
         }
     }
     h2 {
-        color:#444;
+        color: $t2;
     }
     p, li {
-        color:#666;
+        color: $t3;
     }
     .pure-button {
         background:$color-1;

@@ -32,13 +32,13 @@ $blue: #4A90E2;
     }
     .no-solutions-section {
         i {
-            color:$t3;
+            color: $t4;
         }
         h2 {
-            color:$color-2;
+            color: $color-2;
         }
         p {
-            color:$t3;
+            color: $t3;
         }
     }
     .no-your-solutions,
@@ -78,7 +78,7 @@ $blue: #4A90E2;
         }
         .details {
             @include width-medium() {
-                border-left-color: #ddd;
+                border-left-color: transparent;
             }
             .difficulty {
                 &.easy { color: $color-1; }
