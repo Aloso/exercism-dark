@@ -2531,11 +2531,15 @@ body.namespace-my.controller-tracks.action-show footer {
   border-bottom-color: #404040;
 }
 #landing-page .pr-section {
-  background: linear-gradient(#ccc, #fff 56%, #fff 64%, #ccc);
+  background: #141414;
+  color: white;
   border-color: transparent;
 }
 #landing-page .pr-section h2 {
-  color: #444;
+  color: white;
+}
+#landing-page .pr-section img {
+    filter: invert(91.4%) grayscale(100%);
 }
 #landing-page .cta-section {
   background: rgba(0, 178, 194, 0.7);
