@@ -3531,6 +3531,18 @@ body.prism-dark #teams-my-solution-page .test-suite,
 body.prism-dark #teams-my-solution-page .solution.multi-file {
   background: #141414;
 }
+body.prism-dark #solution-page .test-suite h3,
+body.prism-dark #solution-page .solution.multi-file h3,
+body.prism-dark #mentor-solution-page .test-suite h3,
+body.prism-dark #mentor-solution-page .solution.multi-file h3,
+body.prism-dark #my-solution-page .test-suite h3,
+body.prism-dark #my-solution-page .solution.multi-file h3,
+body.prism-dark #teams-solution-page .test-suite h3,
+body.prism-dark #teams-solution-page .solution.multi-file h3,
+body.prism-dark #teams-my-solution-page .test-suite h3,
+body.prism-dark #teams-my-solution-page .solution.multi-file h3 {
+  border-bottom-color: #303030;
+}
 body.prism-dark #solution-page .test-suite pre,
 body.prism-dark #mentor-solution-page .test-suite pre,
 body.prism-dark #my-solution-page .test-suite pre,

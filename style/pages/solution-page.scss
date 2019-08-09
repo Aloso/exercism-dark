@@ -162,13 +162,16 @@ body.prism-dark {
     #teams-my-solution-page {
         .test-suite,
         .solution.multi-file {
-            background:$bg;
+            background: $bg;
+            h3 {
+                border-bottom-color: $bg3;
+            }
         }
         .test-suite pre {
-            background:$bg;
+            background: $bg;
         }
         .solution pre {
-            background:$bg;
+            background: $bg;
         }
     }
 }
