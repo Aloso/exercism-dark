@@ -24,6 +24,10 @@ footer {
         .copyright, a, .created-by {
             color: $t4;
         }
+        a:hover {
+            color: $t2;
+            border-color: transparent;
+        }
     }
 }
 

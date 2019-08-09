@@ -546,6 +546,10 @@ footer .legal .created-by i {
 footer .legal .copyright, footer .legal a, footer .legal .created-by {
   color: rgba(255, 255, 255, 0.4);
 }
+footer .legal a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+}
 
 .lo-general-header {
   background-color: rgba(0, 178, 194, 0.7);
@@ -2468,6 +2472,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #landing-page .tracks-section {
   background: #141414;
+  border-color: #404040;
 }
 #landing-page .tracks-section .title-block p {
   color: rgba(255, 255, 255, 0.8);

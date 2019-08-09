@@ -38,7 +38,8 @@
         }
     }
     .tracks-section {
-        background:$bg;
+        background: $bg;
+        border-color: $bord;
         .title-block {
             p {
                 color:$t2;
