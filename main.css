@@ -1251,6 +1251,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-track-page .core-exercises .unlocked-exercises-section {
   border-color: rgba(0, 178, 194, 0.5);
+  background: #0f0f0f;
 }
 #my-track-page .core-exercises .unlocked-exercises-section:before {
   background: #00b2c2;
@@ -1266,6 +1267,15 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise:hover {
   background: #00b2c2;
+}
+#my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise[data-status=Completed] {
+  border-color: #505050;
+}
+#my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise[data-status=Completed] img {
+  filter: grayscale(1);
+}
+#my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise[data-status=Completed]:hover {
+  background-color: #505050;
 }
 #my-track-page .side-exercises .num-extra-exercises {
   color: rgba(255, 255, 255, 0.6);

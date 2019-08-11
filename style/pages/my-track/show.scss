@@ -130,6 +130,8 @@ body.namespace-my.controller-tracks.action-show {
         }
         .unlocked-exercises-section {
             border-color: rgba($color-2, 0.5);
+            background: darken($bg, 2%);
+
             &:before {
                 background: $color-2;
             }
@@ -143,6 +145,15 @@ body.namespace-my.controller-tracks.action-show {
                 background: $bg;
                 &:hover {
                     background: $color-2;
+                }
+                &[data-status=Completed] {
+                    border-color: $bord2;
+                    img {
+                        filter: grayscale(1);
+                    }
+                    &:hover {
+                        background-color: $bord2;
+                    }
                 }
             }
         }
