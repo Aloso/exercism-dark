@@ -27,13 +27,16 @@ body .md-editor {
 
     pre {
         border-color: #f3f3f3;
-        background:#fafafa;
+        background: #fafafa;
     }
 
     p, li {
         code {
-            border-color: $bg2;
+            border-color: lighten($bg2, 1%);
             background: darken($bg2, 2%);
+        }
+        pre code {
+            border: none;
         }
     }
 

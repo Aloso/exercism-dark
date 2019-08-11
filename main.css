@@ -413,8 +413,13 @@ body .md-editor textarea {
 .editable-text .editable-text-html p code, .editable-text .editable-text-html li code,
 .new-editable-text .preview-area p code,
 .new-editable-text .preview-area li code {
-  border-color: #222222;
+  border-color: #252525;
   background: #1d1d1d;
+}
+.editable-text .editable-text-html p pre code, .editable-text .editable-text-html li pre code,
+.new-editable-text .preview-area p pre code,
+.new-editable-text .preview-area li pre code {
+  border: none;
 }
 .editable-text .editable-text-html table th, .editable-text .editable-text-html table td,
 .new-editable-text .preview-area table th,
