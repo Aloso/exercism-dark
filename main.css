@@ -1,4 +1,28 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  transition: 0.5s;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(47, 194, 108, 0.7);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #222222;
+}
+
 #admin-users-page .discussion-post {
   border-bottom-color: #ccc;
 }
@@ -538,9 +562,10 @@ footer h4 {
 }
 footer a {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 footer a:hover {
-  color: #95caff;
+  text-decoration: underline;
 }
 footer .legal {
   border-top-color: #404040;
@@ -550,6 +575,9 @@ footer .legal .created-by i {
 }
 footer .legal .copyright, footer .legal a, footer .legal .created-by {
   color: rgba(255, 255, 255, 0.4);
+}
+footer .legal a {
+  text-decoration: underline;
 }
 footer .legal a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -625,9 +653,8 @@ header.logged-in .misc-menu .dropdown a:hover {
   background: #222222;
 }
 header.logged-in .notifications {
-  color: rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.06);
-  color: #bababa;
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
 }
 header.logged-in .notifications.active:before {
@@ -810,10 +837,13 @@ body.namespace-teams a.logo span {
   border-color: #404040;
 }
 #my-solution-unlocked-page .page-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #95caff;
+  text-decoration: none;
+  border-bottom: 1px solid #404040;
 }
 #my-solution-unlocked-page .page-links a:hover {
   color: #95caff;
+  border-bottom-color: #95caff;
 }
 
 body:not(.prism-dark) #my-solution-unlocked-page .instructions .rendered pre {
@@ -2371,7 +2401,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .weekly-section .box a,
 #mentor-next-solutions-page .contributions-section .box a,
 #mentor-next-solutions-page .celebration-section .box a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #95caff;
   border-bottom-color: #404040;
 }
 #mentor-dashboard-page .help-section .box a:hover,
@@ -2384,7 +2414,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .weekly-section .box a:hover,
 #mentor-next-solutions-page .contributions-section .box a:hover,
 #mentor-next-solutions-page .celebration-section .box a:hover {
-  color: #95caff;
+  border-bottom-color: #95caff;
 }
 #mentor-dashboard-page .rating-section,
 #mentor-next-solutions-page .rating-section {

@@ -18,10 +18,10 @@ $blue: #4A90E2;
         }
         .header-tabs {
             .header-tab {
-                background:darken($color-2, 20%);
+                background: darken($color-2, 20%);
                 color: $t1;
                 &.selected {
-                    background:$bg;
+                    background: $bg;
                     color: $t2;
                 }
             }
@@ -106,23 +106,23 @@ $blue: #4A90E2;
     .weekly-section,
     .contributions-section,
     .celebration-section {
-        background:$bg2;
+        background: $bg2;
         h2 {
-            color:$color-2;
+            color: $color-2;
         }
         .h2-subtitle {
-            color:$t3;
+            color: $t3;
         }
         .box {
-            background:$bg;
+            background: $bg;
             strong {
                 color:$color-2;
             }
             a {
-                color: $t3;
+                color: $link;
                 border-bottom-color: $bord;
                 &:hover {
-                    color: $link;
+                    border-bottom-color: $link;
                 }
             }
         }

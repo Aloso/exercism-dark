@@ -10,8 +10,9 @@ footer {
 
     a {
         color: $t3;
+        text-decoration: none;
         &:hover {
-            color: $link;
+            text-decoration: underline;
         }
     }
     .legal {
@@ -23,6 +24,9 @@ footer {
         }
         .copyright, a, .created-by {
             color: $t4;
+        }
+        a {
+            text-decoration: underline;
         }
         a:hover {
             color: $t2;

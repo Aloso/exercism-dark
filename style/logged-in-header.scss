@@ -54,9 +54,8 @@ header.logged-in {
         }
     }
     .notifications {
-        color:rgba(#fff, 0.9);
-        background:rgba(#fff, 0.06);
-        color:#bababa;
+        background: rgba(#fff, 0.06);
+        color: rgba(#fff, 0.9);
         text-shadow: 0 0 1px rgba(0,0,0,0.7);
         &.active {
             &:before {

@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  transition: .5s;
+
+  &:hover {
+    background-color: rgba(#fff, 0.05);
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(#fff, 0.2);
+  &:hover {
+    background-color: $color-1t;
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background-color: $bg2;
+}
