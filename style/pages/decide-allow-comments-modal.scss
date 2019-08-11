@@ -3,10 +3,10 @@
 
 #modal-wrapper #modal.decide-allow-comments {
     h2 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#555;
+        color: $t2;
     }
     .pure-button {
         border-color: $color-1;
@@ -15,7 +15,7 @@
         }
         &.no-button {
             border-color: $color-1;
-            background:#fff;
+            background: transparent;
             color:$color-1;
         }
     }

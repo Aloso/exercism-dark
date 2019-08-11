@@ -10,24 +10,24 @@
 #modal.pause-track,
 #modal.unpause-track {
     h2 {
-        color:#555;
+        color: $t2;
     }
     h3 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#555;
+        color: $t2;
     }
     .pure-button {
-        background:$color-1;
+        background: $color-1;
     }
 }
 
 #modal.my-track-started {
     .learn-more {
-        border-top-color: #ddd;
+        border-top-color: $bord;
         a {
-            color:#333;
+            color: $link;
         }
     }
     .buttons {
@@ -35,8 +35,8 @@
             border-color: $color-1;
             &.independent-mode-button {
                 border-color: $color-1;
-                background:#fff;
-                color:$color-1;
+                background: transparent;
+                color: $color-1;
             }
         }
     }
@@ -47,8 +47,8 @@
         border-color: $color-1;
         &.independent-mode {
             border-color: $color-1;
-            background:#fff;
-            color:$color-1;
+            background: transparent;
+            color: $color-1;
         }
     }
 }
@@ -62,8 +62,8 @@
         border-color: $color-1;
         &.cancel-button {
             border-color: $color-1;
-            background:#fff;
-            color:$color-1;
+            background: transparent;
+            color: $color-1;
         }
     }
 }

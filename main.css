@@ -1054,7 +1054,7 @@ body.devise {
 #modal.leave-track h2,
 #modal.pause-track h2,
 #modal.unpause-track h2 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.my-track-started h3,
 #modal.my-track-finished h3,
@@ -1064,7 +1064,7 @@ body.devise {
 #modal.leave-track h3,
 #modal.pause-track h3,
 #modal.unpause-track h3 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.my-track-started p,
 #modal.my-track-finished p,
@@ -1074,7 +1074,7 @@ body.devise {
 #modal.leave-track p,
 #modal.pause-track p,
 #modal.unpause-track p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.my-track-started .pure-button,
 #modal.my-track-finished .pure-button,
@@ -1088,17 +1088,17 @@ body.devise {
 }
 
 #modal.my-track-started .learn-more {
-  border-top-color: #ddd;
+  border-top-color: #404040;
 }
 #modal.my-track-started .learn-more a {
-  color: #333;
+  color: #95caff;
 }
 #modal.my-track-started .buttons .pure-button {
   border-color: #2fc26c;
 }
 #modal.my-track-started .buttons .pure-button.independent-mode-button {
   border-color: #2fc26c;
-  background: #fff;
+  background: transparent;
   color: #2fc26c;
 }
 
@@ -1107,7 +1107,7 @@ body.devise {
 }
 #modal.my-track-v1-migration .pure-button.independent-mode {
   border-color: #2fc26c;
-  background: #fff;
+  background: transparent;
   color: #2fc26c;
 }
 
@@ -1124,7 +1124,7 @@ body.devise {
 #modal.pause-track .pure-button.cancel-button,
 #modal.unpause-track .pure-button.cancel-button {
   border-color: #2fc26c;
-  background: #fff;
+  background: transparent;
   color: #2fc26c;
 }
 
@@ -1523,7 +1523,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #modal.edit-profile .h2-subtitle {
-  color: #999;
+  color: rgba(255, 255, 255, 0.6);
 }
 #modal.edit-profile .name-section h3,
 #modal.edit-profile .bio-section h3 {
@@ -1579,10 +1579,10 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #modal.welcome-to-mentoring h2 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.welcome-to-mentoring p a, #modal.welcome-to-mentoring li a {
-  color: #333;
+  color: #95caff;
 }
 #modal.welcome-to-mentoring .pure-button {
   background: #00b2c2;
@@ -1993,10 +1993,10 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #modal-wrapper #modal.decide-allow-comments h2 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal-wrapper #modal.decide-allow-comments p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal-wrapper #modal.decide-allow-comments .pure-button {
   border-color: #2fc26c;
@@ -2006,7 +2006,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #modal-wrapper #modal.decide-allow-comments .pure-button.no-button {
   border-color: #2fc26c;
-  background: #fff;
+  background: transparent;
   color: #2fc26c;
 }
 
@@ -2039,13 +2039,15 @@ body.namespace-my.controller-tracks.action-show footer {
 #modal.new-profile .pure-button.cancel {
   border-color: #2fc26c;
   color: #2fc26c;
-  background: #fff;
+  background: transparent;
 }
-#modal.new-profile .page-2 input {
-  border-color: #ddd;
+#modal.new-profile .page-2 input, #modal.new-profile .page-2 textarea {
+  border-color: #404040;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
 }
-#modal.new-profile .page-2 textarea {
-  border-color: #ddd;
+#modal.new-profile .page-2 input:focus, #modal.new-profile .page-2 textarea:focus {
+  border-color: rgba(0, 178, 194, 0.7);
 }
 
 #mentor-solution-page .track-header {
@@ -2573,13 +2575,13 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #modal.announcement h2 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.announcement p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.announcement p a {
-  color: #555;
+  color: #95caff;
 }
 #modal.announcement .pure-button {
   background: #2fc26c;
@@ -2919,14 +2921,17 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #mentor-exercise-notes p a, #mentor-exercise-notes ul a, #mentor-exercise-notes ol a {
-  color: #333;
-  border-bottom-color: #aaa;
+  color: #95caff;
+  border-bottom-color: #404040;
+}
+#mentor-exercise-notes p a:hover, #mentor-exercise-notes ul a:hover, #mentor-exercise-notes ol a:hover {
+  border-bottom-color: #95caff;
 }
 #mentor-exercise-notes pre {
-  border-color: #ddd;
+  border-color: #404040;
 }
 #mentor-exercise-notes .changes {
-  border-top-color: #ddd;
+  border-top-color: #404040;
 }
 
 body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-notes .header {
@@ -2943,6 +2948,9 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #modal-wrapper #modal.mentor-exercise-notes #modal-close-button {
   background: #2fc26c;
   color: white;
+}
+#modal-wrapper #modal.mentor-exercise-notes #modal-close-button:hover {
+  background: #2aad61;
 }
 
 #my-solution-page .finished-section {
@@ -3242,19 +3250,19 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 }
 
 #modal.solution-confirm-unapproved-completion .warning-bar {
-  background: #ffe3e3;
+  background: rgba(243, 74, 86, 0.1);
   color: #f34a56;
 }
 #modal.solution-confirm-unapproved-completion .content h2 {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-confirm-unapproved-completion .content p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.8);
 }
 #modal.solution-confirm-unapproved-completion .content .pure-button {
-  border-color: #ccc;
-  background: #fff;
-  color: #333;
+  border-color: #404040;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #modal.solution-completed .progress i,

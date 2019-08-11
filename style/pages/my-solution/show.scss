@@ -155,20 +155,20 @@
 
 #modal.solution-confirm-unapproved-completion {
     .warning-bar {
-        background:#ffe3e3;
-        color:#f34a56;
+        background: rgba(#f34a56, 0.1);
+        color: #f34a56;
     }
     .content {
         h2 {
-            color:#555;
+            color: $t2;
         }
         p {
-            color:#555;
+            color: $t2;
         }
         .pure-button {
-            border-color: #ccc;
-            background:#fff;
-            color:#333;
+            border-color: $bord;
+            background: transparent;
+            color: $t2;
         }
     }
 }

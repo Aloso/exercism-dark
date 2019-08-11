@@ -110,15 +110,15 @@
 
 #modal.announcement {
     h2 {
-        color:#555;
+        color: $t2;
     }
     p {
-        color:#555;
+        color: $t2;
         a {
-            color:#555;
+            color: $link;
         }
     }
     .pure-button {
-        background:$color-1;
+        background: $color-1;
     }
 }

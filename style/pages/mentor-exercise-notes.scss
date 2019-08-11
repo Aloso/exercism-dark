@@ -2,18 +2,21 @@
 @import '../mixins';
 
 #mentor-exercise-notes {
-    p,ul,ol {
+    p, ul, ol {
         a {
-            color:#333;
-            border-bottom-color: #aaa;
+            color: $link;
+            border-bottom-color: $bord;
+            &:hover {
+                border-bottom-color: $link;
+            }
         }
     }
     pre {
-        border-color: #ddd;
+        border-color: $bord;
     }
 
     .changes {
-        border-top-color: #ddd;
+        border-top-color: $bord;
     }
 }
 body.namespace-mentor.controller-exercise_notes.action-show {
@@ -28,11 +31,14 @@ body.namespace-mentor.controller-exercise_notes.action-show {
 }
 #modal-wrapper #modal.mentor-exercise-notes {
     h1 {
-        background:$color-1;
+        background: $color-1;
         color: $t1;
     }
     #modal-close-button {
-        background:$color-1;
+        background: $color-1;
         color: $t1;
+        &:hover {
+            background: darken($color-1, 5%);
+        }
     }
 }

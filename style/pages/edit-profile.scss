@@ -7,12 +7,12 @@
             border-left-color: $bord;
         }
         h3 {
-            color:$t2;
+            color: $t2;
         }
     }
 
     .h2-subtitle {
-        color:#999;
+        color: $t3;
     }
     .name-section,
     .bio-section {
@@ -32,19 +32,19 @@
 
     .field {
         i {
-            color:$t2;
+            color: $t2;
             border-right-color: $bord;
         }
         input {
             background: $bg2;
-            color:$t2;
+            color: $t2;
             border-color: $bord;
         }
         &.twitter,
         &.medium,
         &.github {
             &:before {
-                color:$t3;
+                color: $t3;
             }
         }
     }
@@ -52,8 +52,8 @@
         background: $color-1;
         &.cancel-button {
             border-color: $color-1;
-            color:$color-1;
-            background:transparent;
+            color: $color-1;
+            background: transparent;
         }
     }
 }

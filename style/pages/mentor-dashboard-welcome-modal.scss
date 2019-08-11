@@ -3,15 +3,15 @@
 
 #modal.welcome-to-mentoring {
     h2 {
-        color:#555;
+        color: $t2;
     }
     p, li {
         a {
-            color:#333;
+            color: $link;
         }
     }
 
     .pure-button {
-        background:$color-2;
+        background: $color-2;
     }
 }

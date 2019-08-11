@@ -29,20 +29,22 @@
         color: $t3;
     }
     .pure-button {
-        background:$color-1;
+        background: $color-1;
         color: $t1;
         &.cancel {
             border-color: $color-1;
-            color:$color-1;
-            background:#fff;
+            color: $color-1;
+            background: transparent;
         }
     }
     .page-2 {
-        input {
-            border-color: #ddd;
-        }
-        textarea {
-            border-color: #ddd;
+        input, textarea {
+            border-color: $bord;
+            background: transparent;
+            color: $t2;
+            &:focus {
+                border-color: $color-2t;
+            }
         }
     }
 }
