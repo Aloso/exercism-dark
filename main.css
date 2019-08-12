@@ -2994,6 +2994,10 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #my-solution-page .finished-section .next-block i {
   color: #2fc26c;
 }
+#my-solution-page .finished-section .title-block a,
+#my-solution-page .finished-section .next-block a {
+  color: #95caff;
+}
 #my-solution-page .finished-section .next-block:before {
   border-left-color: #2fc26c;
 }
