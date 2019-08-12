@@ -1,11 +1,11 @@
 @import '../variables';
 @import '../mixins';
 
+//#teams-solution-page,
+//#teams-my-solution-page,
 #solution-page,
 #mentor-solution-page,
-#my-solution-page,
-#teams-solution-page,
-#teams-my-solution-page {
+#my-solution-page {
     .legacy-warning {
         background: $bg2;
         color: $t2;
@@ -56,11 +56,11 @@
     }
 }
 
+//body:not(.prism-dark) #teams-solution-page,
+//body:not(.prism-dark) #teams-my-solution-page,
 body:not(.prism-dark) #solution-page,
 body:not(.prism-dark) #mentor-solution-page,
-body:not(.prism-dark) #my-solution-page,
-body:not(.prism-dark) #teams-solution-page,
-body:not(.prism-dark) #teams-my-solution-page {
+body:not(.prism-dark) #my-solution-page {
     .pane.instructions {
         pre {
             background:#f6f6f6;
@@ -155,11 +155,11 @@ body:not(.prism-dark) #teams-my-solution-page {
 }
 
 body.prism-dark {
+    //#teams-solution-page,
+    //#teams-my-solution-page {
     #solution-page,
     #mentor-solution-page,
-    #my-solution-page,
-    #teams-solution-page,
-    #teams-my-solution-page {
+    #my-solution-page {
         .test-suite,
         .solution.multi-file {
             background: $bg;
