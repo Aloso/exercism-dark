@@ -1,4 +1,21 @@
 @charset "UTF-8";
+::selection {
+  color: white;
+  background-color: rgba(28, 197, 0, 0.5);
+}
+
+code::selection,
+code ::selection {
+  color: inherit;
+  background-color: rgba(28, 197, 0, 0.3);
+}
+
+a::selection,
+a ::selection {
+  color: white;
+  background-color: rgba(0, 157, 197, 0.3);
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
