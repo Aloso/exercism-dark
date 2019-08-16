@@ -23,8 +23,11 @@
             color: $t2;
         }
         .created-at {
-            color:$t3;
-            border-bottom-color: $bord;
+            color: $t3;
+            border-bottom-color: $bg3;
+            &:hover {
+                border-bottom-color: $t4;
+            }
         }
     }
 }

@@ -22,7 +22,7 @@
 
     .test-suite,
     .solution.multi-file {
-        background: #f9f9f9;
+        background: $bg2;
         h3 {
             background: $bg2;
             color: $t2;
@@ -46,11 +46,11 @@
             border-color: $bord;
             color:$t2;
         }
-        .md-editor.active+.warning {
-            background: #EBF7F8;
-            color: #666;
+        .md-editor.active + .warning {
+            background: $bg3;
+            color: $t2;
             h4 {
-                color:$color-2;
+                color: lighten($color-2, 7%);
             }
         }
     }

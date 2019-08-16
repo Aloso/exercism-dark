@@ -3,9 +3,9 @@
 
 #admin-users-page {
     .discussion-post {
-        border-bottom-color: #ccc;
+        border-bottom-color: $bord;
         .solution {
-            color:#666;
+            color: $t2;
         }
     }
 }

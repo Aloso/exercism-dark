@@ -81,9 +81,15 @@ $blue: #4A90E2;
                 border-left-color: transparent;
             }
             .difficulty {
-                &.easy { color: $color-1; }
-                &.medium { color: #f48b00 }
-                &.hard { color: #f34a56 }
+                &.easy {
+                    color: $color-1;
+                }
+                &.medium {
+                    color: #f48b00;
+                }
+                &.hard {
+                    color: #f34a56;
+                }
             }
             .title {
                 color:$t3;

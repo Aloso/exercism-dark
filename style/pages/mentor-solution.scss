@@ -27,6 +27,25 @@
             }
         }
     }
+    .analysis-section {
+         border-color: $color-1t;
+         h3 {
+             background: $color-1t;
+             color: #fff;
+             i {
+                 color: #fff;
+             }
+         }
+         .recommendation {
+             border-bottom-color: $bord;
+         }
+
+         .comments {
+             .comment.widget-code-snippet {
+                 background: $bg;
+             }
+         }
+     }
     .discussion,
     .new-editable-text {
         h3 {

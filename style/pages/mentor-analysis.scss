@@ -4,7 +4,10 @@
 #mentor-analysis {
     .analysis {
         pre {
-            background: #eee;
+            background: $bg2;
         }
+    }
+    .pure-button {
+        background: $color-1;
     }
 }

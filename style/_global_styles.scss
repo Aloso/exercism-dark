@@ -42,3 +42,16 @@ a ::selection {
 ::-webkit-scrollbar-corner {
   background-color: $bg2;
 }
+
+
+// error pages
+div.heading-bar {
+  background-color: $bg3;
+}
+img[src="https://assets.exercism.io/sad-icon.png"] + p,
+img[src="https://assets.exercism.io/sad-icon.png"] + * + p {
+  color: $t2;
+  a {
+    color: $link;
+  }
+}

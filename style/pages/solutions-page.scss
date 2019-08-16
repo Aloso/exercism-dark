@@ -8,14 +8,14 @@
     .solution {
         border-color: $bord;
         &:hover {
-            border-color:$color-2;
+            border-color: $color-2t;
         }
 
         .exercise {
-            color:$t2;
+            color: $t2;
         }
         .track {
-            color:$t3;
+            color: $t3;
         }
         .details-bar {
             .handle,
@@ -26,32 +26,32 @@
         }
     }
     .user-solution {
-        background:#fafafa;
-        border-color: #ddd;
-        color:#999;
+        background: $bg2;
+        border-color: $bord;
+        color: $t2;
         .not-published {
             border-color: $color-2;
             color:$color-2;
-            background:#fafafa;
+            background: $bg2;
         }
     }
     .solution {
         .reactions {
-            background:#fafafa;
-            border-color: #eee;
+            background: $bg2;
+            border-color: $bord;
             .reaction {
-                border-right-color: #eee;
+                border-right-color: $bg3;
                 &.highlight {
                     i, .count {
-                        color:$color-2;
+                        color: $color-2;
                     }
                 }
                 .count {
-                    color:#888;
+                    color: $t3;
                 }
 
                 i {
-                    color:#aaa;
+                    color: $t2;
                 }
             }
         }
