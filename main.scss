@@ -36,8 +36,8 @@
 @import 'style/pure-modifications';
 @import 'style/settings-bar';
 @import 'style/tabs-and-panes';
-//@import 'style/teams-header';
-//@import 'style/teams';
+@import 'style/teams-header';
+@import 'style/teams';
 @import 'style/unsubscribe';
 @import 'style/variables';
 
@@ -57,7 +57,7 @@
 @import 'style/pages/exercises-page.css.scss';
 @import 'style/pages/my-solution-walkthrough';
 @import 'style/pages/profiles-page';
-//@import 'style/pages/team-page';
+@import 'style/pages/team-page';
 @import 'style/pages/edit-profile';
 @import 'style/pages/generic-page';
 @import 'style/pages/mentor-dashboard-welcome-modal';

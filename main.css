@@ -805,6 +805,35 @@ pre.line-numbers .line-highlight:before {
   color: white;
 }
 
+body.namespace-teams a.logo {
+  color: #fff;
+}
+body.namespace-teams a.logo span {
+  border-left-color: #fff;
+}
+
+.namespace-teams .h2-subheading {
+  color: #666;
+}
+
+.team-page #team-header {
+  background: #eee;
+}
+.team-page #team-header .avatar {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.team-page #team-header h1 {
+  background-color: #00b2c2;
+  color: white;
+}
+.team-page #team-header a {
+  color: #666;
+}
+.team-page #team-header a.selected {
+  color: #00b2c2;
+  border-bottom-color: #00b2c2;
+}
+
 @media screen and (min-width: 48em) {
   #my-solution-unlocked-page .rhs {
     border-left-color: #404040;
@@ -1481,6 +1510,75 @@ body.namespace-my.controller-tracks.action-show footer {
 #profiles-page .profile:hover {
   border-color: #00b2c2;
   background: rgba(0, 178, 194, 0.05);
+}
+
+#team-page .header {
+  background-color: rgba(0, 178, 194, 0.7);
+}
+#team-page .header h1 {
+  color: white;
+}
+#team-page .header h3 {
+  color: white;
+}
+#team-page .header h3 a {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+#team-page .changes {
+  border-top-color: #404040;
+}
+#team-page p.subheading {
+  color: rgba(255, 255, 255, 0.6);
+}
+#team-page .core {
+  border-bottom-color: #404040;
+}
+#team-page .widget-maintainer .bio, #team-page .widget-mentor .bio {
+  color: rgba(255, 255, 255, 0.6);
+}
+#team-page .core .core-person {
+  border-color: #404040;
+}
+#team-page .core .core-person:hover {
+  background: #222222;
+}
+#team-page .core .core-person h3 {
+  color: #00b2c2;
+}
+#team-page .core .core-person .bio {
+  color: rgba(255, 255, 255, 0.8);
+}
+#team-page .core .core-person .tags .tag {
+  background: rgba(0, 178, 194, 0.7);
+  color: white;
+}
+#team-page .contributors .contributor {
+  border-color: #404040;
+  color: rgba(255, 255, 255, 0.8);
+}
+#team-page .contributors .contributor:hover {
+  background: #222222;
+}
+#team-page .contributors .contributor img {
+  border-right-color: #404040;
+}
+#team-page .contributors .contributor h3 {
+  color: #00b2c2;
+}
+#team-page .contributors .contributor .num-contributions {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+#team-page .contributors .pure-button {
+  border-color: #00b2c2;
+  background: transparent;
+  color: #00b2c2;
+}
+#team-page .contributors .pure-button:hover {
+  background: #00b2c2;
+  color: white;
 }
 
 @media screen and (min-width: 48em) {
