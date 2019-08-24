@@ -4,7 +4,8 @@
 $blue: #4A90E2;
 
 #mentor-dashboard-page,
-#mentor-next-solutions-page {
+#mentor-next-solutions-page,
+#mentor-testimonials-page {
     .header {
         background: $color-2t;
         h1 {
@@ -51,7 +52,7 @@ $blue: #4A90E2;
     .solution {
         border-color: $bord;
         &:hover {
-            border-color:$color-2;
+            border-color: $color-2;
         }
         &.core {
             border-color: $color-2t;
@@ -62,7 +63,7 @@ $blue: #4A90E2;
         }
         .side,
         .independent {
-            color:$t3;
+            color: $t3;
         }
         .icons {
             .exercise {
@@ -122,7 +123,7 @@ $blue: #4A90E2;
         .box {
             background: $bg;
             strong {
-                color:$color-2;
+                color: $color-2;
             }
             a {
                 color: $link;
@@ -204,5 +205,30 @@ $blue: #4A90E2;
                 }
             }
         }
+    }
+}
+
+#mentor-testimonials-page {
+    .testimonial {
+        .feedback {
+            i {
+                color: darken($t4, 15%);
+            }
+        }
+        .about {
+            color: $t3;
+        }
+        .user {
+            color: $t2;
+        }
+        .exercise {
+            color: $color-2;
+        }
+        & + .testimonial {
+            border-top-color: $bord;
+        }
+    }
+    .pagination {
+        border-top-color: $bord;
     }
 }

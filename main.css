@@ -2266,122 +2266,151 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #mentor-dashboard-page .header,
-#mentor-next-solutions-page .header {
+#mentor-next-solutions-page .header,
+#mentor-testimonials-page .header {
   background: rgba(0, 178, 194, 0.7);
 }
 #mentor-dashboard-page .header h1,
-#mentor-next-solutions-page .header h1 {
+#mentor-next-solutions-page .header h1,
+#mentor-testimonials-page .header h1 {
   color: white;
 }
 #mentor-dashboard-page .header .h1-subtitle,
-#mentor-next-solutions-page .header .h1-subtitle {
+#mentor-next-solutions-page .header .h1-subtitle,
+#mentor-testimonials-page .header .h1-subtitle {
   color: white;
 }
 #mentor-dashboard-page .header .h1-subtitle a,
-#mentor-next-solutions-page .header .h1-subtitle a {
+#mentor-next-solutions-page .header .h1-subtitle a,
+#mentor-testimonials-page .header .h1-subtitle a {
   color: white;
 }
 #mentor-dashboard-page .header .header-tabs .header-tab,
-#mentor-next-solutions-page .header .header-tabs .header-tab {
+#mentor-next-solutions-page .header .header-tabs .header-tab,
+#mentor-testimonials-page .header .header-tabs .header-tab {
   background: #00545c;
   color: white;
 }
 #mentor-dashboard-page .header .header-tabs .header-tab.selected,
-#mentor-next-solutions-page .header .header-tabs .header-tab.selected {
+#mentor-next-solutions-page .header .header-tabs .header-tab.selected,
+#mentor-testimonials-page .header .header-tabs .header-tab.selected {
   background: #141414;
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-dashboard-page .subheading,
-#mentor-next-solutions-page .subheading {
+#mentor-next-solutions-page .subheading,
+#mentor-testimonials-page .subheading {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .no-solutions-section i,
-#mentor-next-solutions-page .no-solutions-section i {
+#mentor-next-solutions-page .no-solutions-section i,
+#mentor-testimonials-page .no-solutions-section i {
   color: rgba(255, 255, 255, 0.4);
 }
 #mentor-dashboard-page .no-solutions-section h2,
-#mentor-next-solutions-page .no-solutions-section h2 {
+#mentor-next-solutions-page .no-solutions-section h2,
+#mentor-testimonials-page .no-solutions-section h2 {
   color: #00b2c2;
 }
 #mentor-dashboard-page .no-solutions-section p,
-#mentor-next-solutions-page .no-solutions-section p {
+#mentor-next-solutions-page .no-solutions-section p,
+#mentor-testimonials-page .no-solutions-section p {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .no-your-solutions,
 #mentor-dashboard-page .no-next-solutions,
 #mentor-next-solutions-page .no-your-solutions,
-#mentor-next-solutions-page .no-next-solutions {
+#mentor-next-solutions-page .no-next-solutions,
+#mentor-testimonials-page .no-your-solutions,
+#mentor-testimonials-page .no-next-solutions {
   background: rgba(0, 178, 194, 0.05);
   border-color: #00b2c2;
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-dashboard-page .solution,
-#mentor-next-solutions-page .solution {
+#mentor-next-solutions-page .solution,
+#mentor-testimonials-page .solution {
   border-color: #404040;
 }
 #mentor-dashboard-page .solution:hover,
-#mentor-next-solutions-page .solution:hover {
+#mentor-next-solutions-page .solution:hover,
+#mentor-testimonials-page .solution:hover {
   border-color: #00b2c2;
 }
 #mentor-dashboard-page .solution.core,
-#mentor-next-solutions-page .solution.core {
+#mentor-next-solutions-page .solution.core,
+#mentor-testimonials-page .solution.core {
   border-color: rgba(0, 178, 194, 0.7);
 }
 #mentor-dashboard-page .solution .core,
-#mentor-next-solutions-page .solution .core {
+#mentor-next-solutions-page .solution .core,
+#mentor-testimonials-page .solution .core {
   color: #00b2c2;
 }
 #mentor-dashboard-page .solution .side,
 #mentor-dashboard-page .solution .independent,
 #mentor-next-solutions-page .solution .side,
-#mentor-next-solutions-page .solution .independent {
+#mentor-next-solutions-page .solution .independent,
+#mentor-testimonials-page .solution .side,
+#mentor-testimonials-page .solution .independent {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .solution .icons .exercise,
-#mentor-next-solutions-page .solution .icons .exercise {
+#mentor-next-solutions-page .solution .icons .exercise,
+#mentor-testimonials-page .solution .icons .exercise {
   background: transparent;
   border-color: #00b2c2;
 }
 #mentor-dashboard-page .solution .icons .joiner,
-#mentor-next-solutions-page .solution .icons .joiner {
+#mentor-next-solutions-page .solution .icons .joiner,
+#mentor-testimonials-page .solution .icons .joiner {
   border-bottom-color: #00b2c2;
 }
 #mentor-dashboard-page .solution .icons .person,
-#mentor-next-solutions-page .solution .icons .person {
+#mentor-next-solutions-page .solution .icons .person,
+#mentor-testimonials-page .solution .icons .person {
   border-color: #00b2c2;
 }
 @media screen and (min-width: 48em) {
   #mentor-dashboard-page .solution .details,
-#mentor-next-solutions-page .solution .details {
+#mentor-next-solutions-page .solution .details,
+#mentor-testimonials-page .solution .details {
     border-left-color: transparent;
   }
 }
 #mentor-dashboard-page .solution .details .difficulty.easy,
-#mentor-next-solutions-page .solution .details .difficulty.easy {
+#mentor-next-solutions-page .solution .details .difficulty.easy,
+#mentor-testimonials-page .solution .details .difficulty.easy {
   color: #2fc26c;
 }
 #mentor-dashboard-page .solution .details .difficulty.medium,
-#mentor-next-solutions-page .solution .details .difficulty.medium {
+#mentor-next-solutions-page .solution .details .difficulty.medium,
+#mentor-testimonials-page .solution .details .difficulty.medium {
   color: #f48b00;
 }
 #mentor-dashboard-page .solution .details .difficulty.hard,
-#mentor-next-solutions-page .solution .details .difficulty.hard {
+#mentor-next-solutions-page .solution .details .difficulty.hard,
+#mentor-testimonials-page .solution .details .difficulty.hard {
   color: #f34a56;
 }
 #mentor-dashboard-page .solution .details .title,
-#mentor-next-solutions-page .solution .details .title {
+#mentor-next-solutions-page .solution .details .title,
+#mentor-testimonials-page .solution .details .title {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .solution .details .title .handle,
-#mentor-next-solutions-page .solution .details .title .handle {
+#mentor-next-solutions-page .solution .details .title .handle,
+#mentor-testimonials-page .solution .details .title .handle {
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-dashboard-page .solution .details .extra,
-#mentor-next-solutions-page .solution .details .extra {
+#mentor-next-solutions-page .solution .details .extra,
+#mentor-testimonials-page .solution .details .extra {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .solution .details .extra .divider,
-#mentor-next-solutions-page .solution .details .extra .divider {
+#mentor-next-solutions-page .solution .details .extra .divider,
+#mentor-testimonials-page .solution .details .extra .divider {
   border-right-color: #404040;
 }
 #mentor-dashboard-page .help-section,
@@ -2393,7 +2422,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section,
 #mentor-next-solutions-page .weekly-section,
 #mentor-next-solutions-page .contributions-section,
-#mentor-next-solutions-page .celebration-section {
+#mentor-next-solutions-page .celebration-section,
+#mentor-testimonials-page .help-section,
+#mentor-testimonials-page .rating-section,
+#mentor-testimonials-page .weekly-section,
+#mentor-testimonials-page .contributions-section,
+#mentor-testimonials-page .celebration-section {
   background: #222222;
 }
 #mentor-dashboard-page .help-section h2,
@@ -2405,7 +2439,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section h2,
 #mentor-next-solutions-page .weekly-section h2,
 #mentor-next-solutions-page .contributions-section h2,
-#mentor-next-solutions-page .celebration-section h2 {
+#mentor-next-solutions-page .celebration-section h2,
+#mentor-testimonials-page .help-section h2,
+#mentor-testimonials-page .rating-section h2,
+#mentor-testimonials-page .weekly-section h2,
+#mentor-testimonials-page .contributions-section h2,
+#mentor-testimonials-page .celebration-section h2 {
   color: #00b2c2;
 }
 #mentor-dashboard-page .help-section .h2-subtitle,
@@ -2417,7 +2456,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section .h2-subtitle,
 #mentor-next-solutions-page .weekly-section .h2-subtitle,
 #mentor-next-solutions-page .contributions-section .h2-subtitle,
-#mentor-next-solutions-page .celebration-section .h2-subtitle {
+#mentor-next-solutions-page .celebration-section .h2-subtitle,
+#mentor-testimonials-page .help-section .h2-subtitle,
+#mentor-testimonials-page .rating-section .h2-subtitle,
+#mentor-testimonials-page .weekly-section .h2-subtitle,
+#mentor-testimonials-page .contributions-section .h2-subtitle,
+#mentor-testimonials-page .celebration-section .h2-subtitle {
   color: rgba(255, 255, 255, 0.6);
 }
 #mentor-dashboard-page .help-section .box,
@@ -2429,7 +2473,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section .box,
 #mentor-next-solutions-page .weekly-section .box,
 #mentor-next-solutions-page .contributions-section .box,
-#mentor-next-solutions-page .celebration-section .box {
+#mentor-next-solutions-page .celebration-section .box,
+#mentor-testimonials-page .help-section .box,
+#mentor-testimonials-page .rating-section .box,
+#mentor-testimonials-page .weekly-section .box,
+#mentor-testimonials-page .contributions-section .box,
+#mentor-testimonials-page .celebration-section .box {
   background: #141414;
 }
 #mentor-dashboard-page .help-section .box strong,
@@ -2441,7 +2490,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section .box strong,
 #mentor-next-solutions-page .weekly-section .box strong,
 #mentor-next-solutions-page .contributions-section .box strong,
-#mentor-next-solutions-page .celebration-section .box strong {
+#mentor-next-solutions-page .celebration-section .box strong,
+#mentor-testimonials-page .help-section .box strong,
+#mentor-testimonials-page .rating-section .box strong,
+#mentor-testimonials-page .weekly-section .box strong,
+#mentor-testimonials-page .contributions-section .box strong,
+#mentor-testimonials-page .celebration-section .box strong {
   color: #00b2c2;
 }
 #mentor-dashboard-page .help-section .box a,
@@ -2453,7 +2507,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section .box a,
 #mentor-next-solutions-page .weekly-section .box a,
 #mentor-next-solutions-page .contributions-section .box a,
-#mentor-next-solutions-page .celebration-section .box a {
+#mentor-next-solutions-page .celebration-section .box a,
+#mentor-testimonials-page .help-section .box a,
+#mentor-testimonials-page .rating-section .box a,
+#mentor-testimonials-page .weekly-section .box a,
+#mentor-testimonials-page .contributions-section .box a,
+#mentor-testimonials-page .celebration-section .box a {
   color: #95caff;
   border-bottom-color: #404040;
 }
@@ -2466,47 +2525,61 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .rating-section .box a:hover,
 #mentor-next-solutions-page .weekly-section .box a:hover,
 #mentor-next-solutions-page .contributions-section .box a:hover,
-#mentor-next-solutions-page .celebration-section .box a:hover {
+#mentor-next-solutions-page .celebration-section .box a:hover,
+#mentor-testimonials-page .help-section .box a:hover,
+#mentor-testimonials-page .rating-section .box a:hover,
+#mentor-testimonials-page .weekly-section .box a:hover,
+#mentor-testimonials-page .contributions-section .box a:hover,
+#mentor-testimonials-page .celebration-section .box a:hover {
   border-bottom-color: #95caff;
 }
 #mentor-dashboard-page .rating-section,
-#mentor-next-solutions-page .rating-section {
+#mentor-next-solutions-page .rating-section,
+#mentor-testimonials-page .rating-section {
   border-color: #404040;
 }
 #mentor-dashboard-page .rating-section h2,
-#mentor-next-solutions-page .rating-section h2 {
+#mentor-next-solutions-page .rating-section h2,
+#mentor-testimonials-page .rating-section h2 {
   background-color: #1c1c1c;
   border-bottom-color: #303030;
   color: #00b2c2;
 }
 #mentor-dashboard-page .rating-section .rating,
-#mentor-next-solutions-page .rating-section .rating {
+#mentor-next-solutions-page .rating-section .rating,
+#mentor-testimonials-page .rating-section .rating {
   color: #00b2c2;
   border-bottom-color: rgba(47, 194, 108, 0.2);
 }
 #mentor-dashboard-page .weekly-section .bar-widget .bar,
-#mentor-next-solutions-page .weekly-section .bar-widget .bar {
+#mentor-next-solutions-page .weekly-section .bar-widget .bar,
+#mentor-testimonials-page .weekly-section .bar-widget .bar {
   background: #222222;
 }
 #mentor-dashboard-page .weekly-section .bar-widget .bar .fill,
-#mentor-next-solutions-page .weekly-section .bar-widget .bar .fill {
+#mentor-next-solutions-page .weekly-section .bar-widget .bar .fill,
+#mentor-testimonials-page .weekly-section .bar-widget .bar .fill {
   background: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget .count,
-#mentor-next-solutions-page .weekly-section .bar-widget .count {
+#mentor-next-solutions-page .weekly-section .bar-widget .count,
+#mentor-testimonials-page .weekly-section .bar-widget .count {
   background: #141414;
   border-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .fill,
-#mentor-next-solutions-page .weekly-section .bar-widget.completed .fill {
+#mentor-next-solutions-page .weekly-section .bar-widget.completed .fill,
+#mentor-testimonials-page .weekly-section .bar-widget.completed .fill {
   background-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .count,
-#mentor-next-solutions-page .weekly-section .bar-widget.completed .count {
+#mentor-next-solutions-page .weekly-section .bar-widget.completed .count,
+#mentor-testimonials-page .weekly-section .bar-widget.completed .count {
   border-color: #00b2c2;
 }
 #mentor-dashboard-page .weekly-section .hr,
-#mentor-next-solutions-page .weekly-section .hr {
+#mentor-next-solutions-page .weekly-section .hr,
+#mentor-testimonials-page .weekly-section .hr {
   border-top-color: #404040;
 }
 
@@ -2530,6 +2603,25 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #mentor-next-solutions-page .next-exercises-navigation .exercises .label.selected:before {
   border-left-color: #00b2c2;
+}
+
+#mentor-testimonials-page .testimonial .feedback i {
+  color: rgba(217, 217, 217, 0.4);
+}
+#mentor-testimonials-page .testimonial .about {
+  color: rgba(255, 255, 255, 0.6);
+}
+#mentor-testimonials-page .testimonial .user {
+  color: rgba(255, 255, 255, 0.8);
+}
+#mentor-testimonials-page .testimonial .exercise {
+  color: #00b2c2;
+}
+#mentor-testimonials-page .testimonial + .testimonial {
+  border-top-color: #404040;
+}
+#mentor-testimonials-page .pagination {
+  border-top-color: #404040;
 }
 
 #my-solutions .header {
@@ -3403,7 +3495,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: rgba(255, 255, 255, 0.6);
 }
 #modal.solution-unlocked .side-exercises h4 strong {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 #modal.solution-unlocked .side-exercises .side-exercise {
   border-color: rgba(0, 178, 194, 0.7);
