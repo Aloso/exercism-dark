@@ -18,18 +18,18 @@ body.namespace-teams {
 
 .team-page {
     #team-header {
-        background:#eee;
+        background: #eee;
         .avatar {
             border-color: rgba(#fff, 0.5);
         }
         h1 {
-            background-color:$color-2;
+            background-color: $color-2;
             color: $t1;
         }
         a {
-            color:#666;
+            color: #666;
             &.selected {
-                color:$color-2;
+                color: $color-2b;
                 border-bottom-color: $color-2;
             }
         }

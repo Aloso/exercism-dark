@@ -7,9 +7,9 @@ $inner-width: 800px;
     .welcome-section {
         .box {
             background: rgba(#000, 0.92);
-            border-color: $color-2;
+            border-color: $color-2b;
             h1 {
-                color: $color-2;
+                color: $color-2b;
             }
             p {
                 color: $t2;
@@ -20,8 +20,8 @@ $inner-width: 800px;
                     color: $t1;
                 }
                 &.learn-more-button {
-                    border-color: $color-2;
-                    color: $color-2;
+                    border-color: $color-2b;
+                    color: $color-2b;
                     background: transparent;
                 }
             }

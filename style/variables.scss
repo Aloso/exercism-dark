@@ -2,6 +2,7 @@ $color-1: #2fc26c;
 $color-1t: rgba($color-1, .7);
 
 $color-2: #00b2c2;
+$color-2b: lighten($color-2, 10%);
 $color-2t: rgba($color-2, .7);
 
 $color-2-opaque: #131a1d;

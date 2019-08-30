@@ -132,42 +132,6 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
   color: #333;
 }
 
-/* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+c+asciidoc+csharp+autohotkey+autoit+bash+basic+batch+bison+brainfuck+bro+cpp+aspnet+coffeescript+ruby+css-extras+d+dart+diff+django+docker+eiffel+elixir+markup-templating+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+less+handlebars+haskell+haxe+http+icon+inform7+ini+j+java+jolie+json+julia+keyman+kotlin+latex+markdown+livescript+lolcode+lua+makefile+crystal+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+sql+powershell+processing+prolog+properties+protobuf+scss+puppet+pure+python+q+qore+r+jsx+typescript+reason+rest+rip+roboconf+textile+rust+sas+sass+stylus+scala+scheme+smalltalk+smarty+swift+yaml+tcl+haml+twig+vbnet+verilog+vhdl+vim+wiki+xojo&plugins=line-highlight+line-numbers */
-/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
-body.prism-dark code[class*=language-],
-body.prism-dark pre[class*=language-] {
-  color: #f8f8f2;
-  background: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-}
-
-/* Code blocks */
-body.prism-dark :not(pre) > code[class*=language-],
-body.prism-dark pre[class*=language-] {
-  background: #191919;
-  border-color: #303030;
-}
-
-body.prism-dark .line-highlight:before,
-body.prism-dark .line-highlight[data-end]:after {
-  background-color: rgba(153, 122, 102, 0.4);
-  color: #f5f2f0;
-  box-shadow: 0 1px white;
-}
-
-body.prism-dark .line-numbers .line-numbers-rows {
-  border-right-color: #404040;
-}
-
-body.prism-dark .line-numbers-rows > span:before {
-  color: rgba(255, 255, 255, 0.4);
-}
-
 #widget-code-person {
   filter: invert(0.92);
 }
@@ -309,7 +273,7 @@ body.prism-dark .line-numbers-rows > span:before {
 }
 .widget-maintainer h3,
 .widget-mentor h3 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 .widget-maintainer h3 a,
 .widget-mentor h3 a {
@@ -487,6 +451,11 @@ body .md-editor textarea {
 .editable-text .editable-text-html table tr:nth-child(even),
 .new-editable-text .preview-area table tr:nth-child(even) {
   background: #fafafa;
+}
+
+body.prism-dark .editable-text .editable-text-html pre[class*=language-],
+body.prism-dark .new-editable-text .preview-area pre[class*=language-] {
+  background: none;
 }
 
 #cta-footer {
@@ -830,7 +799,7 @@ body.namespace-teams a.logo span {
   color: #666;
 }
 .team-page #team-header a.selected {
-  color: #00b2c2;
+  color: #00e1f5;
   border-bottom-color: #00b2c2;
 }
 
@@ -909,7 +878,7 @@ body.devise {
   background: #222222;
 }
 .lo-devise-page h1 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 .lo-devise-page .github-button {
   background: #3d3d3d;
@@ -1100,7 +1069,7 @@ body.devise {
   border-bottom-color: #ddd;
 }
 #mentor-registration-page h2 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #mentor-registration-page p a {
   color: #666;
@@ -1544,7 +1513,7 @@ body.namespace-my.controller-tracks.action-show footer {
   background: #222222;
 }
 #team-page .core .core-person h3 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #team-page .core .core-person .bio {
   color: rgba(255, 255, 255, 0.8);
@@ -1564,7 +1533,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-right-color: #404040;
 }
 #team-page .contributors .contributor h3 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #team-page .contributors .contributor .num-contributions {
   color: rgba(255, 255, 255, 0.6);
@@ -1574,7 +1543,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #team-page .contributors .pure-button {
   border-color: #00b2c2;
   background: transparent;
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #team-page .contributors .pure-button:hover {
   background: #00b2c2;
@@ -1951,9 +1920,9 @@ body.namespace-my.controller-tracks.action-show footer {
 #solutions-page .user-solution .not-published,
 #my-starred-solutions-page .user-solution .not-published,
 #exercise-page .user-solution .not-published {
-  border-color: #00b2c2;
-  color: #00b2c2;
-  background: #222222;
+  border-color: #00e1f5;
+  color: #00e1f5;
+  background: transparent;
 }
 #solutions-page .solution .reactions,
 #my-starred-solutions-page .solution .reactions,
@@ -2210,10 +2179,10 @@ body.namespace-my.controller-tracks.action-show footer {
 
 #become-a-mentor-page .welcome-section .box {
   background: rgba(0, 0, 0, 0.92);
-  border-color: #00b2c2;
+  border-color: #00e1f5;
 }
 #become-a-mentor-page .welcome-section .box h1 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #become-a-mentor-page .welcome-section .box p {
   color: rgba(255, 255, 255, 0.8);
@@ -2223,8 +2192,8 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #become-a-mentor-page .welcome-section .box .pure-button.learn-more-button {
-  border-color: #00b2c2;
-  color: #00b2c2;
+  border-color: #00e1f5;
+  color: #00e1f5;
   background: transparent;
 }
 #become-a-mentor-page .pr-section {
@@ -2797,11 +2766,11 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 @media screen and (max-width: 48em) {
   #blog-posts .sidebar h3 {
-    color: #00b2c2;
+    color: #00e1f5;
   }
 }
 #blog-posts h2 {
-  color: #00b2c2;
+  color: #00e1f5;
 }
 #blog-posts .blog-post {
   color: rgba(255, 255, 255, 0.8);
@@ -3043,8 +3012,8 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #notifications-page .header-bar .mark-all-button {
   background: transparent;
-  border-color: #00b2c2;
-  color: #00b2c2;
+  border-color: #00e1f5;
+  color: #00e1f5;
 }
 #notifications-page .notification {
   border-color: #404040;

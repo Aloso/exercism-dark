@@ -35,13 +35,13 @@
 
         h3 {
             @include width-smaller-than-medium() {
-                color: $color-2;
+                color: $color-2b;
             }
         }
     }
 
     h2 {
-        color: $color-2;
+        color: $color-2b;
     }
 
     .blog-post {

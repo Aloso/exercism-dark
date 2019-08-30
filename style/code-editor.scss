@@ -50,3 +50,12 @@ body .md-editor {
         }
     }
 }
+
+body.prism-dark {
+    .editable-text .editable-text-html,
+    .new-editable-text .preview-area {
+        pre[class*="language-"] {
+            background: none;
+        }
+    }
+}
