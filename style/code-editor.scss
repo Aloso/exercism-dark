@@ -23,6 +23,11 @@ body .md-editor {
     }
     a {
         color: $link;
+        text-decoration: none;
+        box-shadow: 0 1px 0 $link-u2;
+        &:hover {
+            box-shadow: 0 1px 0 $link-u;
+        }
     }
 
     pre {
@@ -52,12 +57,10 @@ body .md-editor {
 }
 
 body.prism-dark {
-    .editable-text .editable-text-html,
-    .new-editable-text .preview-area {
-        pre[class*="language-"] {
-            background: lighten($bg, 2%);
-            border-color: $bg3;
-        }
+    :not(pre) > code[class*=language-],
+    pre[class*="language-"] {
+        background: lighten($bg, 2%);
+        border-color: $bg3;
     }
 
     .line-numbers .line-numbers-rows {

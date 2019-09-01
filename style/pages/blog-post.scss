@@ -19,7 +19,12 @@
     }
     .blog-content {
         a {
-            color: lighten($color-2, 7%);
+            color: $link;
+            text-decoration: none;
+            box-shadow: 0 1px 0 $link-u2;
+            &:hover {
+                box-shadow: 0 1px 0 $link-u;
+            }
         }
     }
     h1 {
@@ -27,9 +32,6 @@
     }
     .byline {
         border-bottom-color: $bord;
-        a {
-            color: $link;
-        }
     }
     .categories {
         a {
@@ -79,9 +81,11 @@
                 color: $t3;
 
                 a {
-                    color: $t4;
+                    color: $link;
+                    text-decoration: none;
+                    border-bottom: 1px solid $link-u2;
                     &:hover {
-                        color: $link;
+                        border-bottom-color: $link-u;
                     }
                 }
             }

@@ -44,6 +44,10 @@ a ::selection {
 }
 
 
+hr {
+  border-color: transparent transparent $bord2 transparent;
+}
+
 // error pages
 div.heading-bar {
   background-color: $bg3;

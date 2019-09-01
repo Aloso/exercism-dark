@@ -8,6 +8,11 @@
 
   a {
     color: $link;
+    text-decoration: none;
+    box-shadow: 0 1px 0 $link-u2;
+    &:hover {
+      box-shadow: 0 1px 0 $link-u;
+    }
   }
 
   blockquote {

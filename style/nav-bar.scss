@@ -6,11 +6,15 @@
     border-bottom-color: transparent;
     a {
         color: $link;
-        &:before {
-            background: $bord2;
+        &::before {
+            background-color: transparent;
         }
 
-        &:nth-child(n+1):after {
+        &:hover::before {
+            background-color: $link-u2;
+        }
+
+        &:nth-child(n+1)::after {
             opacity: 0.2;
         }
     }

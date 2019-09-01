@@ -40,6 +40,10 @@ a ::selection {
   background-color: #222222;
 }
 
+hr {
+  border-color: transparent transparent #505050 transparent;
+}
+
 div.heading-bar {
   background-color: #303030;
 }
@@ -50,7 +54,7 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p {
 }
 img[src="https://assets.exercism.io/sad-icon.png"] + p a,
 img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 
 #admin-users-page .discussion-post {
@@ -85,7 +89,7 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
 }
 
 .md-editor.active {
-  border-color: rgba(0, 178, 194, 0.7) !important;
+  border-color: rgba(0, 171, 194, 0.7) !important;
   box-shadow: none;
 }
 
@@ -273,12 +277,12 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
 }
 .widget-maintainer h3,
 .widget-mentor h3 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 .widget-maintainer h3 a,
 .widget-mentor h3 a {
   border-left-color: #404040;
-  color: #95caff;
+  color: #80f0ff;
 }
 .widget-maintainer .bio,
 .widget-mentor .bio {
@@ -290,7 +294,7 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
 }
 .widget-maintainer .banner,
 .widget-mentor .banner {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
@@ -301,40 +305,40 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
 }
 .widget-side-exercise:hover {
   background: #131a1d;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 .widget-side-exercise.locked:hover {
   background: #222222;
   border-color: #444444;
 }
 .widget-side-exercise.unlocked {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 .widget-side-exercise.unlocked .status {
   color: rgba(255, 255, 255, 0.4);
 }
 .widget-side-exercise.in-progress, .widget-side-exercise.mentoring-requested, .widget-side-exercise.approved {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 .widget-side-exercise.in-progress .icon, .widget-side-exercise.mentoring-requested .icon, .widget-side-exercise.approved .icon {
   background-color: transparent;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 .widget-side-exercise.in-progress .status, .widget-side-exercise.mentoring-requested .status, .widget-side-exercise.approved .status {
-  color: #00b2c2;
+  color: #00abc2;
 }
 .widget-side-exercise.completed {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 .widget-side-exercise.completed .icon {
-  background: #00b2c2;
-  border-color: #00b2c2;
+  background: #00abc2;
+  border-color: #00abc2;
 }
 .widget-side-exercise.completed .status {
   color: #fff;
 }
 .widget-side-exercise.completed .status:before {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
 }
 .widget-side-exercise .icon {
   border-color: #444444;
@@ -368,7 +372,7 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
   color: rgba(255, 255, 255, 0.8);
 }
 .widget-solution-comment .comment-header .user-handle a {
-  color: #95caff;
+  color: #80f0ff;
 }
 .widget-solution-comment .comment-header .user-role {
   background: #222222;
@@ -394,7 +398,12 @@ img[src="https://assets.exercism.io/sad-icon.png"] + * + p a {
   border-bottom-color: #404040;
 }
 #cli-walkthrough a {
-  color: #95caff;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+#cli-walkthrough a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 #cli-walkthrough blockquote {
   border-left-color: #404040;
@@ -425,7 +434,13 @@ body .md-editor textarea {
 }
 .editable-text .editable-text-html a,
 .new-editable-text .preview-area a {
-  color: #95caff;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+.editable-text .editable-text-html a:hover,
+.new-editable-text .preview-area a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 .editable-text .editable-text-html pre,
 .new-editable-text .preview-area pre {
@@ -453,8 +468,8 @@ body .md-editor textarea {
   background: #fafafa;
 }
 
-body.prism-dark .editable-text .editable-text-html pre[class*=language-],
-body.prism-dark .new-editable-text .preview-area pre[class*=language-] {
+body.prism-dark :not(pre) > code[class*=language-],
+body.prism-dark pre[class*=language-] {
   background: #191919;
   border-color: #303030;
 }
@@ -463,7 +478,7 @@ body.prism-dark .line-numbers .line-numbers-rows {
 }
 
 #cta-footer {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 #cta-footer .logo {
@@ -475,10 +490,10 @@ body.prism-dark .line-numbers .line-numbers-rows {
 #cta-footer .pure-button.sign-up-button, #cta-footer .pure-button.languages-button {
   border-color: #fff;
   color: white;
-  background: #00b2c2;
+  background: #00abc2;
 }
 #cta-footer .pure-button.sign-up-button:hover, #cta-footer .pure-button.languages-button:hover {
-  color: #00b2c2;
+  color: #00abc2;
   background: #fff;
 }
 
@@ -547,8 +562,8 @@ input {
   color: rgba(255, 255, 255, 0.6);
 }
 .editable-text .editable-text-editor .buttons .update-button {
-  border-color: #00b2c2;
-  background: #00b2c2;
+  border-color: #00abc2;
+  background: #00abc2;
   color: white;
 }
 .editable-text .editable-text-editor .buttons .cancel-button {
@@ -592,7 +607,7 @@ footer .legal a:hover {
 }
 
 .lo-general-header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 .lo-general-header h1 {
   color: white;
@@ -703,12 +718,15 @@ header.logged-out .options a + a {
   border-bottom-color: transparent;
 }
 #nav.lo-nav-bar a {
-  color: #95caff;
+  color: #80f0ff;
 }
-#nav.lo-nav-bar a:before {
-  background: #505050;
+#nav.lo-nav-bar a::before {
+  background-color: transparent;
 }
-#nav.lo-nav-bar a:nth-child(n+1):after {
+#nav.lo-nav-bar a:hover::before {
+  background-color: #396b73;
+}
+#nav.lo-nav-bar a:nth-child(n+1)::after {
   opacity: 0.2;
 }
 
@@ -722,7 +740,7 @@ header.logged-out .options a + a {
   border-color: #404040;
 }
 .new-editable-text .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
@@ -745,10 +763,10 @@ header.logged-out .options a + a {
 }
 
 pre.line-numbers .line-highlight {
-  background: rgba(0, 178, 194, 0.1);
+  background: rgba(0, 171, 194, 0.1);
 }
 pre.line-numbers .line-highlight:before {
-  background: #00b2c2;
+  background: #00abc2;
 }
 
 #settings-bar.lo-settings-bar {
@@ -758,8 +776,8 @@ pre.line-numbers .line-highlight:before {
   color: rgba(255, 255, 255, 0.8);
 }
 #settings-bar.lo-settings-bar a.selected {
-  color: #00c9dc;
-  border-bottom-color: #00b2c2;
+  color: #00c1dc;
+  border-bottom-color: #00abc2;
 }
 
 .tabs-and-panes > .tabs {
@@ -796,15 +814,15 @@ body.namespace-teams a.logo span {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .team-page #team-header h1 {
-  background-color: #00b2c2;
+  background-color: #00abc2;
   color: white;
 }
 .team-page #team-header a {
   color: #666;
 }
 .team-page #team-header a.selected {
-  color: #00e1f5;
-  border-bottom-color: #00b2c2;
+  color: #00d8f5;
+  border-bottom-color: #00abc2;
 }
 
 @media screen and (min-width: 48em) {
@@ -816,11 +834,11 @@ body.namespace-teams a.logo span {
   border-bottom-color: #404040;
 }
 #my-solution-unlocked-page .instructions .rendered a {
-  color: #95caff;
-  border-bottom-color: #404040;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #my-solution-unlocked-page .instructions .rendered a:hover {
-  border-bottom-color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 #my-solution-unlocked-page .instructions .pure-button {
   background: #2fc26c;
@@ -844,13 +862,13 @@ body.namespace-teams a.logo span {
   border-color: #404040;
 }
 #my-solution-unlocked-page .page-links a {
-  color: #95caff;
+  color: #80f0ff;
   text-decoration: none;
-  border-bottom: 1px solid #404040;
+  border-bottom: 1px solid #396b73;
 }
 #my-solution-unlocked-page .page-links a:hover {
-  color: #95caff;
-  border-bottom-color: #95caff;
+  color: #80f0ff;
+  border-bottom-color: #5ba8b3;
 }
 
 body:not(.prism-dark) #my-solution-unlocked-page .instructions .rendered pre {
@@ -861,7 +879,7 @@ body:not(.prism-dark) #my-solution-unlocked-page .instructions .rendered code {
 }
 
 #my-starred-solutions-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #my-starred-solutions-page .header h1 {
   color: white;
@@ -882,7 +900,7 @@ body.devise {
   background: #222222;
 }
 .lo-devise-page h1 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 .lo-devise-page .github-button {
   background: #3d3d3d;
@@ -901,10 +919,10 @@ body.devise {
 }
 .lo-devise-page input:focus {
   outline: none;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 .lo-devise-page button {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
   color: white;
 }
 .lo-devise-page .sign-up,
@@ -917,7 +935,15 @@ body.devise {
 .lo-devise-page .log-in a,
 .lo-devise-page .reset-password a,
 .lo-devise-page .confirmation-instructions a {
-  color: #95caff;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+.lo-devise-page .sign-up a:hover,
+.lo-devise-page .log-in a:hover,
+.lo-devise-page .reset-password a:hover,
+.lo-devise-page .confirmation-instructions a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 .lo-devise-page #notice {
   border-color: #404040;
@@ -937,12 +963,12 @@ body.devise {
   color: #666;
 }
 #unsubscribe-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
 #blog-post .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #blog-post .header .heading a {
   color: white;
@@ -955,16 +981,18 @@ body.devise {
   color: white;
 }
 #blog-post .blog-content a {
-  color: #00d3e6;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+#blog-post .blog-content a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 #blog-post h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 #blog-post .byline {
   border-bottom-color: #404040;
-}
-#blog-post .byline a {
-  color: #95caff;
 }
 #blog-post .categories a {
   background: #303030;
@@ -981,11 +1009,11 @@ body.devise {
 }
 #blog-post .author a {
   background: transparent;
-  border-color: #00b2c2;
-  color: #00b2c2;
+  border-color: #00abc2;
+  color: #00abc2;
 }
 #blog-post .author a:hover {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 #blog-post .comments-section {
@@ -1004,10 +1032,12 @@ body.devise {
   color: rgba(255, 255, 255, 0.6);
 }
 #blog-post .comments-section .blog-comment .comment-footer a {
-  color: rgba(255, 255, 255, 0.4);
+  color: #80f0ff;
+  text-decoration: none;
+  border-bottom: 1px solid #396b73;
 }
 #blog-post .comments-section .blog-comment .comment-footer a:hover {
-  color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 
 #mentor-analysis .analysis pre {
@@ -1019,7 +1049,7 @@ body.devise {
 
 #exercise-page .header,
 #solutions-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #exercise-page .header .track .title,
 #solutions-page .header .track .title {
@@ -1063,8 +1093,8 @@ body.devise {
   color: rgba(255, 255, 255, 0.8);
 }
 #exercise-page .more-button {
-  border-color: #00b2c2;
-  color: #00b2c2;
+  border-color: #00abc2;
+  color: #00abc2;
   background: #fff;
 }
 
@@ -1073,16 +1103,16 @@ body.devise {
   border-bottom-color: #ddd;
 }
 #mentor-registration-page h2 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #mentor-registration-page p a {
   color: #666;
 }
 #mentor-registration-page label {
-  background: rgba(0, 178, 194, 0.1);
+  background: rgba(0, 171, 194, 0.1);
 }
 #mentor-registration-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
@@ -1131,7 +1161,7 @@ body.devise {
   border-top-color: #404040;
 }
 #modal.my-track-started .learn-more a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #modal.my-track-started .buttons .pure-button {
   border-color: #2fc26c;
@@ -1295,23 +1325,23 @@ body.namespace-my.controller-tracks.action-show footer {
   background: #2fc26c;
 }
 #my-track-page .core-exercises .unlocked-exercises-section {
-  border-color: rgba(0, 178, 194, 0.5);
+  border-color: rgba(0, 171, 194, 0.5);
   background: #0f0f0f;
 }
 #my-track-page .core-exercises .unlocked-exercises-section:before {
-  background: #00b2c2;
+  background: #00abc2;
 }
 #my-track-page .core-exercises .unlocked-exercises-section h3 {
-  color: rgba(0, 178, 194, 0.9);
+  color: rgba(0, 171, 194, 0.9);
   background: rgba(47, 194, 108, 0.04);
-  border-bottom-color: rgba(0, 178, 194, 0.1);
+  border-bottom-color: rgba(0, 171, 194, 0.1);
 }
 #my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise {
-  border-color: rgba(0, 178, 194, 0.5);
+  border-color: rgba(0, 171, 194, 0.5);
   background: #141414;
 }
 #my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise:hover {
-  background: #00b2c2;
+  background: #00abc2;
 }
 #my-track-page .core-exercises .unlocked-exercises-section .unlocked-exercise[data-status=Completed] {
   border-color: #505050;
@@ -1405,15 +1435,15 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #my-track-page .progress-section .guides a {
-  color: #95caff;
-  border-bottom-color: #404040;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #my-track-page .progress-section .guides a:hover {
-  border-bottom-color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 
 #exercises-page .header {
-  background-color: #00b2c2;
+  background-color: #00abc2;
 }
 #exercises-page .header .h1-subtitle {
   color: white;
@@ -1424,7 +1454,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #exercises-page .header .status {
   background: #fff;
-  border-color: #00b2c2;
+  border-color: #00abc2;
   color: #555;
 }
 #exercises-page .header .pure-button {
@@ -1443,10 +1473,10 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #exercises-page .exercises .exercise:hover {
   background: #131a1d;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #exercises-page .exercises .exercise .icon {
-  border-color: #00b2c2;
+  border-color: #00abc2;
   background: #fff;
 }
 #exercises-page .exercises .exercise .stats .length {
@@ -1468,7 +1498,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #profiles-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #profiles-page .header h1 {
   color: white;
@@ -1478,15 +1508,15 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #profiles-page .profile {
   color: #333;
-  border-color: rgba(0, 178, 194, 0.5);
+  border-color: rgba(0, 171, 194, 0.5);
 }
 #profiles-page .profile:hover {
-  border-color: #00b2c2;
-  background: rgba(0, 178, 194, 0.05);
+  border-color: #00abc2;
+  background: rgba(0, 171, 194, 0.05);
 }
 
 #team-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #team-page .header h1 {
   color: white;
@@ -1517,13 +1547,13 @@ body.namespace-my.controller-tracks.action-show footer {
   background: #222222;
 }
 #team-page .core .core-person h3 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #team-page .core .core-person .bio {
   color: rgba(255, 255, 255, 0.8);
 }
 #team-page .core .core-person .tags .tag {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
   color: white;
 }
 #team-page .contributors .contributor {
@@ -1537,7 +1567,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-right-color: #404040;
 }
 #team-page .contributors .contributor h3 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #team-page .contributors .contributor .num-contributions {
   color: rgba(255, 255, 255, 0.6);
@@ -1545,12 +1575,12 @@ body.namespace-my.controller-tracks.action-show footer {
   border-color: rgba(255, 255, 255, 0.05);
 }
 #team-page .contributors .pure-button {
-  border-color: #00b2c2;
+  border-color: #00abc2;
   background: transparent;
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #team-page .contributors .pure-button:hover {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
@@ -1599,7 +1629,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #generic-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #generic-page .header h1 {
   color: white;
@@ -1608,11 +1638,11 @@ body.namespace-my.controller-tracks.action-show footer {
   border-top-color: #404040;
 }
 #generic-page p a, #generic-page ul a, #generic-page ol a {
-  color: #95caff;
-  border-bottom-color: #505050;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #generic-page p a:hover, #generic-page ul a:hover, #generic-page ol a:hover {
-  border-bottom-color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 #generic-page pre {
   border-color: #404040;
@@ -1622,17 +1652,17 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #modal.welcome-to-mentoring p a, #modal.welcome-to-mentoring li a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #modal.welcome-to-mentoring .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
 }
 
 #track-page .header,
 #track-maintainers-page .header,
 #track-mentors-page .header,
 #my-track-not-joined-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #track-page .header .pure-button,
 #track-maintainers-page .header .pure-button,
@@ -1689,15 +1719,15 @@ body.namespace-my.controller-tracks.action-show footer {
 #track-maintainers-page .about-section p a,
 #track-mentors-page .about-section p a,
 #my-track-not-joined-page .about-section p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #track-page .about-section .pure-button,
 #track-maintainers-page .about-section .pure-button,
 #track-mentors-page .about-section .pure-button,
 #my-track-not-joined-page .about-section .pure-button {
   background: transparent;
-  border-color: #00b2c2;
-  color: #00b2c2;
+  border-color: #00abc2;
+  color: #00abc2;
 }
 #track-page .testimonal-section,
 #track-maintainers-page .testimonal-section,
@@ -1711,14 +1741,14 @@ body.namespace-my.controller-tracks.action-show footer {
 #track-mentors-page .testimonal-section .frame,
 #my-track-not-joined-page .testimonal-section .frame {
   filter: invert(1);
-  border-color: #00b2c2;
+  border-color: #00abc2;
   background: #222222;
 }
 #track-page .testimonal-section .frame img,
 #track-maintainers-page .testimonal-section .frame img,
 #track-mentors-page .testimonal-section .frame img,
 #my-track-not-joined-page .testimonal-section .frame img {
-  background: #00b2c2;
+  background: #00abc2;
 }
 #track-page .testimonal-section .frame h2,
 #track-maintainers-page .testimonal-section .frame h2,
@@ -1804,7 +1834,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #track-maintainers-page .cta-section,
 #track-mentors-page .cta-section,
 #my-track-not-joined-page .cta-section {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
 }
 #track-page .cta-section h2,
 #track-maintainers-page .cta-section h2,
@@ -1828,7 +1858,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #tracks-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #tracks-page .header h1 {
   color: white;
@@ -1845,7 +1875,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-color: #404040;
 }
 #tracks-page .track:hover {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #tracks-page .track .title .num-exercises {
   color: rgba(255, 255, 255, 0.8);
@@ -1876,7 +1906,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-starred-solutions-page .solution:hover,
 #exercise-page .user-solution:hover,
 #exercise-page .solution:hover {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #solutions-page .user-solution .exercise,
 #solutions-page .solution .exercise,
@@ -1924,8 +1954,8 @@ body.namespace-my.controller-tracks.action-show footer {
 #solutions-page .user-solution .not-published,
 #my-starred-solutions-page .user-solution .not-published,
 #exercise-page .user-solution .not-published {
-  border-color: #00e1f5;
-  color: #00e1f5;
+  border-color: #00d8f5;
+  color: #00d8f5;
   background: transparent;
 }
 #solutions-page .solution .reactions,
@@ -1944,7 +1974,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-starred-solutions-page .solution .reactions .reaction.highlight .count,
 #exercise-page .solution .reactions .reaction.highlight i,
 #exercise-page .solution .reactions .reaction.highlight .count {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #solutions-page .solution .reactions .reaction .count,
 #my-starred-solutions-page .solution .reactions .reaction .count,
@@ -2001,10 +2031,10 @@ body.namespace-my.controller-tracks.action-show footer {
   color: #2fc26c;
 }
 #profile-page .lhs .sidebar .external-link {
-  color: #95caff;
+  color: #80f0ff;
 }
 #profile-page .lhs .sidebar .external-link span {
-  border-bottom-color: #505050;
+  border-bottom-color: #396b73;
 }
 #profile-page .lhs .sidebar .external-link:hover i {
   color: #2fc26c;
@@ -2087,7 +2117,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #modal.new-profile .page-2 input:focus, #modal.new-profile .page-2 textarea:focus {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 
 #mentor-solution-page .track-header {
@@ -2183,10 +2213,10 @@ body.namespace-my.controller-tracks.action-show footer {
 
 #become-a-mentor-page .welcome-section .box {
   background: rgba(0, 0, 0, 0.92);
-  border-color: #00e1f5;
+  border-color: #00d8f5;
 }
 #become-a-mentor-page .welcome-section .box h1 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #become-a-mentor-page .welcome-section .box p {
   color: rgba(255, 255, 255, 0.8);
@@ -2196,8 +2226,8 @@ body.namespace-my.controller-tracks.action-show footer {
   color: white;
 }
 #become-a-mentor-page .welcome-section .box .pure-button.learn-more-button {
-  border-color: #00e1f5;
-  color: #00e1f5;
+  border-color: #00d8f5;
+  color: #00d8f5;
   background: transparent;
 }
 #become-a-mentor-page .pr-section {
@@ -2241,7 +2271,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-dashboard-page .header,
 #mentor-next-solutions-page .header,
 #mentor-testimonials-page .header {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
 }
 #mentor-dashboard-page .header h1,
 #mentor-next-solutions-page .header h1,
@@ -2261,7 +2291,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-dashboard-page .header .header-tabs .header-tab,
 #mentor-next-solutions-page .header .header-tabs .header-tab,
 #mentor-testimonials-page .header .header-tabs .header-tab {
-  background: #00545c;
+  background: #00515c;
   color: white;
 }
 #mentor-dashboard-page .header .header-tabs .header-tab.selected,
@@ -2283,7 +2313,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-dashboard-page .no-solutions-section h2,
 #mentor-next-solutions-page .no-solutions-section h2,
 #mentor-testimonials-page .no-solutions-section h2 {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-dashboard-page .no-solutions-section p,
 #mentor-next-solutions-page .no-solutions-section p,
@@ -2296,8 +2326,8 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .no-next-solutions,
 #mentor-testimonials-page .no-your-solutions,
 #mentor-testimonials-page .no-next-solutions {
-  background: rgba(0, 178, 194, 0.05);
-  border-color: #00b2c2;
+  background: rgba(0, 171, 194, 0.05);
+  border-color: #00abc2;
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-dashboard-page .solution,
@@ -2308,17 +2338,17 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-dashboard-page .solution:hover,
 #mentor-next-solutions-page .solution:hover,
 #mentor-testimonials-page .solution:hover {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #mentor-dashboard-page .solution.core,
 #mentor-next-solutions-page .solution.core,
 #mentor-testimonials-page .solution.core {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #mentor-dashboard-page .solution .core,
 #mentor-next-solutions-page .solution .core,
 #mentor-testimonials-page .solution .core {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-dashboard-page .solution .side,
 #mentor-dashboard-page .solution .independent,
@@ -2332,17 +2362,17 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-next-solutions-page .solution .icons .exercise,
 #mentor-testimonials-page .solution .icons .exercise {
   background: transparent;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #mentor-dashboard-page .solution .icons .joiner,
 #mentor-next-solutions-page .solution .icons .joiner,
 #mentor-testimonials-page .solution .icons .joiner {
-  border-bottom-color: #00b2c2;
+  border-bottom-color: #00abc2;
 }
 #mentor-dashboard-page .solution .icons .person,
 #mentor-next-solutions-page .solution .icons .person,
 #mentor-testimonials-page .solution .icons .person {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 @media screen and (min-width: 48em) {
   #mentor-dashboard-page .solution .details,
@@ -2418,7 +2448,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .weekly-section h2,
 #mentor-testimonials-page .contributions-section h2,
 #mentor-testimonials-page .celebration-section h2 {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-dashboard-page .help-section .h2-subtitle,
 #mentor-dashboard-page .rating-section .h2-subtitle,
@@ -2469,7 +2499,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .weekly-section .box strong,
 #mentor-testimonials-page .contributions-section .box strong,
 #mentor-testimonials-page .celebration-section .box strong {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-dashboard-page .help-section .box a,
 #mentor-dashboard-page .rating-section .box a,
@@ -2486,8 +2516,8 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .weekly-section .box a,
 #mentor-testimonials-page .contributions-section .box a,
 #mentor-testimonials-page .celebration-section .box a {
-  color: #95caff;
-  border-bottom-color: #404040;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #mentor-dashboard-page .help-section .box a:hover,
 #mentor-dashboard-page .rating-section .box a:hover,
@@ -2504,7 +2534,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .weekly-section .box a:hover,
 #mentor-testimonials-page .contributions-section .box a:hover,
 #mentor-testimonials-page .celebration-section .box a:hover {
-  border-bottom-color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 #mentor-dashboard-page .rating-section,
 #mentor-next-solutions-page .rating-section,
@@ -2516,12 +2546,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .rating-section h2 {
   background-color: #1c1c1c;
   border-bottom-color: #303030;
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-dashboard-page .rating-section .rating,
 #mentor-next-solutions-page .rating-section .rating,
 #mentor-testimonials-page .rating-section .rating {
-  color: #00b2c2;
+  color: #00abc2;
   border-bottom-color: rgba(47, 194, 108, 0.2);
 }
 #mentor-dashboard-page .weekly-section .bar-widget .bar,
@@ -2532,23 +2562,23 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-dashboard-page .weekly-section .bar-widget .bar .fill,
 #mentor-next-solutions-page .weekly-section .bar-widget .bar .fill,
 #mentor-testimonials-page .weekly-section .bar-widget .bar .fill {
-  background: #00b2c2;
+  background: #00abc2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget .count,
 #mentor-next-solutions-page .weekly-section .bar-widget .count,
 #mentor-testimonials-page .weekly-section .bar-widget .count {
   background: #141414;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .fill,
 #mentor-next-solutions-page .weekly-section .bar-widget.completed .fill,
 #mentor-testimonials-page .weekly-section .bar-widget.completed .fill {
-  background-color: #00b2c2;
+  background-color: #00abc2;
 }
 #mentor-dashboard-page .weekly-section .bar-widget.completed .count,
 #mentor-next-solutions-page .weekly-section .bar-widget.completed .count,
 #mentor-testimonials-page .weekly-section .bar-widget.completed .count {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #mentor-dashboard-page .weekly-section .hr,
 #mentor-next-solutions-page .weekly-section .hr,
@@ -2563,7 +2593,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.4);
 }
 #mentor-next-solutions-page .next-exercises-navigation .label.selected {
-  color: #00b2c2 !important;
+  color: #00abc2 !important;
 }
 #mentor-next-solutions-page .next-exercises-navigation .title .label {
   color: white;
@@ -2575,7 +2605,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-left-color: #303030;
 }
 #mentor-next-solutions-page .next-exercises-navigation .exercises .label.selected:before {
-  border-left-color: #00b2c2;
+  border-left-color: #00abc2;
 }
 
 #mentor-testimonials-page .testimonial .feedback i {
@@ -2588,7 +2618,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #mentor-testimonials-page .testimonial .exercise {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #mentor-testimonials-page .testimonial + .testimonial {
   border-top-color: #404040;
@@ -2641,7 +2671,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #landing-page .welcome-section .rhs h1 {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #landing-page .welcome-section .rhs h1 img {
   background: #141414;
@@ -2661,7 +2691,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #landing-page .tracks-section .title-block p a,
 #landing-page .how-section .title-block p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #landing-page .tracks-section {
   background: #141414;
@@ -2671,20 +2701,20 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #landing-page .tracks-section .title-block p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #landing-page .tracks-section .tracks .row .track {
   filter: invert(0.93) hue-rotate(180deg) brightness(1.4);
 }
 #landing-page .tracks-section .tracks-mini a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #landing-page .tracks-section .tracks-mini a .track-mini {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #landing-page .tracks-section .tracks-mini a .track-mini .logo {
-  background-color: #00b2c2;
-  color: #00b2c2;
+  background-color: #00abc2;
+  color: #00abc2;
 }
 #landing-page .tracks-section .tracks-mini a .track-mini .logo img {
   filter: brightness(1.14);
@@ -2693,7 +2723,7 @@ body.namespace-my.controller-tracks.action-show footer {
   background-color: transparent;
 }
 #landing-page .tracks-section .tracks-mini a:hover .track-mini, #landing-page .tracks-section .tracks-mini a:hover .track-mini .title {
-  background-color: #00b2c2 !important;
+  background-color: #00abc2 !important;
   color: white;
 }
 #landing-page .how-section .divider {
@@ -2711,14 +2741,14 @@ body.namespace-my.controller-tracks.action-show footer {
   filter: invert(91.5%) grayscale(100%);
 }
 #landing-page .cta-section {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
 }
 #landing-page .cta-section h2 {
   color: white;
 }
 #landing-page .cta-section .pure-button {
   border-color: #fff;
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
@@ -2729,14 +2759,19 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #modal.announcement p a {
-  color: #95caff;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+#modal.announcement p a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 #modal.announcement .pure-button {
   background: #2fc26c;
 }
 
 #blog-posts .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #blog-posts .header .heading {
   color: white;
@@ -2762,33 +2797,33 @@ body.namespace-my.controller-tracks.action-show footer {
   }
 }
 #blog-posts .sidebar ul a {
-  color: #95caff;
-  border-bottom-color: #505050;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #blog-posts .sidebar ul a:hover {
-  border-color: #95caff;
+  border-color: #5ba8b3;
 }
 @media screen and (max-width: 48em) {
   #blog-posts .sidebar h3 {
-    color: #00e1f5;
+    color: #00d8f5;
   }
 }
 #blog-posts h2 {
-  color: #00e1f5;
+  color: #00d8f5;
 }
 #blog-posts .blog-post {
   color: rgba(255, 255, 255, 0.8);
   border-left-color: #303030;
 }
 #blog-posts .blog-post:hover {
-  border-left-color: #00b2c2;
+  border-left-color: #00abc2;
 }
 #blog-posts .blog-post:hover h3 .text {
   border-bottom-color: #404040;
 }
 #blog-posts .blog-post:hover .img {
-  box-shadow: 0 0 0 2px #00b2c2;
-  border-color: #00b2c2;
+  box-shadow: 0 0 0 2px #00abc2;
+  border-color: #00abc2;
 }
 #blog-posts .blog-post .img {
   border-color: #303030;
@@ -2802,7 +2837,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #my-tracks-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #my-tracks-page form .search-bar:before {
   color: rgba(255, 255, 255, 0.6);
@@ -2813,7 +2848,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 #my-tracks-page form input:focus {
   outline: none;
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #my-tracks-page form button {
   border-color: #404040;
@@ -2828,7 +2863,7 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.8);
 }
 #my-tracks-page .no-results p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #my-tracks-page .num-tracks {
   color: rgba(255, 255, 255, 0.6);
@@ -2839,7 +2874,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-color: #404040;
 }
 #my-tracks-page .track:hover {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #my-tracks-page .track img {
   filter: invert(0.9) hue-rotate(180deg) brightness(1.4);
@@ -2856,7 +2891,7 @@ body.namespace-my.controller-tracks.action-show footer {
   border-color: transparent;
 }
 #my-tracks-page .track .progress .filled {
-  background: rgba(0, 178, 194, 0.33);
+  background: rgba(0, 171, 194, 0.33);
 }
 #my-tracks-page .track .enrolled {
   color: rgba(255, 255, 255, 0.8);
@@ -2879,7 +2914,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-settings-page .settings-section.toggle .toggles i.fa.fa-toggle-on,
 #my-preferences-page .settings-section.toggle .toggles i.fa.fa-toggle-on,
 #my-track-settings-page .settings-section.toggle .toggles i.fa.fa-toggle-on {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #my-settings-page .settings-section.toggle .toggles i.fa.fa-toggle-off,
 #my-preferences-page .settings-section.toggle .toggles i.fa.fa-toggle-off,
@@ -2957,12 +2992,12 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-track-settings-page .field input:focus,
 #my-settings-delete-account-page .field input:focus {
   outline: none;
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #my-settings-page .pure-button,
 #my-track-settings-page .pure-button,
 #my-settings-delete-account-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 #my-settings-page .tracks th,
@@ -2987,7 +3022,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #my-settings-page .track .toggles i.fa.fa-toggle-on,
 #my-track-settings-page .track .toggles i.fa.fa-toggle-on,
 #my-settings-delete-account-page .track .toggles i.fa.fa-toggle-on {
-  color: #00b2c2;
+  color: #00abc2;
 }
 #my-settings-page .track .toggles i.fa.fa-toggle-off,
 #my-track-settings-page .track .toggles i.fa.fa-toggle-off,
@@ -3005,19 +3040,19 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 #js-ecma-migration-page img {
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #js-ecma-migration-page p a {
-  color: #00b2c2;
+  color: #00abc2;
 }
 
 #notifications-page .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 #notifications-page .header-bar .mark-all-button {
   background: transparent;
-  border-color: #00e1f5;
-  color: #00e1f5;
+  border-color: #00d8f5;
+  color: #00d8f5;
 }
 #notifications-page .notification {
   border-color: #404040;
@@ -3036,14 +3071,14 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.6);
 }
 #notifications-page .notification .mark-as-read-button {
-  background-color: #00b2c2;
-  border-color: #00b2c2;
+  background-color: #00abc2;
+  border-color: #00abc2;
 }
 #notifications-page .no-notifications {
   color: rgba(255, 255, 255, 0.8);
 }
 #notifications-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
 }
 
 @media screen and (min-width: 48em) {
@@ -3064,16 +3099,16 @@ body.namespace-my.controller-tracks.action-show footer {
   color: rgba(255, 255, 255, 0.6);
 }
 #my-preferences-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 
 #mentor-exercise-notes p a, #mentor-exercise-notes ul a, #mentor-exercise-notes ol a {
-  color: #95caff;
-  border-bottom-color: #404040;
+  color: #80f0ff;
+  border-bottom-color: #396b73;
 }
 #mentor-exercise-notes p a:hover, #mentor-exercise-notes ul a:hover, #mentor-exercise-notes ol a:hover {
-  border-bottom-color: #95caff;
+  border-bottom-color: #5ba8b3;
 }
 #mentor-exercise-notes pre {
   border-color: #404040;
@@ -3083,7 +3118,7 @@ body.namespace-my.controller-tracks.action-show footer {
 }
 
 body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-notes .header {
-  background-color: rgba(0, 178, 194, 0.7);
+  background-color: rgba(0, 171, 194, 0.7);
 }
 body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-notes .header h1 {
   color: white;
@@ -3114,7 +3149,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 }
 #my-solution-page .finished-section .title-block a,
 #my-solution-page .finished-section .next-block a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #my-solution-page .finished-section .next-block:before {
   border-left-color: #2fc26c;
@@ -3135,7 +3170,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: rgba(255, 255, 255, 0.4);
 }
 #my-solution-page .rhs p.disabled a {
-  color: #95caff;
+  color: #5ba8b3;
 }
 #my-solution-page .rhs .approved-section,
 #my-solution-page .rhs .next-steps {
@@ -3147,7 +3182,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 }
 #my-solution-page .rhs .approved-section p a,
 #my-solution-page .rhs .next-steps p a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #my-solution-page .rhs form textarea, #my-solution-page .rhs form .preview-area {
   border-color: #404040;
@@ -3292,7 +3327,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: #e73b3b;
 }
 #my-solution-page .migration-bar a {
-  color: #95caff;
+  color: #80f0ff;
 }
 #my-solution-page .migration-bar i {
   color: #2fc26c;
@@ -3318,7 +3353,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: rgba(255, 255, 255, 0.8);
 }
 #my-solution-page .notifications-bar .notification a:hover {
-  color: #95caff;
+  color: #80f0ff;
 }
 #my-solution-page .notifications-bar .notification i {
   color: #2fc26c;
@@ -3471,7 +3506,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: white;
 }
 #modal.solution-unlocked .side-exercises .side-exercise {
-  border-color: rgba(0, 178, 194, 0.7);
+  border-color: rgba(0, 171, 194, 0.7);
 }
 #modal.solution-unlocked .side-exercises .side-exercise .tooltip {
   background: #222222;
@@ -3486,7 +3521,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
   color: #222222;
 }
 #modal.solution-unlocked .side-exercises .side-exercise:hover {
-  background: #00b2c2;
+  background: #00abc2;
 }
 #modal.solution-unlocked .pure-button {
   background: #2fc26c;
@@ -3507,7 +3542,14 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #solution-page .pane.instructions a,
 #mentor-solution-page .pane.instructions a,
 #my-solution-page .pane.instructions a {
-  color: #95caff;
+  color: #80f0ff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #396b73;
+}
+#solution-page .pane.instructions a:hover,
+#mentor-solution-page .pane.instructions a:hover,
+#my-solution-page .pane.instructions a:hover {
+  box-shadow: 0 1px 0 #5ba8b3;
 }
 #solution-page .test-suite,
 #solution-page .solution.multi-file,
@@ -3557,7 +3599,7 @@ body.namespace-mentor.controller-exercise_notes.action-show #mentor-exercise-not
 #solution-page .new-editable-text .md-editor.active + .warning h4,
 #mentor-solution-page .new-editable-text .md-editor.active + .warning h4,
 #my-solution-page .new-editable-text .md-editor.active + .warning h4 {
-  color: #00d3e6;
+  color: #00cae6;
 }
 
 body:not(.prism-dark) #solution-page .pane.instructions pre,
@@ -3576,7 +3618,7 @@ body:not(.prism-dark) #my-solution-page .pane.instructions code {
 }
 #solution-page .header .avatar {
   background-color: #fff;
-  border-color: #00b2c2;
+  border-color: #00abc2;
 }
 #solution-page .header .info h2 {
   color: #999;
@@ -3628,7 +3670,7 @@ body:not(.prism-dark) #my-solution-page .pane.instructions code {
   color: rgba(255, 255, 255, 0.4);
 }
 #solution-page .comments-disabled .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }
 #solution-page .comments-section {
@@ -3672,11 +3714,11 @@ body.prism-dark #my-solution-page .solution pre {
   color: #333;
 }
 #not-published-solution-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
 }
 
 #mentor-configure-page .header {
-  background: rgba(0, 178, 194, 0.7);
+  background: rgba(0, 171, 194, 0.7);
 }
 #mentor-configure-page .header h1 {
   color: white;
@@ -3688,10 +3730,10 @@ body.prism-dark #my-solution-page .solution pre {
   color: white;
 }
 #mentor-configure-page label {
-  background: rgba(0, 178, 194, 0.1);
-  border-color: rgba(0, 178, 194, 0.2);
+  background: rgba(0, 171, 194, 0.1);
+  border-color: rgba(0, 171, 194, 0.2);
 }
 #mentor-configure-page .pure-button {
-  background: #00b2c2;
+  background: #00abc2;
   color: white;
 }

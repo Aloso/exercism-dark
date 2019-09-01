@@ -5,9 +5,9 @@
     p, ul, ol {
         a {
             color: $link;
-            border-bottom-color: $bord;
+            border-bottom-color: $link-u2;
             &:hover {
-                border-bottom-color: $link;
+                border-bottom-color: $link-u;
             }
         }
     }

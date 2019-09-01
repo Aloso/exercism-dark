@@ -127,9 +127,9 @@ $blue: #4A90E2;
             }
             a {
                 color: $link;
-                border-bottom-color: $bord;
+                border-bottom-color: $link-u2;
                 &:hover {
-                    border-bottom-color: $link;
+                    border-bottom-color: $link-u;
                 }
             }
         }

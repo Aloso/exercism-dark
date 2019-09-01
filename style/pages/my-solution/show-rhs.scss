@@ -13,17 +13,17 @@
     }
     p.disabled {
         a {
-            color:$link;
+            color: $link-u;
         }
     }
     .approved-section,
     .next-steps {
-        background:rgba($color-1, 0.05);
+        background: rgba($color-1, 0.05);
         .title {
-            color:$color-1;
+            color: $color-1;
         }
         p a {
-            color:$link;
+            color: $link;
         }
     }
     form {

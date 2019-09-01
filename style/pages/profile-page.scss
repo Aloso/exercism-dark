@@ -47,9 +47,9 @@
                 }
             }
             .external-link {
-                color:$link;
+                color: $link;
                 span {
-                    border-bottom-color: $bord2;
+                    border-bottom-color: $link-u2;
                 }
                 &:hover i {
                     color: $color-1;
