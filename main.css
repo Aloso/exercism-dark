@@ -455,7 +455,11 @@ body .md-editor textarea {
 
 body.prism-dark .editable-text .editable-text-html pre[class*=language-],
 body.prism-dark .new-editable-text .preview-area pre[class*=language-] {
-  background: none;
+  background: #191919;
+  border-color: #303030;
+}
+body.prism-dark .line-numbers .line-numbers-rows {
+  border-right-color: #404040;
 }
 
 #cta-footer {

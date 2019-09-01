@@ -55,7 +55,12 @@ body.prism-dark {
     .editable-text .editable-text-html,
     .new-editable-text .preview-area {
         pre[class*="language-"] {
-            background: none;
+            background: lighten($bg, 2%);
+            border-color: $bg3;
         }
+    }
+
+    .line-numbers .line-numbers-rows {
+        border-right-color: $bord;
     }
 }
