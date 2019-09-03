@@ -473,6 +473,10 @@ body.prism-dark pre[class*=language-] {
   background: #191919;
   border-color: #303030;
 }
+body.prism-dark .editable-text .editable-text-html pre[class*=language-],
+body.prism-dark .new-editable-text .preview-area pre[class*=language-] {
+  background: #191919;
+}
 body.prism-dark .line-numbers .line-numbers-rows {
   border-right-color: #404040;
 }
@@ -2499,7 +2503,7 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-testimonials-page .weekly-section .box strong,
 #mentor-testimonials-page .contributions-section .box strong,
 #mentor-testimonials-page .celebration-section .box strong {
-  color: #00abc2;
+  color: #10e3ff;
 }
 #mentor-dashboard-page .help-section .box a,
 #mentor-dashboard-page .rating-section .box a,

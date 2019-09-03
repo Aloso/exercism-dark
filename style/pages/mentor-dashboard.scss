@@ -123,7 +123,7 @@ $blue: #4A90E2;
         .box {
             background: $bg;
             strong {
-                color: $color-2;
+                color: lighten($color-2, 15%);
             }
             a {
                 color: $link;
