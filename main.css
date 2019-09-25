@@ -2164,6 +2164,35 @@ body.namespace-my.controller-tracks.action-show footer {
 #mentor-solution-page .analysis-section .comments .comment.widget-code-snippet {
   background: #141414;
 }
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section h3 {
+  background: #2fc26c;
+  border-color: #2fc26c;
+  color: #fff;
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section h3 i {
+  color: #fff;
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .recommendation {
+  border-color: #2fc26c;
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .comments .beta {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(47, 194, 108, 0.1);
+  border-color: #2fc26c;
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .comments .comment-with-commentary {
+  border-color: #2fc26c;
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .comments .commentary {
+  background: rgba(47, 194, 108, 0.1);
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .comments .commentary-and-comment {
+  border-bottom-color: #2fc26c;
+  background: rgba(47, 194, 108, 0.1);
+}
+#mentor-solution-page .javascript-resistor-color-duo-experiment-analysis-section .comments .comment.widget-code-snippet {
+  background: #222222;
+}
 #mentor-solution-page .discussion h3,
 #mentor-solution-page .new-editable-text h3 {
   border-bottom-color: #404040;

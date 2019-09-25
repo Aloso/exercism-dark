@@ -46,6 +46,42 @@
              }
          }
      }
+    .javascript-resistor-color-duo-experiment-analysis-section {
+        h3 {
+            background: $color-1;
+            border-color: $color-1;
+            color:#fff;
+            i {
+                color: #fff;
+            }
+        }
+        .recommendation {
+            border-color: $color-1;
+        }
+
+        .comments {
+            .beta {
+                color: $t3;
+                background: $color-1-opaque;
+                border-color: $color-1;
+            }
+            .comment-with-commentary {
+                border-color: $color-1;
+            }
+            .commentary {
+                background: $color-1-opaque;
+            }
+            .commentary-and-comment {
+                border-bottom-color: $color-1;
+                background: $color-1-opaque;
+            }
+
+            .comment.widget-code-snippet {
+                background: $bg2;
+            }
+        }
+    }
+
     .discussion,
     .new-editable-text {
         h3 {
