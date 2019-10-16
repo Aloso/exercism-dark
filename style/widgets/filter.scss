@@ -7,28 +7,34 @@
         background-color: $bg2;
         color: $t3;
     }
+
     .selectize-control {
         .selectize-input,
         .selectize-input.input-active {
             border-color: $bord;
             background-color: $bg2;
             color: $t2;
+
             &:before {
                 background-color: $bg2;
             }
+
             &:after {
                 border-top-color: $bord2;
             }
+
             &.dropdown-active:after {
                 border-bottom-color: $bord2;
             }
         }
+
         .selectize-dropdown {
             background-color: $bg2;
             border-color: $bord;
 
             .option {
                 color: $t2;
+
                 &.active {
                     background-color: $bg;
                     color: $t1;
@@ -42,20 +48,28 @@
 .selectize-control.single .selectize-input.input-active {
     background-color: $bg2;
 }
+
 .selectize-input.full {
     background-color: $bg2;
     border-color: $bord;
     color: $t1;
 }
+
 .selectize-dropdown {
     background-color: $bg2;
     border-color: $bord;
     color: $t2;
 }
+
 .selectize-input.dropdown-active::before {
     background-color: $bg2;
 }
+
 .selectize-dropdown .active {
     background-color: $bg;
     color: $t1;
+}
+
+.selectize-input, .selectize-input input {
+    color: $t2;
 }
