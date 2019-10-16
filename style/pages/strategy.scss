@@ -1,0 +1,12 @@
+@import '../variables';
+@import '../mixins';
+
+$purple: #8A89C0;
+
+#strategy-page {
+    .content-section {
+        a {
+            color: $color-2b;
+        }
+    }
+}

@@ -1,27 +1,27 @@
 @import 'variables';
 @import 'mixins';
 
-#nav.lo-nav-bar {
+nav.breadcrumb {
     background: $bg2;
     border-bottom-color: transparent;
-    a {
-        color: $link;
-        &::before {
-            background-color: transparent;
-        }
 
-        &:hover::before {
-            background-color: $link-u2;
-        }
-
-        &:nth-child(n+1)::after {
-            opacity: 0.2;
+    li {
+        &:after {
+            filter: invert(0.7);
         }
     }
 
+    a {
+        color: $link;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline solid $link-u;
+        }
+    }
+    .current-link {
+        color: $t2;
+        &:hover {
+            text-decoration: underline solid $t4;
+        }
+    }
 }
-
-#nav.lo-external-nav-bar {
-    background:#eee;
-}
-

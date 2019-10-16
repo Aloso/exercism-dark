@@ -1,0 +1,21 @@
+@import '../variables';
+@import '../mixins';
+
+#supporter-page {
+    .section-link {
+        color: $color-2b;
+    }
+    .details-section {
+        .read-more {
+            .post {
+                color: $color-2b;
+                & + .post {
+                    border-top-color: $bord;
+                }
+            }
+            h2 {
+                color: $color-2b;
+            }
+        }
+    }
+}

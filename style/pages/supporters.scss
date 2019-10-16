@@ -1,0 +1,32 @@
+@import '../variables';
+@import '../mixins';
+
+$purple: #8A89C0;
+
+#supporters-page {
+    .introduction-section {
+        h2 {
+            color: $color-2b;
+        }
+        .support-box {
+            background: $purple;
+            color: #fff;
+            .pure-button {
+                color: $purple;
+            }
+        }
+    }
+    .current-supporters-section {
+        background: $bg;
+
+        .supporter {
+            background: $bg2;
+            img {
+                filter: invert(1);
+            }
+            .section-link {
+                color: $color-2b;
+            }
+        }
+    }
+}

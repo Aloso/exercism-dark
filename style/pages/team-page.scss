@@ -1,86 +1,98 @@
 @import '../variables';
 @import '../mixins';
 
-#team-page {
-    .header {
-        background-color: $color-2t;
-        h1 {
-            color: $t1;
+#team-intro-page {
+    section.intro-section {
+        p a {
+            color: $color-2b;
         }
+
+        .map img {
+            filter: invert(1) hue-rotate(180deg);
+        }
+    }
+    .section-link {
+        color: $color-2b;
+    }
+
+    .details-section {
+        background: $bg;
+
+        .group {
+            background: $bg2;
+        }
+    }
+}
+
+#team-members-page {
+    section {
         h3 {
-            color: $t1;
+            color: #fff;
+
             a {
-                color: $t1;
-                border-bottom-color: $t3;
+                color: #fff;
+                border-bottom-color: $bord;
             }
         }
     }
-    .changes {
-        border-top-color: $bord;
-    }
 
-    p.subheading {
-        color: $t3;
-    }
-
-    .core {
-        border-bottom-color: $bord;
-    }
     .widget-maintainer, .widget-mentor {
         .bio {
-            color: $t3;
+            color: $t2;
         }
+
     }
-    .core {
-        .core-person {
-            border-color: $bord;
-            &:hover {
-                background: $bg2;
-            }
 
-            h3 {
-                color: $color-2b;
-            }
-            .bio {
-                color: $t2;
-            }
-            .tags {
-                .tag {
-                    background: $color-2t;
-                    color: $t1;
-                }
-            }
+    .person {
+        h3 {
+            color: $t2;
         }
 
+        .bio {
+            color: $t2;
+        }
+
+        .holding-text {
+            color: $t4;
+        }
+
+        &.contributor a {
+            color: $color-2b;
+        }
     }
 
     .contributors {
         .contributor {
-            border-color: $bord;
-            color: $t2;
+            border-color: #ddd;
+            color: #333;
+
             &:hover {
-                background: $bg2;
+                background: #fafafa;
             }
 
             img {
-                border-right-color: $bord;
+                border-right-color: #ddd;
             }
+
             h3 {
                 color: $color-2b;
             }
+
             .num-contributions {
                 color: $t3;
-                background: rgba(#fff, 5%);
-                border-color: rgba(#fff, 5%);
+                background: #eee;
+                border-color: #ddd;
             }
         }
+
         .pure-button {
             border-color: $color-2;
             background: transparent;
             color: $color-2b;
+
             &:hover {
                 background: $color-2;
-                color: $t1;
+                color: #fff;
             }
         }
     }

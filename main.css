@@ -717,25 +717,25 @@ header.logged-out .options a + a {
   background: #222222;
 }
 
-#nav.lo-nav-bar {
+nav.breadcrumb {
   background: #222222;
   border-bottom-color: transparent;
 }
-#nav.lo-nav-bar a {
+nav.breadcrumb li:after {
+  filter: invert(0.7);
+}
+nav.breadcrumb a {
   color: #80f0ff;
+  text-decoration: none;
 }
-#nav.lo-nav-bar a::before {
-  background-color: transparent;
+nav.breadcrumb a:hover {
+  text-decoration: underline solid #5ba8b3;
 }
-#nav.lo-nav-bar a:hover::before {
-  background-color: #396b73;
+nav.breadcrumb .current-link {
+  color: rgba(255, 255, 255, 0.8);
 }
-#nav.lo-nav-bar a:nth-child(n+1)::after {
-  opacity: 0.2;
-}
-
-#nav.lo-external-nav-bar {
-  background: #eee;
+nav.breadcrumb .current-link:hover {
+  text-decoration: underline solid rgba(255, 255, 255, 0.4);
 }
 
 .new-editable-text form .md-editor,
@@ -1519,73 +1519,70 @@ body.namespace-my.controller-tracks.action-show footer {
   background: rgba(0, 171, 194, 0.05);
 }
 
-#team-page .header {
-  background-color: rgba(0, 171, 194, 0.7);
+#team-intro-page section.intro-section p a {
+  color: #00d8f5;
 }
-#team-page .header h1 {
-  color: white;
+#team-intro-page section.intro-section .map img {
+  filter: invert(1) hue-rotate(180deg);
 }
-#team-page .header h3 {
-  color: white;
+#team-intro-page .section-link {
+  color: #00d8f5;
 }
-#team-page .header h3 a {
-  color: white;
-  border-bottom-color: rgba(255, 255, 255, 0.6);
+#team-intro-page .details-section {
+  background: #141414;
 }
-#team-page .changes {
-  border-top-color: #404040;
+#team-intro-page .details-section .group {
+  background: #222222;
 }
-#team-page p.subheading {
-  color: rgba(255, 255, 255, 0.6);
+
+#team-members-page section h3 {
+  color: #fff;
 }
-#team-page .core {
+#team-members-page section h3 a {
+  color: #fff;
   border-bottom-color: #404040;
 }
-#team-page .widget-maintainer .bio, #team-page .widget-mentor .bio {
-  color: rgba(255, 255, 255, 0.6);
-}
-#team-page .core .core-person {
-  border-color: #404040;
-}
-#team-page .core .core-person:hover {
-  background: #222222;
-}
-#team-page .core .core-person h3 {
-  color: #00d8f5;
-}
-#team-page .core .core-person .bio {
+#team-members-page .widget-maintainer .bio, #team-members-page .widget-mentor .bio {
   color: rgba(255, 255, 255, 0.8);
 }
-#team-page .core .core-person .tags .tag {
-  background: rgba(0, 171, 194, 0.7);
-  color: white;
-}
-#team-page .contributors .contributor {
-  border-color: #404040;
+#team-members-page .person h3 {
   color: rgba(255, 255, 255, 0.8);
 }
-#team-page .contributors .contributor:hover {
-  background: #222222;
+#team-members-page .person .bio {
+  color: rgba(255, 255, 255, 0.8);
 }
-#team-page .contributors .contributor img {
-  border-right-color: #404040;
+#team-members-page .person .holding-text {
+  color: rgba(255, 255, 255, 0.4);
 }
-#team-page .contributors .contributor h3 {
+#team-members-page .person.contributor a {
   color: #00d8f5;
 }
-#team-page .contributors .contributor .num-contributions {
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.05);
+#team-members-page .contributors .contributor {
+  border-color: #ddd;
+  color: #333;
 }
-#team-page .contributors .pure-button {
+#team-members-page .contributors .contributor:hover {
+  background: #fafafa;
+}
+#team-members-page .contributors .contributor img {
+  border-right-color: #ddd;
+}
+#team-members-page .contributors .contributor h3 {
+  color: #00d8f5;
+}
+#team-members-page .contributors .contributor .num-contributions {
+  color: rgba(255, 255, 255, 0.6);
+  background: #eee;
+  border-color: #ddd;
+}
+#team-members-page .contributors .pure-button {
   border-color: #00abc2;
   background: transparent;
   color: #00d8f5;
 }
-#team-page .contributors .pure-button:hover {
+#team-members-page .contributors .pure-button:hover {
   background: #00abc2;
-  color: white;
+  color: #fff;
 }
 
 @media screen and (min-width: 48em) {
@@ -3769,4 +3766,117 @@ body.prism-dark #my-solution-page .solution pre {
 #mentor-configure-page .pure-button {
   background: #00abc2;
   color: white;
+}
+
+.lo-organisation-page .lo-organisation-pages-menu a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.lo-organisation-page .lo-organisation-pages-menu a.selected {
+  color: #00d8f5;
+  border-bottom-color: #00abc2;
+}
+.lo-organisation-page .organisation-top-banner-section .inner {
+  background-color: black;
+  color: #fff;
+}
+.lo-organisation-page .organisation-top-banner-section h1 {
+  color: #fff;
+}
+@media screen and (max-width: 48em) {
+  .lo-organisation-page .organisation-top-banner-section h1 {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+.lo-organisation-page .section-link {
+  color: #111;
+}
+
+#about-page section.stats-section {
+  background-color: #646399;
+}
+#about-page section.vision-section h2 {
+  color: #00d8f5;
+}
+#about-page section.supporters-section {
+  border-bottom-color: #404040;
+}
+#about-page section.supporters-section .logo img {
+  filter: invert(1);
+}
+#about-page section.supporters-section .pure-button {
+  background: #00abc2;
+}
+#about-page section.supporters-section .current .your-organisation-here {
+  border-color: #00abc2;
+  color: #00abc2;
+}
+@media screen and (max-width: 48em) {
+  #about-page section.supporters-section .current {
+    background: #222222;
+  }
+  #about-page section.supporters-section .current h3 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #about-page section.supporters-section .current .your-organisation-here {
+    background: transparent;
+  }
+}
+@media screen and (min-width: 48em) {
+  #about-page section.supporters-section .current h3 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+#about-page section.methodology-section {
+  border-bottom-color: #404040;
+}
+#about-page section.methodology-section table th {
+  color: #00d8f5;
+  border-color: #404040;
+}
+#about-page section.methodology-section table td {
+  border-color: #404040;
+  color: rgba(255, 255, 255, 0.6);
+}
+#about-page section.story-section div.map img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+#strategy-page .content-section a {
+  color: #00d8f5;
+}
+
+#supporters-page .introduction-section h2 {
+  color: #00d8f5;
+}
+#supporters-page .introduction-section .support-box {
+  background: #8A89C0;
+  color: #fff;
+}
+#supporters-page .introduction-section .support-box .pure-button {
+  color: #8A89C0;
+}
+#supporters-page .current-supporters-section {
+  background: #141414;
+}
+#supporters-page .current-supporters-section .supporter {
+  background: #222222;
+}
+#supporters-page .current-supporters-section .supporter img {
+  filter: invert(1);
+}
+#supporters-page .current-supporters-section .supporter .section-link {
+  color: #00d8f5;
+}
+
+#supporter-page .section-link {
+  color: #00d8f5;
+}
+#supporter-page .details-section .read-more .post {
+  color: #00d8f5;
+}
+#supporter-page .details-section .read-more .post + .post {
+  border-top-color: #404040;
+}
+#supporter-page .details-section .read-more h2 {
+  color: #00d8f5;
 }

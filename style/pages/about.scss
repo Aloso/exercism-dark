@@ -1,0 +1,71 @@
+@import '../variables';
+@import '../mixins';
+
+#about-page {
+    section.stats-section {
+        background-color: #646399;
+    }
+
+    section.vision-section {
+        h2 {
+            color: $color-2b;
+        }
+    }
+    section.supporters-section {
+        border-bottom-color: $bord;
+
+        .logo img {
+            filter: invert(1);
+        }
+
+        .pure-button {
+            background: $color-2;
+        }
+
+        .current {
+            .your-organisation-here {
+                border-color: $color-2;
+                color: $color-2;
+            }
+
+            @include width-smaller-than-medium() {
+                background: $bg2;
+
+                h3 {
+                    color: $t2;
+                }
+
+                .your-organisation-here {
+                    background: transparent;
+                }
+
+            }
+            @include width-medium() {
+                h3 {
+                    color: $t2;
+                }
+            }
+        }
+    }
+
+    section.methodology-section {
+        border-bottom-color: $bord;
+
+        table {
+            th {
+                color: $color-2b;
+                border-color: $bord;
+            }
+            td {
+                border-color: $bord;
+                color: $t3;
+            }
+        }
+    }
+
+    section.story-section {
+        div.map img {
+            filter: invert(1) hue-rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixins';
+
+.lo-organisation-page {
+    .lo-organisation-pages-menu {
+        a {
+            color: $t2;
+            &.selected {
+                color: $color-2b;
+                border-bottom-color: $color-2;
+            }
+        }
+    }
+    .organisation-top-banner-section {
+        .inner {
+            background-color: black;
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+
+            @include width-smaller-than-medium() {
+                background: rgba(0,0,0,0.8);
+            }
+        }
+    }
+    .section-link {
+        color: #111;
+    }
+}
